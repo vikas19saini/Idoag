@@ -1,0 +1,163 @@
+/******************************************************************
+Theme Name: idoag
+Theme URI: http://www.igenero.com/
+Description: Wordpress Blog theme for IDOAG
+Author: iGenero
+Author URI: http://www.igenero.com/
+Version: 1.7.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+******************************************************************/
+
+@font-face {
+	font-family: 'proxima_nova_regular';
+	src: url('fonts/mark_simonson_-_proxima_nova_regular-webfont.eot');
+	src: url('fonts/mark_simonson_-_proxima_nova_regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/mark_simonson_-_proxima_nova_regular-webfont.woff2') format('woff2'), url('fonts/mark_simonson_-_proxima_nova_regular-webfont.woff') format('woff'), url('fonts/mark_simonson_-_proxima_nova_regular-webfont.ttf') format('truetype'), url('fonts/mark_simonson_-_proxima_nova_regular-webfont.svg#proxima_nova_regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'proxima_nova_rgbold';
+	src: url('fonts/mark_simonson_-_proxima_nova_bold-webfont.eot');
+	src: url('fonts/mark_simonson_-_proxima_nova_bold-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/mark_simonson_-_proxima_nova_bold-webfont.woff2') format('woff2'), url('fonts/mark_simonson_-_proxima_nova_bold-webfont.woff') format('woff'), url('fonts/mark_simonson_-_proxima_nova_bold-webfont.ttf') format('truetype'), url('fonts/mark_simonson_-_proxima_nova_bold-webfont.svg#proxima_nova_rgbold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'proxima_nova_ltsemibold';
+	src: url('fonts/mark_simonson_-_proxima_nova_semibold-webfont.eot');
+	src: url('fonts/mark_simonson_-_proxima_nova_semibold-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/mark_simonson_-_proxima_nova_semibold-webfont.woff2') format('woff2'), url('fonts/mark_simonson_-_proxima_nova_semibold-webfont.woff') format('woff'), url('fonts/mark_simonson_-_proxima_nova_semibold-webfont.ttf') format('truetype'), url('fonts/mark_simonson_-_proxima_nova_semibold-webfont.svg#proxima_nova_ltsemibold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'proxima_novalight';
+	src: url('fonts/proximanova-light-webfont.eot');
+	src: url('fonts/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/proximanova-light-webfont.woff2') format('woff2'), url('fonts/proximanova-light-webfont.woff') format('woff'), url('fonts/proximanova-light-webfont.ttf') format('truetype'), url('fonts/proximanova-light-webfont.svg#proxima_novalight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'proxima_nova_ththin';
+	src: url('fonts/mark_simonson_-_proxima_nova_thin-webfont.eot');
+	src: url('fonts/mark_simonson_-_proxima_nova_thin-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/mark_simonson_-_proxima_nova_thin-webfont.woff2') format('woff2'), url('fonts/mark_simonson_-_proxima_nova_thin-webfont.woff') format('woff'), url('fonts/mark_simonson_-_proxima_nova_thin-webfont.ttf') format('truetype'), url('fonts/mark_simonson_-_proxima_nova_thin-webfont.svg#proxima_nova_ththin') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'museo500';
+	src: url('fonts/museosans_500-webfont.eot');
+	src: url('fonts/museosans_500-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/museosans_500-webfont.woff2') format('woff2'), url('fonts/museosans_500-webfont.woff') format('woff'), url('fonts/museosans_500-webfont.ttf') format('truetype'), url('fonts/museosans_500-webfont.svg#museo500') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'museo700';
+	src: url('fonts/museosans_700-webfont.eot');
+	src: url('fonts/museosans_700-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/museosans_700-webfont.woff2') format('woff2'), url('fonts/museosans_700-webfont.woff') format('woff'), url('fonts/museosans_700-webfont.ttf') format('truetype'), url('fonts/museosans_700-webfont.svg#museo700') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+body {
+	font-family: 'proxima_nova_regular' !important;
+	font-size: 17px;
+}
+a.c5-logo {
+	border-right: 1px solid #dde2e4;
+	padding: 0 30px 0 0;
+}
+.top-menu-nav ul.menu-sc-nav > li.menu-item {
+	margin: 0;
+	padding: 0 0 0 30px;
+}
+.top-menu-nav ul.menu-sc-nav > li.menu-item > a, .top-menu-nav.default ul.menu-sc-nav > li.menu-item > a {
+	font-family: 'museo500' !important;
+	font-size: 16px;
+	color: #475055;
+}
+.top-menu-nav ul.menu-sc-nav > li.menu-item > ul.sub-menu li.menu-item {
+	background: #ffffff;
+	border-bottom: 1px solid #eee;
+}
+.top-menu-nav ul.menu-sc-nav > li.menu-item > ul.sub-menu li.menu-item > a {
+	text-decoration: none;
+	font-size: 16px;
+	font-family: 'museo500';
+	color: #333;
+}
+.top-menu-nav ul.menu-sc-nav > li.menu-item > ul.sub-menu li.menu-item:hover {
+	background: #5dc1d8;
+}
+.top-menu-nav ul.menu-sc-nav > li.menu-item > ul.sub-menu li.menu-item:hover > a {
+	color: #fff;
+}
+.c5ab_posts_slider ul.c5ab_slides li .content h3, .c5ab_posts_thumb_blog_1_single h3, h3.title, h2.title, h3.widget-title, .products h2, .c5-dark-shadow .c5-header-data h1, .c5-floating-article-header h3 {
+	font-family: 'proxima_nova_ltsemibold';
+}
+button, input, select, textarea {
+	font-family: 'proxima_nova_regular' !important;
+}
+.footer .footer-bar {
+	padding: 15px 0px;
+}
+.header .c5-main-width-wrap, .footer .c5-main-width-wrap{
+max-width:100%;
+    padding: 0 15px;
+}
+ul.sub-menu li a .caret{
+display:none;
+}
+
+@media only screen and (max-device-width: 480px) {
+.social_txt{
+    line-height: 21px;
+    padding: 0 10px;
+    margin-top: 17px;
+}
+.footer .c5-right{
+float:inherit;
+}
+.footer .c5-copyrights{
+text-align:center;
+}
+.footer_nav ul li a{
+font-size:10px;
+}
+.header{
+min-height:54px;
+}
+nav .menu-enable{
+display:none !important;
+}
+.header a.c5-logo{
+border-right:inherit;
+margin-left:40px;
+margin-top: 16px !important;
+}
+.header a.c5-logo img{
+width:54px;
+}
+#gotop{
+    line-height: 35px;
+    width: 30px;
+    bottom: 60px;
+    right: 0;
+    height: 28px;
+}
+}
+@media (max-width: 750px){
+.header.descended {
+    display: inherit !important
+}
+.c5ab_posts_slider{
+    z-index: 9999999;
+}
+.c5-content-dark.c5-main-header-wrap {
+    background-color: #222;
+    z-index: 9999999;
+}
+.superfly-on #sfm-sidebar {
+    z-index: 99999999;
+}
+}

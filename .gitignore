@@ -1,0 +1,11 @@
+app/config/database.php
+/app/config/local
+/app/config/local/*
+/public/uploads/*
+/public/imports/*
+/public/logs/*
+/vendor
+.DS_Store
+*/.DS_Store
+composer.lock
+sftp-config.json

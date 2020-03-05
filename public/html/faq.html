@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en-US"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en-US"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="images/fav.png" />
+<title>Idoag</title>
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+<link href="css/font-awesome.min.css" type="text/css" rel="stylesheet">
+<link href="css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="css/animate.css" type="text/css" rel="stylesheet">
+<link href="css/jquery.bxslider.css" type="text/css" rel="stylesheet">
+<link href="css/style.css" type="text/css" rel="stylesheet">
+<link href="css/responsive.css" type="text/css" rel="stylesheet">
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.bxslider.js"></script>
+<script>
+$(function(){
+	var ww=$(window).innerWidth();
+	$(".navbar-default .navbar-nav > li .submenu").width(ww);
+	
+	$( window ).resize(function() {
+		var ww2=$(window).innerWidth();
+		$(".navbar-default .navbar-nav > li .submenu").width(ww2);
+	});
+	
+	$('.navbar-default .navbar-nav > li .submenu .mybrandslider_info').bxSlider({
+		minSlides: 1,
+		maxSlides: 5,
+		slideWidth: 154,
+		infiniteLoop: false,
+		pager: false,
+		moveSlides: 1,
+		slideMargin: 10
+	});	
+	
+$(".faq_liststyle .faq_list:first-child h4").addClass("closeimg");
+$(".faq_list h4").click(function(){	
+	var thisclass=$(this).attr("class");		
+		if(thisclass!="closeimg"){			
+		$(this).attr("class", "closeimg");			
+		$(this).parents(".faq_list").find(".faq_cnt").slideDown();			
+	}
+else{				
+$(this).attr("class", "");
+$(this).parents(".faq_list").find(".faq_cnt").slideUp();
+}
+});
+	
+	
+	
+});
+</script>
+</head>
+
+<body>
+<div class="wrapper">
+  <header>
+    <div class="logo_nav_info">
+      <div class="logo"> <a href="index.html"> <img src="images/logo.png" alt="Logo"> </a> </div>
+      <div class="nav_info">
+        <nav class="navbar navbar-default" role="navigation">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li> <a href="index.html"> home </a> </li>
+              <li> <a href="javascript:void(0)"> offers </a>
+                <div class="submenu">
+                  <div class="container_info">
+                    <div class="row">
+                      <div class="col-sm-2">
+                        <h5>Top Brands</h5>
+                        <ul>
+                          <li><a href="javascript:void(0)">Myntra.com</a></li>
+                          <li><a href="javascript:void(0)">Pepsi</a></li>
+                          <li><a href="javascript:void(0)">KFC India</a></li>
+                          <li><a href="javascript:void(0)">Coca Cola</a></li>
+                          <li><a href="javascript:void(0)">Armani Jeans</a></li>
+                          <li><a href="javascript:void(0)">Apollo Pharmacy</a></li>
+                          <li><a href="javascript:void(0)">Lenskart.com</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-2">
+                        <h5>Categories</h5>
+                        <ul>
+                          <li><a href="javascript:void(0)">Apparel & Accessories</a></li>
+                          <li><a href="javascript:void(0)">Food & Beverages</a></li>
+                          <li><a href="javascript:void(0)">Hospitals</a></li>
+                          <li><a href="javascript:void(0)">Luxury Goods</a></li>
+                          <li><a href="javascript:void(0)">Export Surplus</a></li>
+                          <li><a href="javascript:void(0)">Raste Ka Maal</a></li>
+                          <li><a href="javascript:void(0)">Saste Mein</a></li>
+                          <li class="more_txt"><a href="javascript:void(0)"><img src="images/more_img.png"> More</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-8">
+                        <h5>My Brands</h5>
+                        <div class="mybrandslider_info">
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img1.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img2.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img3.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img4.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img5.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img1.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img2.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img3.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img4.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img5.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li> <a href="javascript:void(0)"> internships </a>
+                <div class="submenu">
+                  <div class="container_info">
+                    <div class="row">
+                      <div class="col-sm-2">
+                        <h5>Top Brands</h5>
+                        <ul>
+                          <li><a href="javascript:void(0)">Myntra.com</a></li>
+                          <li><a href="javascript:void(0)">Pepsi</a></li>
+                          <li><a href="javascript:void(0)">KFC India</a></li>
+                          <li><a href="javascript:void(0)">Coca Cola</a></li>
+                          <li><a href="javascript:void(0)">Armani Jeans</a></li>
+                          <li><a href="javascript:void(0)">Apollo Pharmacy</a></li>
+                          <li><a href="javascript:void(0)">Lenskart.com</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-2">
+                        <h5>Categories</h5>
+                        <ul>
+                          <li><a href="javascript:void(0)">Apparel & Accessories</a></li>
+                          <li><a href="javascript:void(0)">Food & Beverages</a></li>
+                          <li><a href="javascript:void(0)">Hospitals</a></li>
+                          <li><a href="javascript:void(0)">Luxury Goods</a></li>
+                          <li><a href="javascript:void(0)">Export Surplus</a></li>
+                          <li><a href="javascript:void(0)">Raste Ka Maal</a></li>
+                          <li><a href="javascript:void(0)">Saste Mein</a></li>
+                          <li class="more_txt"><a href="javascript:void(0)"><img src="images/more_img.png"> More</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-8">
+                        <h5>My Brands</h5>
+                        <div class="mybrandslider_info">
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img1.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img2.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img3.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img4.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img5.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img1.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img2.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img3.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img4.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img5.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li> <a href="javascript:void(0)"> brands </a>
+                <div class="submenu">
+                  <div class="container_info">
+                    <div class="row">
+                      <div class="col-sm-2">
+                        <h5>Top Brands</h5>
+                        <ul>
+                          <li><a href="javascript:void(0)">Myntra.com</a></li>
+                          <li><a href="javascript:void(0)">Pepsi</a></li>
+                          <li><a href="javascript:void(0)">KFC India</a></li>
+                          <li><a href="javascript:void(0)">Coca Cola</a></li>
+                          <li><a href="javascript:void(0)">Armani Jeans</a></li>
+                          <li><a href="javascript:void(0)">Apollo Pharmacy</a></li>
+                          <li><a href="javascript:void(0)">Lenskart.com</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-2">
+                        <h5>Categories</h5>
+                        <ul>
+                          <li><a href="javascript:void(0)">Apparel & Accessories</a></li>
+                          <li><a href="javascript:void(0)">Food & Beverages</a></li>
+                          <li><a href="javascript:void(0)">Hospitals</a></li>
+                          <li><a href="javascript:void(0)">Luxury Goods</a></li>
+                          <li><a href="javascript:void(0)">Export Surplus</a></li>
+                          <li><a href="javascript:void(0)">Raste Ka Maal</a></li>
+                          <li><a href="javascript:void(0)">Saste Mein</a></li>
+                          <li class="more_txt"><a href="javascript:void(0)"><img src="images/more_img.png"> More</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-8">
+                        <h5>My Brands</h5>
+                        <div class="mybrandslider_info">
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img1.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img2.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img3.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img4.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img5.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img1.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img2.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img3.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img4.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img5.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li> <a href="javascript:void(0)"> institutions </a> </li>
+              <li> <a href="javascript:void(0)"> more... </a> </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="login_detail">
+        <form>
+          <div class="login_headtop">
+            <input type="email" value="" placeholder="email address">
+            <input type="password" value="" placeholder="password">
+            <br/>
+          </div>
+          <input type="submit" value="">
+        </form>
+      </div>
+    </div>
+  </header>
+  <div class="faq_info">
+    <div class="container_info">
+    <div class="faqsearch">
+      <h5>Faq</h5>
+      
+      
+<form>
+
+	<span><input type="text" class="search square" placeholder="search faq"></span>
+</form>
+</div>
+
+      <div class="faq_liststyle">
+        <div class="faq_list">
+          <h4 class="closeimg">HOW DO I MAKE A PURCHASE? <span></span></h4>
+          <div class="faq_cnt">
+            <h6>Shopping at idoag</h6>
+            <ul>
+<li>If you know what you are looking for, use the CLOTHING and ACCESSORIES links. You can also shop by browsing directly by designer.</li>
+<li>Once you have found an item, select your size and click on the 'ADD TO SHOPPING BAG' button underneath each item. </li>
+<li>Review the items in your shopping bag by clicking the 'SHOPPING BAG' link at the top of the page. You can use the 'REMOVE FROM BASKET' link to delete items from your shopping bag.</li>
+<li>Click on 'PROCEED TO PURCHASE' to complete your order.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="faq_list">
+          <h4>Do I need to set up an account to place an order? <span></span></h4>
+          <div class="faq_cnt">
+            <h6>Shopping at idoag</h6>
+            <ul>
+<li>If you know what you are looking for, use the CLOTHING and ACCESSORIES links. You can also shop by browsing directly by designer.</li>
+<li>Once you have found an item, select your size and click on the 'ADD TO SHOPPING BAG' button underneath each item. </li>
+<li>Review the items in your shopping bag by clicking the 'SHOPPING BAG' link at the top of the page. You can use the 'REMOVE FROM BASKET' link to delete items from your shopping bag.</li>
+<li>Click on 'PROCEED TO PURCHASE' to complete your order.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="faq_list">
+          <h4>I've forgotten my password. What should I do? <span></span></h4>
+          <div class="faq_cnt">
+            <h6>Shopping at idoag</h6>
+            <ul>
+<li>If you know what you are looking for, use the CLOTHING and ACCESSORIES links. You can also shop by browsing directly by designer.</li>
+<li>Once you have found an item, select your size and click on the 'ADD TO SHOPPING BAG' button underneath each item. </li>
+<li>Review the items in your shopping bag by clicking the 'SHOPPING BAG' link at the top of the page. You can use the 'REMOVE FROM BASKET' link to delete items from your shopping bag.</li>
+<li>Click on 'PROCEED TO PURCHASE' to complete your order.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="faq_list">
+          <h4>How do I know that the products you sell are authentic? <span></span></h4>
+          <div class="faq_cnt">
+            <h6>Shopping at idoag</h6>
+            <ul>
+<li>If you know what you are looking for, use the CLOTHING and ACCESSORIES links. You can also shop by browsing directly by designer.</li>
+<li>Once you have found an item, select your size and click on the 'ADD TO SHOPPING BAG' button underneath each item. </li>
+<li>Review the items in your shopping bag by clicking the 'SHOPPING BAG' link at the top of the page. You can use the 'REMOVE FROM BASKET' link to delete items from your shopping bag.</li>
+<li>Click on 'PROCEED TO PURCHASE' to complete your order.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="faq_list">
+          <h4>Which size should I choose? <span></span></h4>
+          <div class="faq_cnt">
+            <h6>Shopping at idoag</h6>
+            <ul>
+<li>If you know what you are looking for, use the CLOTHING and ACCESSORIES links. You can also shop by browsing directly by designer.</li>
+<li>Once you have found an item, select your size and click on the 'ADD TO SHOPPING BAG' button underneath each item. </li>
+<li>Review the items in your shopping bag by clicking the 'SHOPPING BAG' link at the top of the page. You can use the 'REMOVE FROM BASKET' link to delete items from your shopping bag.</li>
+<li>Click on 'PROCEED TO PURCHASE' to complete your order.</li>
+            </ul>
+          </div>
+        </div>
+       
+     
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="footer_inner">
+    <div class="footer_nav">
+      <ul>
+        <li><a href="javascript:void(0)">FAQs </a></li>
+        <li><a href="javascript:void(0)"> Terms of Service </a></li>
+        <li><a href="javascript:void(0)"> About the Company </a></li>
+        <li><a href="javascript:void(0)"> Services </a></li>
+        <li><a href="javascript:void(0)"> Offline Activation </a></li>
+        <li><a href="javascript:void(0)"> Support</a></li>
+      </ul>
+    </div>
+    <div class="copyright_txt"> Copyright (c) IDOAG, 2015 </div>
+  </div>
+</footer>
+</body>
+</html>

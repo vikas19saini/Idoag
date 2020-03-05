@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en-US"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en-US"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="images/fav.png" />
+<title>Idoag</title>
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+<link href="css/font-awesome.min.css" type="text/css" rel="stylesheet">
+<link href="css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="css/animate.css" type="text/css" rel="stylesheet">
+<link href="css/jquery.bxslider.css" type="text/css" rel="stylesheet">
+<link href="css/style.css" type="text/css" rel="stylesheet">
+<link href="css/responsive.css" type="text/css" rel="stylesheet">
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.bxslider.js"></script>
+<script>
+$(function(){
+	var ww=$(window).innerWidth();
+	$(".navbar-default .navbar-nav > li .submenu").width(ww);
+		
+	$( window ).resize(function() {
+		var ww2=$(window).innerWidth();
+		$(".navbar-default .navbar-nav > li .submenu").width(ww2);
+	});
+	
+	$('.navbar-default .navbar-nav > li .submenu .mybrandslider_info').bxSlider({
+		minSlides: 1,
+		maxSlides: 5,
+		slideWidth: 154,
+		infiniteLoop: false,
+		pager: false,
+		moveSlides: 1,
+		slideMargin: 10
+	});
+	
+	$('.statistics_slider').bxSlider({
+		pager: false
+	});
+	
+});
+</script>
+</head>
+
+<body>
+<div class="wrapper">
+  <header>
+    <div class="logo_nav_info">
+      <div class="logo"> <a href="index.html"> <img src="images/logo.png" alt="Logo"> </a> </div>
+      <div class="nav_info">
+        <nav class="navbar navbar-default" role="navigation">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li> <a href="index.html"> home </a> </li>
+              <li> <a href="javascript:void(0)"> offers </a>
+                <div class="submenu">
+                  <div class="container_info">
+                    <div class="row">
+                      <div class="col-sm-2">
+                        <h5>Top Brands</h5>
+                        <ul>
+                          <li><a href="javascript:void(0)">Myntra.com</a></li>
+                          <li><a href="javascript:void(0)">Pepsi</a></li>
+                          <li><a href="javascript:void(0)">KFC India</a></li>
+                          <li><a href="javascript:void(0)">Coca Cola</a></li>
+                          <li><a href="javascript:void(0)">Armani Jeans</a></li>
+                          <li><a href="javascript:void(0)">Apollo Pharmacy</a></li>
+                          <li><a href="javascript:void(0)">Lenskart.com</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-2">
+                        <h5>Categories</h5>
+                        <ul>
+                          <li><a href="javascript:void(0)">Apparel & Accessories</a></li>
+                          <li><a href="javascript:void(0)">Food & Beverages</a></li>
+                          <li><a href="javascript:void(0)">Hospitals</a></li>
+                          <li><a href="javascript:void(0)">Luxury Goods</a></li>
+                          <li><a href="javascript:void(0)">Export Surplus</a></li>
+                          <li><a href="javascript:void(0)">Raste Ka Maal</a></li>
+                          <li><a href="javascript:void(0)">Saste Mein</a></li>
+                          <li class="more_txt"><a href="javascript:void(0)"><img src="images/more_img.png"> More</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-8">
+                        <h5>My Brands</h5>
+                        <div class="mybrandslider_info">
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img1.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img2.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img3.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img4.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img5.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img1.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img2.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img3.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img4.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img5.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li> <a href="javascript:void(0)"> internships </a>
+                <div class="submenu">
+                  <div class="container_info">
+                    <div class="row">
+                      <div class="col-sm-2">
+                        <h5>Top Brands</h5>
+                        <ul>
+                          <li><a href="javascript:void(0)">Myntra.com</a></li>
+                          <li><a href="javascript:void(0)">Pepsi</a></li>
+                          <li><a href="javascript:void(0)">KFC India</a></li>
+                          <li><a href="javascript:void(0)">Coca Cola</a></li>
+                          <li><a href="javascript:void(0)">Armani Jeans</a></li>
+                          <li><a href="javascript:void(0)">Apollo Pharmacy</a></li>
+                          <li><a href="javascript:void(0)">Lenskart.com</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-2">
+                        <h5>Categories</h5>
+                        <ul>
+                          <li><a href="javascript:void(0)">Apparel & Accessories</a></li>
+                          <li><a href="javascript:void(0)">Food & Beverages</a></li>
+                          <li><a href="javascript:void(0)">Hospitals</a></li>
+                          <li><a href="javascript:void(0)">Luxury Goods</a></li>
+                          <li><a href="javascript:void(0)">Export Surplus</a></li>
+                          <li><a href="javascript:void(0)">Raste Ka Maal</a></li>
+                          <li><a href="javascript:void(0)">Saste Mein</a></li>
+                          <li class="more_txt"><a href="javascript:void(0)"><img src="images/more_img.png"> More</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-8">
+                        <h5>My Brands</h5>
+                        <div class="mybrandslider_info">
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img1.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img2.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img3.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img4.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img5.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img1.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img2.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img3.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img4.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img5.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="active"> <a href="javascript:void(0)"> brands </a>
+                <div class="submenu">
+                  <div class="container_info">
+                    <div class="row">
+                      <div class="col-sm-2">
+                        <h5>Top Brands</h5>
+                        <ul>
+                          <li><a href="javascript:void(0)">Myntra.com</a></li>
+                          <li><a href="javascript:void(0)">Pepsi</a></li>
+                          <li><a href="javascript:void(0)">KFC India</a></li>
+                          <li><a href="javascript:void(0)">Coca Cola</a></li>
+                          <li><a href="javascript:void(0)">Armani Jeans</a></li>
+                          <li><a href="javascript:void(0)">Apollo Pharmacy</a></li>
+                          <li><a href="javascript:void(0)">Lenskart.com</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-2">
+                        <h5>Categories</h5>
+                        <ul>
+                          <li><a href="javascript:void(0)">Apparel & Accessories</a></li>
+                          <li><a href="javascript:void(0)">Food & Beverages</a></li>
+                          <li><a href="javascript:void(0)">Hospitals</a></li>
+                          <li><a href="javascript:void(0)">Luxury Goods</a></li>
+                          <li><a href="javascript:void(0)">Export Surplus</a></li>
+                          <li><a href="javascript:void(0)">Raste Ka Maal</a></li>
+                          <li><a href="javascript:void(0)">Saste Mein</a></li>
+                          <li class="more_txt"><a href="javascript:void(0)"><img src="images/more_img.png"> More</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-8">
+                        <h5>My Brands</h5>
+                        <div class="mybrandslider_info">
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img1.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img2.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img3.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img4.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img5.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img1.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img2.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img3.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img4.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                          <div class="mybrandslider_list">
+                            <div class="mybrandslider_listimg"> <a href="#"><img src="images/mybrand_img5.png"></a> </div>
+                            <div class="mybrandslider_listcont clearfix">
+                              <div class="brandname"><a href="#">Lenskart.com</a></div>
+                              <div class="brandlike"><a href="#"><img src="images/like2_icon.png"> +23,421</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li> <a href="javascript:void(0)"> institutions </a> </li>
+              <li> <a href="javascript:void(0)"> more... </a> </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="social_search_info">
+        <div class="search_txt"><img src="images/search_icon.png"></div>
+        <div class="social_txt">
+          <ul>
+            <li><a href="#"><img src="images/fb_icon.png"></a></li>
+            <li><a href="#"><img src="images/tw_icon.png"></a></li>
+            <li><a href="#"><img src="images/gplus_icon.png"></a></li>
+          </ul>
+        </div>
+        <div class="profile_txt"> <img src="images/userprofile_icon.png"> </div>
+      </div>
+    </div>
+  </header>
+  <div class="brandicon_info">
+    <div class="container_info">
+      <div class="brandicon_list">
+        <div class="brandicon_img"> <img src="images/cocacola_logo.png"> </div>
+        <div class="follow_txt"> Follow </div>
+        <div class="follow_txtlist"> + 1,23,004 </div>
+      </div>
+    </div>
+  </div>
+  <div class="nav_info2">
+    <div class="container_info">
+      <h4>COCA COLA INDIA</h4>
+      <ul>
+        <li class="active"><a href="#">UPDATES</a></li>
+        <li><a href="#">OFFERS</a></li>
+        <li><a href="#">INTERNSHIPS</a></li>
+        <li><a href="#">EVENTS</a></li>
+        <li><a href="#">LINKS</a></li>
+        <li><a href="#">PHOTOS</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="brandoffer_info">
+    <div class="container_info">
+      <div class="brandoffer_contleft">
+        <div class="postsomething_statistics_info clearfix">
+          <div class="postsomething_info">
+            <h6>LET’S POST SOMETHING NEW</h6>
+            <ul>
+              <li> <img src="images/postsomething_img1.png">
+                <p>OFFER</p>
+              </li>
+              <li> <img src="images/postsomething_img2.png">
+                <p>INTERNSHIP</p>
+              </li>
+              <li> <img src="images/postsomething_img3.png">
+                <p>EVENT</p>
+              </li>
+              <li> <img src="images/postsomething_img4.png">
+                <p>TEXT</p>
+              </li>
+              <li> <img src="images/postsomething_img5.png">
+                <p>PHOTOS</p>
+              </li>
+            </ul>
+          </div>
+          <div class="statistics_info">
+            <h6>STATISTICS</h6>
+            <ul class="statistics_slider">
+              <li>
+                <h4>+2,000 </h4>
+                <p>followers this week</p>
+              </li>
+              <li>
+                <h4>+2,000 </h4>
+                <p>followers this week</p>
+              </li>
+              <li>
+                <h4>+2,000 </h4>
+                <p>followers this week</p>
+              </li>
+              <li>
+                <h4>+2,000 </h4>
+                <p>followers this week</p>
+              </li>
+            </ul>
+            <a href="#" class="viewall_btn">view all</a> </div>
+        </div>
+        <div class="brandsign_info">
+          <div class="brandsign_left">
+            <h3><img src="images/note_img3.jpg"> Offer of the Day!</h3>
+            <div class="brandsign_leftcont">
+              <p> Try the New Coca Cola Zero at
+                any outlet and receive 50%
+                cashback instantly. </p>
+              <p> Just Flash your IDOAG Card! </p>
+              <p> Coca Cola Offer #203.
+                Follow us for more offers! </p>
+            </div>
+          </div>
+          <div class="brandsign_right">
+            <div class="share_like_strip">
+              <ul>
+                <li> <a href="#"><img src="images/view_icon.png"><br>
+                  1023</a> </li>
+                <li><a href="#"><img src="images/like_icon.png"><br>
+                  102</a></li>
+                <li><a href="#"><img src="images/share_icon.png"><br>
+                  Share</a></li>
+              </ul>
+            </div>
+            <div class="brandsign_img"> <a href="#"> <img src="images/cocacola_img.png" class="cocacola_img"></a>
+              <div class="new_txt"> <img src="images/new_img.png"> </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="photowidget_list">
+  <div class="photowidget_FSW grid-item">
+    <div class="photowidget_img"><a href="#"> <img src="images/brandsign_gallery1.jpg" class="photowidget_img"> </a>
+      <div class="photowidget_imgcont">
+        <h5><a href="#"> Some Picture or Gallery Title Here.</a></h5>
+        <div class="share_like_txt">
+          <p><a href="#"><img src="images/view_icon.png"> <br>
+            1023</a></p>
+          <p><a href="#"><img src="images/like_icon.png"> <br>
+            102</a></p>
+          <p><a href="#"><img src="images/share_icon.png"> <br>
+            Share</a></p>
+        </div>
+      </div>
+      <div class="note_img2"> <img src="images/note_img5.jpg"> </div>
+    </div>
+  </div>
+  
+  
+  
+  <div class="photowidget_L grid-item">
+    <div class="photowidget_img"><a href="#"> <img src="images/brandsign_gallery1.jpg" class="photowidget_img"> </a>
+      <div class="photowidget_imgcont">
+        <h5><a href="#"> Some Picture or Gallery Title Here.</a></h5>
+        <div class="share_like_txt">
+          <p><a href="#"><img src="images/view_icon.png"> <br>
+            1023</a></p>
+          <p><a href="#"><img src="images/like_icon.png"> <br>
+            102</a></p>
+          <p><a href="#"><img src="images/share_icon.png"> <br>
+            Share</a></p>
+        </div>
+      </div>
+      <div class="note_img2"> <img src="images/note_img5.jpg"> </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  <div class="photowidget_S grid-item">
+    <div class="photowidget_img"><a href="#"> <img src="images/brandsign_img1.jpg" class="photowidget_img"> </a>
+      <div class="photowidget_imgcont">
+        <h5><a href="#"> Valentine Ideas @ IDOAG</a></h5>
+        <div class="share_like_txt">
+          <p><a href="#"><img src="images/view_icon.png"> <br>
+            1023</a></p>
+          <p><a href="#"><img src="images/like_icon.png"> <br>
+            102</a></p>
+          <p><a href="#"><img src="images/share_icon.png"> <br>
+            Share</a></p>
+        </div>
+      </div>
+      <div class="note_img2"> <img src="images/note_img5.jpg"> </div>
+    </div>
+  </div>
+  
+  
+  
+  <div class="photowidget_XS grid-item">
+    <div class="photowidget_img"><a href="#"> <img src="images/brandsign_img1.jpg" class="photowidget_img"> </a>
+      <div class="photowidget_imgcont">
+        <h5><a href="#"> Valentine Ideas @ IDOAG</a></h5>
+        <div class="share_like_txt">
+          <p><a href="#"><img src="images/view_icon.png"> <br>
+            1023</a></p>
+          <p><a href="#"><img src="images/like_icon.png"> <br>
+            102</a></p>
+          <p><a href="#"><img src="images/share_icon.png"> <br>
+            Share</a></p>
+        </div>
+      </div>
+      <div class="note_img2"> <img src="images/note_img5.jpg"> </div>
+    </div>
+  </div>
+  
+  
+   <div class="photowidget_XS grid-item">
+    <div class="photowidget_img"><a href="#"> <img src="images/brandsign_img1.jpg" class="photowidget_img"> </a>
+      <div class="photowidget_imgcont">
+        <h5><a href="#"> Valentine Ideas @ IDOAG</a></h5>
+        <div class="share_like_txt">
+          <p><a href="#"><img src="images/view_icon.png"> <br>
+            1023</a></p>
+          <p><a href="#"><img src="images/like_icon.png"> <br>
+            102</a></p>
+          <p><a href="#"><img src="images/share_icon.png"> <br>
+            Share</a></p>
+        </div>
+      </div>
+      <div class="note_img2"> <img src="images/note_img5.jpg"> </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  <div class="photowidget_M grid-item">
+    <div class="photowidget_img"><a href="#"> <img src="images/openhappiness.jpg" class="photowidget_img"> </a>
+      <div class="photowidget_imgcont">
+        <h5><a href="#"> Some Picture or Gallery Title Here.</a></h5>
+        <div class="share_like_txt">
+          <p><a href="#"><img src="images/view_icon.png"> <br>
+            1023</a></p>
+          <p><a href="#"><img src="images/like_icon.png"> <br>
+            102</a></p>
+          <p><a href="#"><img src="images/share_icon.png"> <br>
+            Share</a></p>
+        </div>
+      </div>
+      <div class="note_img2"> <img src="images/note_img5.jpg"> </div>
+    </div>
+  </div>
+  
+  <div class="photowidget_M grid-item">
+    <div class="photowidget_img"><a href="#"> <img src="images/openhappiness.jpg" class="photowidget_img"> </a>
+      <div class="photowidget_imgcont">
+        <h5><a href="#"> Some Picture or Gallery Title Here.</a></h5>
+        <div class="share_like_txt">
+          <p><a href="#"><img src="images/view_icon.png"> <br>
+            1023</a></p>
+          <p><a href="#"><img src="images/like_icon.png"> <br>
+            102</a></p>
+          <p><a href="#"><img src="images/share_icon.png"> <br>
+            Share</a></p>
+        </div>
+      </div>
+      <div class="note_img2"> <img src="images/note_img5.jpg"> </div>
+    </div>
+  </div>
+  <div class="photowidget_M grid-item">
+    <div class="photowidget_img"><a href="#"> <img src="images/openhappiness.jpg" class="photowidget_img"> </a>
+      <div class="photowidget_imgcont">
+        <h5><a href="#"> Some Picture or Gallery Title Here.</a></h5>
+        <div class="share_like_txt">
+          <p><a href="#"><img src="images/view_icon.png"> <br>
+            1023</a></p>
+          <p><a href="#"><img src="images/like_icon.png"> <br>
+            102</a></p>
+          <p><a href="#"><img src="images/share_icon.png"> <br>
+            Share</a></p>
+        </div>
+      </div>
+      <div class="note_img2"> <img src="images/note_img5.jpg"> </div>
+    </div>
+  </div>
+</div>
+        
+        
+      </div>
+      <div class="notice_feed_info">
+        <div class="brand_poast_info">
+          <h6>BRAND PAGE SETTINGS</h6>
+          <div class="brand_setting_txt">
+            <ul>
+              <li>
+                <div class="name_val">NAME</div>
+                <div class="val_val"><strong>COCA COLA</strong></div>
+              </li>
+              <li>
+                <div class="name_val">COLORS</div>
+                <div class="val_val"><img src="images/color_red.jpg"> <img src="images/color_red.jpg"></div>
+              </li>
+              <li>
+                <div class="name_val">CATEGORIES</div>
+                <div class="val_val">Food & Beverages  |  Alpha Category | Lifestyle  |  Big Picture</div>
+              </li>
+            </ul>
+            <div class="editsettings_btn"> <a href="#">edit settings</a> </div>
+          </div>
+        </div>
+        <div class="brand_poast_info">
+          <h6>POST STATISTICS</h6>
+          <div class="brand_setting_txt">
+            <ul>
+              <li>
+                <div class="name_val">OFFERS</div>
+                <div class="val_val"><strong>20</strong></div>
+              </li>
+              <li>
+                <div class="name_val">INTERNSHIPS</div>
+                <div class="val_val"><strong>32</strong></div>
+              </li>
+              <li>
+                <div class="name_val">PHOTOS</div>
+                <div class="val_val"><strong>341</strong></div>
+              </li>
+              <li>
+                <div class="name_val">EVENTS</div>
+                <div class="val_val"><strong>0</strong></div>
+              </li>
+              <li>
+                <div class="name_val">TEXT UPDATES</div>
+                <div class="val_val"><strong>21</strong></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="brand_poast_info">
+          <h6>FOLLOWERS</h6>
+          <div class="brand_follower_txt">
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <div class="editsettings_btn"> <a href="#">view all followers</a> </div>
+          </div>
+        </div>
+        <div class="brand_poast_info">
+          <h6>NOTES / FEEDBACK</h6>
+          <i>Replying to a note posts it on the page. Please be careful</i>
+          <div class="brand_notesfeedback_txt">
+            <ul>
+              <li>
+                <div class="notice_feed_listinnerimg"> <img src="images/notice_feed_img1.jpg"> </div>
+                <div class="notice_feed_listinnercont">
+                  <h6>Shaillee Singh</h6>
+                  <p>A wierd message here for the brand limited only to 150 characters.</p>
+                  <a href="#">reply</a> </div>
+              </li>
+              <li>
+                <div class="notice_feed_listinnerimg"> <img src="images/notice_feed_img1.jpg"> </div>
+                <div class="notice_feed_listinnercont">
+                  <h6>Shaillee Singh</h6>
+                  <p>A wierd message here for the brand limited only to 150 characters.</p>
+                  <a href="#">reply</a> </div>
+              </li>
+              <li>
+                <div class="notice_feed_listinnerimg"> <img src="images/notice_feed_img1.jpg"> </div>
+                <div class="notice_feed_listinnercont">
+                  <h6>Shaillee Singh</h6>
+                  <p>A wierd message here for the brand limited only to 150 characters.</p>
+                  <a href="#">reply</a> </div>
+              </li>
+              <li>
+                <div class="notice_feed_listinnerimg"> <img src="images/notice_feed_img1.jpg"> </div>
+                <div class="notice_feed_listinnercont">
+                  <h6>Shaillee Singh</h6>
+                  <p>A wierd message here for the brand limited only to 150 characters.</p>
+                  <a href="#">reply</a> </div>
+              </li>
+              <li>
+                <div class="notice_feed_listinnerimg"> <img src="images/notice_feed_img1.jpg"> </div>
+                <div class="notice_feed_listinnercont">
+                  <h6>Shaillee Singh</h6>
+                  <p>A wierd message here for the brand limited only to 150 characters.</p>
+                  <a href="#">reply</a> </div>
+              </li>
+              <li>
+                <div class="notice_feed_listinnerimg"> <img src="images/notice_feed_img1.jpg"> </div>
+                <div class="notice_feed_listinnercont">
+                  <h6>Shaillee Singh</h6>
+                  <p>A wierd message here for the brand limited only to 150 characters.</p>
+                  <a href="#">reply</a> </div>
+              </li>
+            </ul>
+            <div class="editsettings_btn"> <a href="#">view all notes / feedback</a> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="footer_inner">
+    <div class="footer_nav">
+      <ul>
+        <li><a href="javascript:void(0)">FAQs </a></li>
+        <li><a href="javascript:void(0)"> Terms of Service </a></li>
+        <li><a href="javascript:void(0)"> About the Company </a></li>
+        <li><a href="javascript:void(0)"> Services </a></li>
+        <li><a href="javascript:void(0)"> Offline Activation </a></li>
+        <li><a href="javascript:void(0)"> Support</a></li>
+      </ul>
+    </div>
+    <div class="copyright_txt"> Copyright (c) IDOAG, 2015 </div>
+  </div>
+</footer>
+
+
+<script src="js/isotope-docs.min.js"></script>
+
+<script>
+$(function(){
+	
+	$('.photowidget_list').isotope({
+    itemSelector: '.grid-item',
+	layoutMode: 'fitRows',
+	isInitLayout: true,	
+	percentPosition: true,
+    masonry: {
+      columnWidth: 100
+    }
+  });
+	
+	
+});
+</script>
+
+
+</body>
+</html>

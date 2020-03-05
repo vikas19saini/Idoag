@@ -1,0 +1,3896 @@
+
+
+ @media(max-width:700px){
+            
+             .inner_div_useonly p:nth-of-type(1){line-height: 23px;margin-top: 1.4em !important;}
+        }
+@media (max-width: 1440px) {
+        .brandoffer_info .notice_feed_info {
+            width: 385px;
+        }
+        /*.brandoffer_info .brandoffer_list ul li{ margin-right:15px; margin-bottom:15px; width:288px; }*/
+        .brandoffer_info .brandoffer_list ul li:nth-child(3n) {
+            margin: 0 0px 15px 0;
+        }
+    }
+    
+    @media (max-width: 1400px) {
+        .banner_cont .bx-wrapper .bx-pager {
+            left: -15px;
+        }
+        .connectstudents_cont {
+            max-width: 480px;
+            padding: 85px 0 0 0;
+        }
+        .everlastingimpact_info h3,
+        .connectstudents_info h3 {
+            font-size: 30px;
+        }
+        .gettheidoag_info {
+            margin: 190px 0 0 0;
+            width: 480px;
+        }
+        .brandoffer_info .brandoffer_contleft {
+            /*width: 880px;*/
+            width: 905px;
+            min-height: 400px;
+        }
+        .brandoffer_info .brandoffer_list ul li {
+            width: 288px;
+        }
+        .brandoffer_info .notice_feed_info {
+            width: 355px;
+        }
+        .sendyourownnote_info input[type="text"],
+        .sendyourownnote_info input[type="email"],
+        .sendyourownnote_info input[type="password"] {
+            width: 100%;
+        }
+        .brandoffer_info .mybrandoffer_list ul li {
+            width: 275px;
+        }
+        .brandoffer_info .mybrandoffer_list ul li:nth-child(5n) {
+            margin: 0 15px 15px 0;
+        }
+        .brandoffer_info .mybrandoffer_list ul li:nth-child(4n) {
+            margin: 0 0px 15px 0;
+        }
+        .brandsign_infomiddle_right .brandsign_list ul li {
+            width: 200px;
+            margin: 0 10px 20px 0;
+        }
+        .brandsign_infomiddle_right .brandsign_listcont h3 {
+            font-size: 20px;
+        }
+        .postsomething_statistics_info .postsomething_info ul li {
+            margin: 0 16px;
+        }
+        .lenskart_list .brandsign_list ul li {
+            width: 200px;
+        }
+        .brandsign_info .brandsign_right .brandsign_img {
+            margin: 0 0 0 80px;
+            /*position: relative; height:263px;*/
+            width: 468px;
+        }
+        .photowidget_FSW {
+            width: 905px
+        }
+        .photowidget_M {
+            width: 452px;
+        }
+        .photowidget_S {
+            width: 219px;
+        }
+        .brandicon_info {
+            background-size: 100%;
+            height: 214px;
+        }
+    }
+    
+    @media (max-width: 1380px) {
+        .brandoffer_info .mybrandoffer_list ul li {
+            width: 211px;
+        }
+        .brandicon_info {
+            background-size: 100%;
+            height: 214px;
+        }
+        .link_fetch {
+            height: 99px;
+        }
+        .link_fetch .leftdb {
+            width: 46%;
+        }
+        .link_fetch .rightdb {
+            width: 54%;
+        }
+    }
+    
+    @media (max-width: 1300px) {
+        .disruptivenoise_info figure {
+            width: 270px;
+        }
+        .brandoffer_info .brandoffer_contleft {
+            width: 800px;
+        }
+        .brandoffer_info .brandoffer_list ul li {
+            width: 252px;
+            margin-right: 17px;
+        }
+        .brandoffer_info .brandoffer_list ul li:nth-child(3n) {
+            margin-right: 0px;
+        }
+        /*.brandoffer_info .brandoffer_list ul li:nth-child(4n){ margin-right:17px;  }*/
+        .brandoffer_info .notice_feed_info {
+            width: 380px;
+        }
+        .brandoffer_info .mybrandoffer_list ul li {
+            width: 252px;
+        }
+        .brandoffer_info .mybrandoffer_list ul li:nth-child(3n) {
+            margin-right: 0;
+        }
+        .brandoffer_info .mybrandoffer_list ul li:nth-child(4n) {
+            margin-right: 15px;
+        }
+        .brandsign_infomiddle_right .brandsign_list ul li {
+            width: 185px;
+            margin: 0 10px 20px 0;
+        }
+        .brandsign_infomiddle_right .brandsign_listcont h3 {
+            font-size: 18px;
+        }
+        .lenskart_list .brandsign_list ul li {
+            width: 190px;
+            margin: 0 10px 20px 0;
+        }
+        .submenu .container_info {
+            width: 94%;
+        }
+        .available_search .form-group label {
+            text-align: right;
+            width: 65px;
+        }
+        .brandoffer_info .brandoffer_contleft .registoff_info {
+            padding: 15px 10px 8px 10px;
+        }
+        .brandoffer_info .brandoffer_contleft .registoff_info ul li {
+            width: 100% !important;
+        }
+        .postsomething_statistics_info .postsomething_info ul li {
+            margin: 0 12px;
+        }
+        .photowidget_FSW {
+            max-width: 800px;
+            width: 100%;
+            height: 380px;
+        }
+        .photowidget_M {
+            max-width: 400px;
+            width: 100%;
+        }
+        .brandsign_info .brandsign_right .brandsign_img {
+            width: 100%;
+            max-width: 100%;
+        }
+        .newinternship_list ul li span,
+        .stipend_row span,
+        .newinternship_txt p {
+            font-size: 12px;
+            line-height: 13px;
+        }
+        .activateyouridoag_info h4 {
+        font-size: 26px;
+    }
+    }
+    
+    @media all and (max-width:960px) and (min-width:1200px) {
+        .wsmenu {
+            width: 85% !important;
+            font-size: 13px !important;
+            position: inherit;
+            float: left;
+        }
+    }
+     @media(max-width:1253px){
+        .height_div {min-height: 358px !important;}
+        .absolute_span {
+    left: 0em;
+    top: 23em;
+    right: 0em;
+    position: absolute;
+}
+   
+    @media (max-width: 1200px) {
+        .logo {
+            padding: 0 20px 0 0;
+        }
+        .navbar-default .navbar-nav > li {
+            padding: 0 0 0px 20px;
+        }
+        .login_detail input[type="text"],
+        .login_detail input[type="email"],
+        .login_detail input[type="password"] {
+            width: 130px;
+            margin: 0 5px 0 0;
+        }
+        .worldofidoag_info ul li .worldofidoag_cont {
+            max-width: 520px;
+        }
+        .worldofidoag_info ul li .worldofidoag_img {
+            max-width: 420px;
+        }
+        .worldofidoag_info ul li h3 {
+            padding: 30px 0 25px 0;
+        }
+        .disruptivenoise_info figure {
+            width: 24%;
+        }
+        .connectstudents_info {
+            height: 500px;
+        }
+        .connectstudents_cont {
+            max-width: 450px;
+            padding: 50px 0 0 0;
+        }
+        .gettheidoag_info {
+            margin: 68px 0 0 0;
+        }
+        .everlastingimpact_info {
+            height: 500px;
+        }
+        .everlastingimpact_cont {
+            padding: 240px 0 0 0;
+        }
+        .brandoffer_info .brandoffer_contleft {
+            width: 70%;
+            padding-right: 2%;
+        }
+        .brandoffer_info .notice_feed_info {
+            width: 30%;
+        }
+        .brandoffer_info .brandoffer_list ul li {
+            margin: 0 15px 15px 0;
+            vertical-align: top;
+            display: inline-block;
+            float: none;
+            width: 204px;
+        }
+        /*.brandoffer_info .brandoffer_list ul li:nth-child(4n){ margin-right:22px; }*/
+        .brandoffer_info .brandoffer_list ul li:nth-child(3n) {
+            margin-right: 0px;
+        }
+        .brandoffer_info .mybrandoffer_list ul li {
+            width: 31.333%;
+            margin: 0 15px 15px 0;
+        }
+        .brandoffer_info .mybrandoffer_list ul li:nth-child(4n),
+        .mybrandoffer_list ul li:nth-child(5n) {
+            margin-right: 15px;
+        }
+        .brandoffer_info .mybrandoffer_list ul li:nth-child(3n) {
+            margin-right: 0px !important;
+        }
+        .notice_feed_info .brandsnearyou_info ul li {
+            font-size: 13px;
+        }
+        .navbar-default .navbar-nav > li .submenu {
+            top: 50px;
+        }
+        .myinstitute_list .updates_txt {
+            right: 0px;
+        }
+        .nav_info2 ul li {
+            margin: 0 6px 0 15px;
+            font-size: 11px;
+            line-height: 18px;
+            position: relative;
+        }
+        .postsomething_statistics_info .postsomething_info ul li {
+            margin: 0 8px;
+        }
+        .postsomething_statistics_info .postsomething_info ul li p {
+            font-size: 11px;
+        }
+        .photowidget_XS {
+            width: 40%;
+        }
+        .photowidget_S {
+            width: 33.333%;
+        }
+        .photowidget_M {
+            width: 50%;
+        }
+        .photowidget_FSW {
+            width: 100%;
+        }
+        .brandoffer_info .notice_feed_list h3 {
+            font-size: 18px !important;
+        }
+        .notice_feed_list .notice_feed_listinner2 ul li .notice_feed_listinnercont h5 {
+            font-size: 16px;
+        }
+        .available_search {
+            padding: 15px 10px 10px 10px;
+            min-height: 46px;
+            height: auto;
+        }
+        .available_search .form-inline .form-group {
+            width: 27%;
+        }
+        .available_search .form-group label {
+            text-align: left;
+        }
+        /*.brandoffer_info .brandoffer_list ul li:nth-child(4n){ margin-right: 15px !important; }*/
+        .sendyourownnote_info input[type="submit"] {
+            float: left;
+            margin-top: 5px;
+            margin-left: 0;
+        }
+        .photowidget_M .photowidget_img .photowidget_imgcont .share_like_txt p {
+            width: 55px;
+        }
+        .nav_info2 ul {
+            margin-left: 200px;
+        }
+        .contact_locationinfo .contact_list .figure-caption a {
+            font-size: 15px;
+        }
+        .megamenu {
+            top: 54px;
+        }
+        .user_nav {
+            top: 15px;
+        }
+        .wsmenu-list > li {
+            padding: 0 0 0px 25px;
+        }
+        .brandoffer_info .brandoffer_list ul li .brandoffer_cont .brandoffer_continner .brandoffer_conttxt {
+            width: 63%;
+        }
+        .photowidget_FSW {
+            max-width: 658px;
+            width: 100%;
+            height: 300px;
+        }
+        .photowidget_M {
+            max-width: 328px;
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 1100px) {
+        .activateyouridoag_info h4 {
+            font-size: 20px;
+        }
+        .activateyouridoag_info .activateyouridoag_inner {
+            padding: 0 0 0 15px;
+            margin: 0 0 0 15px;
+        }
+    }
+    @media(max-width:1070px){
+        .absolute_span{left: 0em;top: 21em;}
+        .height_div {
+    min-height: 336px !important;max-height:336px !important;
+}
+    }
+    @media (max-width: 1024px) {
+        .wrapper.home .banner_contslider li {background-image: none !important;}
+        .wrapper.home .banner_contslider li img{ display: inherit; }
+    }
+
+    @media (max-width: 980px) {
+        .logo {
+            width: 100px;
+            padding: 0;
+            border: none;
+            float: left;
+            margin: 0 auto;
+        }
+        .nav_info {
+            float: left;
+            width: 84%;
+            text-align: right;
+            margin: 0 0 0px 0;
+        }
+        /*.login_detail {
+    		float: none;
+    		width: 100%;
+    		text-align: center;
+    		clear: both;
+    	}*/
+        .login_detail input[type="text"],
+        .login_detail input[type="email"],
+        .login_detail input[type="password"] {
+            width: 180px;
+            margin: 0 15px 0 0;
+        }
+        .banner_cont .bx-wrapper .bx-pager {
+            left: -8px;
+        }
+        .worldofidoag_info ul li .worldofidoag_cont {
+            float: none;
+            max-width: 96%;
+        }
+        .worldofidoag_info ul li h3 {
+            padding: 0px 0 15px 0;
+            font-size: 32px;
+        }
+        .worldofidoag_info ul li p {
+            font-size: 20px;
+        }
+        .worldofidoag_info ul li .worldofidoag_img {
+            float: none;
+            max-width: 300px;
+            margin: 20px auto;
+        }
+        .disruptivenoise_info {
+            padding: 60px 0;
+        }
+        .disruptivenoise_info h4 {
+            padding: 0 0 30px 0;
+            font-size: 22px;
+        }
+        .connectstudents_cont {
+            padding: 60px 0 0 0;
+        }
+        .gettheidoag_info {
+            margin: 160px 0 0 0;
+        }
+        .everlastingimpact_info h3,
+        .connectstudents_info h3 {
+            padding-bottom: 25px;
+            font-size: 26px;
+        }
+        .everlastingimpact_info .everlastingimpact_cont {
+            padding-top: 80px;
+        }
+        .gettheidoag_info {
+            margin: 20px 0px 0px 0px;
+        }
+        .gettheidoag_info h3 {
+            padding-bottom: 0px;
+        }
+        .banner_cont {
+            /*padding-top:20px;*/
+            max-width: 100%;
+        }
+        .brandoffer_info .brandoffer_contleft {
+            width: 65%;
+            padding-right: 2%;
+        }
+        .brandoffer_info .notice_feed_info {
+            width: 35%;
+        }
+        .brandoffer_info .brandoffer_list ul li {
+            margin: 0 24px 10px 0;
+        }
+        .brandoffer_info .brandoffer_list ul li:nth-child(3n) {
+            margin-right: 24px;
+        }
+        .brandoffer_info .brandoffer_list ul li:nth-child(2n) {
+            margin-right: 0px !important;
+        }
+        .notice_feed_list .notice_feed_listinner2 ul li .notice_feed_listinnerimg {
+            width: 90px;
+            float: left;
+        }
+        .notice_feed_list .notice_feed_listinner2 ul li .notice_feed_listinnerimg img {
+            width: 100%;
+            height: 70px;
+        }
+        .notice_feed_list .notice_feed_listinner2 ul li .notice_feed_listinnercont {
+            padding: 0 0 0 105px;
+        }
+        .brandoffer_info .brandoffer_contleft {
+            width: 65%;
+            padding-right: 2%;
+        }
+        .brandoffer_info .notice_feed_info {
+            width: 35%;
+        }
+        .brandoffer_info .brandoffer_list ul li {
+            margin: 0 24px 10px 0;
+        }
+        .brandoffer_info .brandoffer_list ul li:nth-child(4n) {
+            margin-right: 24px;
+        }
+        .brandoffer_info .brandoffer_list ul li:nth-child(3n) {
+            margin-right: 0px;
+        }
+        .brandoffer_info .brandoffer_list ul li {
+            width: 48.5% !important;
+            margin: 0px 10px 20px 0px !important;
+        }
+        .brandoffer_info .mybrandoffer_list ul li {
+            width: 31%;
+            margin: 0px 15px 15px 0px !important;
+        }
+        /*.brandoffer_info .mybrandoffer_list ul li:nth-child(4n){ margin-right:10px; }
+	   .brandoffer_info .mybrandoffer_list ul li:nth-child(3n){ margin-right:10px; }*/
+        .notice_feed_info .brandsnearyou_info ul li {
+            font-size: 13px;
+        }
+        .banner_cont ul li {
+            font-size: 50px;
+            line-height: 50px;
+        }
+        .banner_cont ul li span {
+            font-size: 36px;
+            line-height: 40px;
+        }
+        .haveanaccount_txt .haveanaccount_head {
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+        .worldofidoag_info {
+            padding: 40px 0px;
+        }
+        .worldofidoag_info .bx-wrapper .bx-pager {
+            bottom: -40px;
+        }
+        .postsomething_statistics_info .statistics_info ul li h4 {
+            font-size: 16px;
+        }
+        .postsomething_statistics_info .statistics_info ul li p {
+            font-size: 12px;
+        }
+        .nav_info2 ul {
+            margin-left: 200px;
+        }
+        .nav_info2 h4 {
+            font-size: 16px;
+        }
+        .brandoffer_info {
+            padding: 20px 0px;
+        }
+        .aboutwrapper_info {
+            padding: 0px 0px !important;
+        }
+        .brandoffer_info .notice_feed_list h3 {
+            font-size: 16px !important;
+        }
+        .brandoffer_listtopcont .available_txt ul li {
+            margin-right: 0;
+            padding: 5px 10px;
+            font-size: 13px;
+        }
+        .couponcode_txt a,
+        .notice_feed_list .notice_feed_listinner2 .seealloffers_btn,
+        .sendyourownnote_info input[type="submit"] {
+            font-size: 13px;
+            padding: 5px 10px;
+        }
+        .available_search .form-inline .form-group {
+            width: 49%;
+            display: inline-block;
+        }
+        .available_search .form-group select,
+        .available_search .form-group input {
+            width: 100%;
+        }
+        .available_search .go_btn {
+            margin-top: 36px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .brandoffer_listtopcont h4 {
+            font-size: 20px;
+            margin: 0 0 10px 0;
+        }
+        .brandoffer_listtopcont .available_txt {
+            width: 100%;
+            margin: 0 0 10px 0;
+        }
+        .brandoffer_listtopcont .show_stores {
+            font-size: 14px;
+        }
+        .brandoffer_info .brandoffer_listtop {
+            margin-bottom: 20px;
+        }
+        .other_offers {
+            font-size: 20px;
+        }
+        .notice_feed_list .notice_feed_listinner ul li .notice_feed_listinnercont h6 {
+            font-size: 11px !important;
+        }
+        .contact_locationinfo .contact_list .figure-caption span {
+            width: 100%;
+            margin-bottom: 8px;
+        }
+        .contact_locationinfo {
+            margin: 20px 0px;
+        }
+        .banner_cont ul li span {
+            font-size: 30px;
+            line-height: 34px;
+        }
+        .banner_cont ul li span.bigtxt {
+            line-height: 42px;
+            font-size: 38px;
+        }
+        /*.banner_cont .bx-wrapper .bx-pager {
+    	    left: 0;
+    	    bottom: -160px;
+    	    right: 0;
+    	    width: 150px;
+    	    top: inherit;
+    	    margin: 0px auto;
+    	}
+    	.banner_cont .bx-wrapper .bx-pager.bx-default-pager a{ 
+    		width: 21px;
+    		height: 4px;
+    		float: left;
+    		margin-right: 10px;
+    	}*/
+        .forgotpassword_bg {
+            min-height: 100%;
+        }
+        .disruptivenoise_info figure {
+            width: 22%;
+            height: 150px;
+        }
+        .addthis_sharing_toolbox span i.fa {
+            width: 28px;
+            font-size: 16px;
+            padding: 6px;
+        }
+        .addthis_sharing_toolbox {
+            left: inherit;
+            right: 15%;
+            top: -15px;
+            width: auto;
+            padding: 5px;
+        }
+        .addthis_sharing_toolbox:after {
+            right: 20px;
+            left: inherit;
+        }
+        .wsmenu-list > li {
+            padding: 0 0 0px 16px;
+        }
+        .container_info {
+            width: 100%;
+            padding: 0px 15px;
+        }
+        .notice_feed_list .studentrecentupdates_list {
+            max-height: inherit;
+        }
+        .worldofidoag_info ul li .worldofidoag_cont {
+            margin: 0px auto;
+            text-align: center;
+        }
+        .worldofidoag_info ul li .worldofidoag_img {
+            min-height: inherit;
+        }
+        .fixed_registerbtn span.img1 {
+            display: none;
+        }
+        .worldofidoag_info ul li .worldofidoag_cont {
+            padding-right: 15px;
+        }
+        .postsomething_statistics_info .postsomething_info ul li {
+            margin: 0 5px;
+        }
+        .lostcard_info,
+        .lostcardguest_info {
+            width: 96%;
+            margin: 2%;
+            padding: 15px;
+        }
+        .activateyouridoag_info .form-group {
+            margin-bottom: 0;
+        }
+        .activateyouridoag_info h4 {
+            display: block;
+        }
+        .activateyouridoag_info .activateyouridoag_inner {
+            display: block;
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+    }
+    
+    @media (max-width:768px) {
+        .absolute_span {top: 22em;}
+  .inner_div_useonly.height_div {
+    min-height: 354px !important;}
+        header {
+            padding: 10px 15px;
+        }
+        .worldofidoag_info ul li h3 {
+            font-size: 22px;
+        }
+        .worldofidoag_info ul li p {
+            font-size: 15px;
+        }
+        .worldofidoag_info .bx-wrapper .bx-pager {
+            bottom: -20px;
+        }
+        .everlastingimpact_info h3,
+        .connectstudents_info h3 {
+            padding-bottom: 15px;
+            font-size: 22px;
+        }
+        .connectstudents_info h3 {
+            padding-top: 15px;
+        }
+        .everlastingimpact_info p,
+        .connectstudents_info p {
+            font-size: 15px;
+        }
+        .everlastingimpact_info {
+            height: auto;
+            background: #10232a;
+            text-align: center;
+            display: inline-block;
+        }
+        .worldofidoag_info {
+            padding: 20px 0px;
+            text-align: center;
+        }
+        .everlastingimpact_info .everlastingimpact_cont {
+            padding-top: 40px;
+        }
+        .connectstudents_info {
+            height: auto;
+            text-align: center;
+            display: inline-block;
+            padding: 20px 0px;
+            background: #5fb8be;
+        }
+        .connectstudents_cont {
+            width: 100%;
+            max-width: 100%;
+            padding-top: 20px;
+        }
+        .everlastingimpact_cont {
+            width: 100%;
+            max-width: 100%;
+        }
+        .gettheidoag_info {
+            margin: 10px auto;
+        }
+        .brandoffer_info .brandoffer_list ul li:nth-child(4n) {
+            margin-right: 0px !important;
+        }
+        .banner_cont ul li span {
+            font-size: 26px;
+            line-height: 32px;
+        }
+        .banner_cont ul li {
+            font-size: 32px;
+            line-height: 38px;
+        }
+        .activateyouridoag_info h4 {
+            font-size: 26px;
+        }
+        .brandoffer_info .notice_feed_list h3 img {
+            width: 38px;
+            height: 38px;
+        }
+        .brandoffer_info .brandoffer_list ul li {
+            width: 49% !important;
+        }
+        .brandoffer_info .brandoffer_list ul li:nth-child(2n) {
+            margin-right: 0px !important;
+        }
+        .press_list h3 {
+            color: #1b1a19;
+            font: normal 18px/24px 'proxima_nova_regular';
+        }
+        .press_seperator {
+            margin: 20px 0px 10px 0px;
+        }
+        .press_text p {
+            color: #1b1a19;
+            font: normal 15px/22px 'proxima_nova_regular' !important;
+        }
+        .read_more_btn a {
+            padding: 10px 15px;
+            font-size: 14px;
+        }
+        .read_more_btn,
+        .original_btn {
+            margin: 10px 0 0;
+            font-size: 14px;
+        }
+        .press_info h1 {
+            font: normal 24px/28px 'proxima_nova_regular';
+            margin-bottom: 15px;
+        }
+        .aboutus_info h1 {
+            font: normal 24px/28px 'proxima_nova_regular';
+        }
+        .about_locationinfo .about_list .figure-caption {
+            padding: 0px 10px !important;
+            font-size: 15px;
+            line-height: 20px;
+        }
+        .about_locationinfo .about_list .figure-caption h4 {
+            font-size: 20px;
+            padding: 0px;
+        }
+        .about_locationinfo .about_list .figure .readmore_btn {
+            margin-bottom: 50px;
+            margin-top: 20px;
+            padding: 5px 20px !important;
+            max-width: inherit;
+            width: auto;
+            font-size: 16px;
+        }
+        .about_contactstip p {
+            font-size: 16px;
+        }
+        .fully_verified img,
+        .brands_content_section img,
+        .mesure_results img {
+            width: 80%;
+        }
+        .fully_verified p,
+        .brands_content_section p,
+        .mesure_results p {
+            font: normal 14px/20px 'proxima_nova_regular';
+        }
+        .brands_full_wrapper {
+            padding: 20px 0;
+        }
+        .why_idog h2,
+        .why_idoginst h2 {
+            font: normal 30px/34px 'proxima_novalight';
+        }
+        .brands_content_section h3,
+        .testimonials_section h3 {
+            font: normal 22px/26px 'proxima_nova_ltsemibold';
+            margin: 60px 0 10px;
+        }
+        .reg_idog a {
+            padding: 12px;
+            font-size: 15px
+        }
+        .events_cnt {
+            padding-top: 60px;
+        }
+        .notice_feed_list .notice_feed_listinner2 ul li .notice_feed_listinnercont h5 {
+            font-size: 14px;
+        }
+        .sendyourownnote_info input[type="submit"] {
+            float: left;
+            margin-top: 5px;
+        }
+        .photowidget_M .photowidget_img .photowidget_imgcont h5,
+        .photowidget_img .photowidget_imgcont h5,
+        .photowidget_S .photowidget_img .photowidget_imgcont h5 {
+            font-size: 14px;
+        }
+        .brands_banner,
+        .student_regbg,
+        .press_banner {
+            height: 200px;
+        }
+        .brand_page_title {
+            width: 180px;
+            height: 40px;
+            font: normal 20px/40px 'proxima_novalight';
+            bottom: 0;
+        }
+        .registered_brands .bx-controls-direction a.bx-prev {
+            left: -30px;
+        }
+        .registered_brands .bx-controls-direction a.bx-next {
+            right: -30px;
+        }
+        .registered_brands_container .container_info,
+        .aboutbanner_cnt {
+            width: 90%;
+        }
+        .why_idog p {
+            font: normal 14px/20px 'proxima_nova_regular';
+        }
+        .reg_idog {
+            margin: 30px 0 20px;
+        }
+        .about_bxslider li {
+            height: 300px;
+        }
+        .aboutdown_arrow {
+            bottom: 30px;
+        }
+        .about_banner .bx-wrapper .bx-pager {
+            bottom: 80px !important;
+        }
+        .aboutbanner_cnt {
+            top: 20%;
+        }
+        .aboutbanner_cnt p {
+            font-size: 20px;
+            line-height: 32px;
+        }
+        .contact_locationinfo .contact_list .figure-caption {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .contact_locationinfo .contact_list .figure img,
+        .contact_locationinfo .contact_list .figure {
+            margin-bottom: 10px;
+        }
+        .contactus_info h1,
+        .contactus_from h1 {
+            font: normal 30px/40px 'proxima_novalight';
+        }
+        .contactus_info p,
+        .contactus_from p {
+            font-size: 15px;
+            line-height: 26px;
+        }
+        .contactus_from {
+            padding: 20px 0px;
+        }
+        .contact_locationinfo .contact_list .figure-caption span {
+            width: auto;
+            float: none;
+        }
+        .contact_locationinfo .contact_list .figure-caption span i {
+            display: none;
+        }
+        .figure-scocialicons {
+            padding-left: 0;
+        }
+        .contactus_fullform textarea {
+            width: 360px;
+        }
+        .stepbystep_modal-dialog {
+            width: 96% !important;
+        }
+        .stepbystep_details {
+            max-width: 100% !important;
+        }
+        .institutions_modal-dialog .modal-body {
+            padding: 5px 10px;
+        }
+        .stepprofile_right ul li span {
+            font-size: 13px;
+        }
+        .stepprofile_left {
+            width: 100px;
+            height: 100px;
+            margin-right: 15px;
+        }
+        .stepprofile_right ul {
+            padding-top: 0;
+        }
+        #progressbar li:before {
+            width: 40px;
+            line-height: 40px;
+            font-size: 16px;
+            height: 40px;
+        }
+        #progressbar li:after {
+            top: 0;
+        }
+        #msform .fs_tab {
+            min-height: auto;
+        }
+        .stepbystep_details .stepbystep_user {
+            font: normal 18px/26px 'proxima_nova_ltsemibold';
+        }
+        .stepbystep_details h4 {
+            font: normal 16px/22px 'proxima_novalight';
+        }
+        .stepbystep_main {
+            margin-top: 0;
+        }
+        #msform .action-button,
+        #msform .back_button {
+            padding: 8px 15px;
+            line-height: inherit;
+            height: auto;
+            font-size: 13px;
+        }
+        .institutions_modal-content input[type="text"],
+        .institutions_modal-content input[type="email"],
+        .institutions_modal-content input[type="password"],
+        #msform input,
+        #msform textarea {
+            font-size: 13px !important;
+        }
+        .selectall_btn {
+            font-size: 13px;
+        }
+        .activity_left {
+            width: 100px;
+            float: left;
+        }
+        .activity_right {
+            padding: 0 0 0 110px;
+        }
+        .date_box {
+            width: 86px;
+            height: 64px;
+            padding: 8px;
+        }
+        .date_box .date {
+            font: normal 22px/24px 'proxima_nova_ltsemibold';
+        }
+        .date_box .year {
+            font: normal 14px/16px 'proxima_nova_regular';
+        }
+        .profile_form_edit input,
+        .profile_form_edit textarea,
+        .profile_form_edit select {
+            width: 100% !important;
+        }
+        .outlettable-row {
+            display: initial;
+            width: 100%;
+            vertical-align: top;
+        }
+        .brandoffer_info .brandoffer_contleft .registoff_info {
+            width: 49%;
+            display: inline-block;
+            vertical-align: top;
+            min-height: 200px;
+        }
+        .export_btns {
+            margin-bottom: 10px;
+        }
+        .registoff_info,
+        .registoff_info:nth-child(4),
+        .registoff_info:nth-child(7) {
+            width: 50%;
+            min-height: 180px;
+            border-right: 1px solid #cfcfcf;
+        }
+        .menuslider .bx-wrapper .bx-prev {
+            left: 0;
+        }
+        .menuslider .bx-wrapper .bx-next {
+            right: 0;
+        }
+        .wsmenu-list > li {
+            text-align: left;
+        }
+        .wsmenu-list > li:first-child {
+            padding-left: 0;
+        }
+        .more_dropdown_menu {
+            margin-top: 0px;
+        }
+        .wsmenu-list .link-list li {
+            padding-left: 20px;
+        }
+        .wsmenu-list .link-list li a {
+            padding-left: 15px;
+            font-size: 14px;
+            color: #444 !important;
+        }
+        .wsmenu-list .link-list li i.lshape_arrow {
+            background: url(../images/mobilemenu_arrow.png) 0px 0px no-repeat;
+            width: 12px;
+            height: 17px;
+            float: left;
+            text-align: left;
+            vertical-align: top;
+            margin-top: 5px;
+            margin-right: 5px;
+        }
+        .logo_nav_info {
+            margin: 0px 0px 0px 40px;
+            padding: 0px 0px;
+        }
+        .navbar-nav .open .dropdown-menu>li>a {
+            padding-left: 10px;
+        }
+        .user_nav {
+            top: 0;
+            z-index: 1;
+        }
+        .more_dropdown a {
+            color: #666;
+            padding: 10px 0px 5px 17px;
+            display: inline-block;
+            width: 100%;
+            font-size: 14px;
+        }
+        .more_dropdown a:hover {
+            color: #5dc1d8;
+        }
+        .mybrandslider_info .mybrandslider_list .mybrandslider_listcont .brandlike img {
+            width: 14px;
+            max-width: 14px !important;
+        }
+        .menuslider .bx-wrapper {
+            margin: 10px auto !important;
+        }
+        .megamenu {
+            top: 0;
+        }
+        .dropdown-submenus > .dropdown-menu {
+            background-color: #5dc1d8 !important;
+            display: block;
+            position: relative;
+            left: 0px;
+        }
+        .dropdown-submenus>.dropdown-menu > li > a {
+            padding-left: 38px;
+        }
+        .institutions_modal-dialog {
+            width: 98% !important;
+            margin: 0px auto;
+        }
+        .aboutyourinst_header h4 {
+            font: normal 20px/20px 'proxima_novalight';
+        }
+        .aboutyourinst_modal-body {
+            padding: 10px !important;
+        }
+        .contactmain_top {
+            margin: 0px;
+            padding: 10px;
+        }
+        .aboutyourinst_modal-body h5 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .contactmain_bottom {
+            padding: 10px 0px;
+        }
+        .aboutyourinst_modal-body input,
+        .aboutyourinst_modal-body textarea,
+        .aboutyourinst_modal-body select {
+            font-size: 13px;
+        }
+        .no_logininfo .social_txt, .haveanaccount_txt .haveanaccount_head {
+            font-size: 13px;
+        }
+        .no_logininfo .social_txt {
+            padding: 0 5px 0 0;
+        }
+        .login_detail {
+            margin-right: 0;
+            position: absolute;
+            top: 0px;
+            right: 0;
+            text-align: right;
+        }
+        .banner_cont ul li span {
+            font-size: 24px;
+            line-height: 34px;
+        }
+        .banner_cont ul li span.bigtxt {
+            line-height: 34px;
+            font-size: 32px;
+        }
+        .banner_cont ul li span.bigtxt br {
+            display: none;
+        }
+        .marketingtrainee_info .marketingtrainee_left ul li {
+            margin: 0 0 10px 0;
+        }
+        .brands_errorleft,
+        .institutions_errorleft,
+        .allnotfund_msgleft {
+            width: 180px;
+        }
+        .brands_errorright,
+        .allnotfund_msgright,
+        .institutions_erroright {
+            padding: 60px 0 0 200px !important;
+            text-align: left !important;
+        }
+        .brandoffer_info .brandoffer_contleft {
+            min-height: inherit;
+        }
+        .allnotfund_msg {
+            margin: 15px 0px;
+        }
+        .faqsearch span {
+            width: 50%;
+            float: left;
+        }
+        .faq_list {
+            margin-bottom: 5px;
+        }
+        .faq_list h4 {
+            font-size: 16px;
+        }
+        .faq_liststyle h2 {
+            font: 18px/28px proxima_nova_ltsemibold !important;
+            margin-top: 10px;
+        }
+        .faq_search {
+            display: none;
+        }
+        .faq_info .faqsearch h5,
+        .privacy_policy h5 {
+            font: normal 20px/28px 'proxima_nova_ltsemibold';
+        }
+        .faqsearch {
+            margin-bottom: 0px;
+            margin-top: 15px;
+            height: inherit;
+            display: inline-block;
+        }
+        .wsmenu-list .megamenu,
+        .megamenu ul li.title {
+            background: #efefef !important;
+            color: #666 !important;
+            border: 0px !important;
+            font: normal 13px/22px 'proxima_nova_ltsemibold' !important;
+        }
+        .megamenu ul li.title {
+            cursor: pointer;
+        }
+        .megamenu ul li.title i {
+            background: url(../images/mobilemenu_plus.png) 0px 0px no-repeat;
+            width: 14px;
+            height: 14px;
+            text-align: right;
+            float: right;
+            margin-right: 6px;
+        }
+        .megamenu ul li.open_submenu i {
+            background: url(../images/mobilemenu_plus.png) 0px -15px no-repeat;
+            width: 14px;
+            height: 14px;
+            text-align: right;
+            float: right;
+        }
+        .menuslider {
+            display: none;
+        }
+        .brandoffer_img .new_txt2 a {
+            font-size: 10px;
+            right: -6px;
+            line-height: 12px;
+        }
+        .brandsatidoag_info h5 {
+            font-size: 18px;
+        }
+        .brandoffer_info .brandoffer_contleft .registoff_info ul li .outlet_locacnt {
+            font-size: 15px;
+            font-family: 'proxima_nova_regular';
+            line-height: 20px;
+        }
+        .brandoffer_info .brandoffer_contleft .registoff_info h4 {
+            font-size: 16px !important;
+        }
+        .photowidget_M .photowidget_img,
+        .photowidget_FSW .photowidget_img,
+        .photowidget_S .photowidget_img {
+            /*height:auto;*/
+            margin: 0px auto;
+        }
+        .photowidget_M .photowidget_img img,
+        .photowidget_FSW .photowidget_img img,
+        .photowidget_S .photowidget_img img {
+            width: inherit;
+        }
+        .having_trouble-content .modal-body {
+            padding: 20px;
+        }
+        .having_trouble-content h4 {
+            font-size: 16px;
+            line-height: 18px;
+        }
+        .postanewoffer_info ul li .input_val input[type="text"],
+        .postanewoffer_info ul li .input_val input[type="email"],
+        .postanewoffer_info ul li .input_val input[type="password"],
+        .postanewoffer_info .form-control,
+        .has-feedback .form-control {
+            padding: 2px 5px;
+            font-size: 14px;
+            width: 100%;
+        }
+        .brandoffer_listtopcont {
+            padding: 15px;
+            font-size: 14px;
+        }
+        .fixedbody {
+            overflow: hidden;
+        }
+        .megamenu .submenu_list {
+            height: auto;
+            display: none;
+        }
+        .addthis_sharing_toolbox span i.fa {
+            width: 24px;
+            font-size: 14px;
+        }
+        .photowidget_img .note_img2 {
+            top: 10px;
+            width: 36px;
+        }
+        .notice_feed_list .studentrecentupdates_list ul li .studentrecentupdates_cont {
+            font-size: 14px;
+        }
+        .brandoffer_info .notice_feed_list {
+            padding: 15px;
+        }
+        .brandoffer_info .internship_appinfo_list {
+            padding: 0px;
+        }
+        .brandoffer_info .internship_appinfo_list h3 img {
+            margin-left: 0px !important;
+        }
+        .brandoffer_info .notice_feed_list h3 img {
+            margin-left: -15px;
+        }
+        .error_msg,
+        .success_msg {
+            width: 90%;
+            top: 100px;
+            background-color: rgb(0, 103, 119);
+            /*rgba(0,0,0,.9);*/
+        }
+        .error_msg p,
+        .success_msg p {
+            font-size: 15px;
+            line-height: 18px;
+        }
+        .dropdown-menu li a i.submenu_arrow,
+        .wsmenu-list > li:hover > a:after {
+            display: none;
+        }
+        .cnt_readmore a {
+            font-size: 18px;
+        }
+        .brandoffer_info .brandoffer_contleft {
+            width: 100%;
+            padding-right: 0px;
+        }
+        .brandoffer_info .notice_feed_info {
+            width: 100%;
+        }
+        .internship_appright ul li span {
+            font-size: 16px;
+        }
+        .checkbox_space,
+        .checkbox_space input[type=file] {
+            font-size: 14px;
+        }
+        .follower_thumb {
+            margin-bottom: 10px;
+        }
+        .activationstep2_info .log_for_chan_info {
+            width: 100%;
+        }
+        .activationstep2_info {
+            margin-left: 1.5%;
+        }
+        .loginnew_info {
+            margin-left: 0;
+        }
+        .loginnew_left,
+        .loginnew_right {
+            width: 45% !important;
+        }
+        .loginnew_middle {
+            width: 10% !important;
+        }
+        /*.activation_middle{ display:none; }*/
+        .user_nav>li .user_nav_dropdown {
+            right: -30px;
+            position: absolute !important;
+            left: inherit;
+        }
+        .user_nav {
+            right: 0;
+            float: left;
+        }
+        .social_search_info {
+            right: 0;
+            top: 0;
+        }
+        .brandsign_info .brandsign_left h3 {
+            font-size: 20px;
+            margin: 10px 0px;
+        }
+        .brandsign_info .brandsign_left .brandsign_leftcont p {
+            font-size: 14px;
+            line-height: 16px;
+        }
+        .brandsign_info .brandsign_left .brandsign_leftcont {
+            margin-left: 10px;
+        }
+        .fixed_registerbtn {
+            display: none !important;
+        }
+        .pagecontent {
+            margin-bottom: 30px;
+        }
+        .mobile_btmenu {
+            display: inline-block;
+            width: 100%;
+            padding: 0px;
+            margin-bottom: 5px;
+        }
+        .mobile_btmenu ul {
+            padding: 0;
+            margin: 0;
+            background-color: #de4a3f;
+            float: left;
+            width: 100%;
+            list-style: none;
+        }
+        .mobile_btmenu ul li:first-child {
+            border-left: 0px;
+        }
+        .mobile_btmenu ul li:last-child {
+            border-right: 0px;
+        }
+        .mobile_btmenu ul li {
+            width: 25%;
+            float: left;
+            text-align: center;
+            border-right: 1px solid #d2352c;
+            border-left: 1px solid #e46359;
+            padding: 10px 0px;
+        }
+        .mobile_btmenu ul li img {
+            display: block;
+            width: 100%;
+            max-width: 22px;
+            height: auto;
+            text-align: center;
+            margin: 0px auto;
+        }
+        .mobile_btmenu ul li a,
+        .mobile_btmenu ul li a:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+        .mobile_btmenu ul li a span {
+            display: block;
+            width: 100%;
+            font: normal 12px/15px 'proxima_nova_regular';
+            color: #fff;
+        }
+        .othertopmenu ul li {
+            width: 50%;
+        }
+        .studentdashboard {
+            display: none;
+        }
+        .stdntdashboard_info {
+            padding: 0px 0px 20px 0;
+        }
+        .postsomething_statistics_info .postsomething_info ul li {
+            margin: 0 13px;
+        }
+        .firstabout_list .readmore_btn {
+            margin-top: 20px !important;
+        }
+        .photowidget_FSW {
+            max-width: 100%;
+            width: 100%;
+            height: 350px;
+        }
+        .photowidget_M {
+            max-width: 365px;
+            width: 100%;
+        }
+        .brandoffer_info .brandoffer_list ul li .brandoffer_img .brandoffer_imgcont .share_like_txt p {
+            width: 60px;
+        }
+        .brandoffer_info .brandoffer_list ul li .addthis_sharing_toolbox {
+            right: inherit;
+            top: -50px;
+            left: 70px;
+        }
+        .brandoffer_info .brandoffer_list ul li .addthis_sharing_toolbox:after {
+            right: 30px;
+            left: inherit;
+        }
+        .recover_card-body {
+            padding: 15px;
+        }
+        .recover_card-body .form-group {
+            margin-bottom: 8px;
+        }
+        .recover_modal-content .form-group label {
+            font-size: 14px;
+        }
+        .recover_modal-content .form-group .form-control {
+            height: 32px;
+        }
+        .recover_modal-content input[type="submit"] {
+            font-size: 14px;
+            line-height: 28px;
+        }
+        .activateyouridoag_info {
+            padding: 10px 0 0;
+        }
+        .activateyouridoag_info input[type="text"],
+        .activateyouridoag_info input[type="email"],
+        .activateyouridoag_info input[type="password"] {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .activateyouridoag_info input[type="submit"] {
+            margin-top: 10px;
+        } 
+        .activateyouridoag_info h4 {
+            padding-bottom: 20px;
+        }
+        /*Footer*/
+        .footer-box-01{width: 100%;float: none;}
+        .footer-box-01 ul {padding: 0;text-align: center;margin: 10px auto;}
+        .footer-box-01 li {list-style: none;display: inline-block;float: none;}
+        .footer-box-01 li a{ font-size:20px;}
+        .footer-box-02{width:100%; float:none;margin:20px 0;text-align: center;}
+        .main-footer-wrapper .grid-01{padding: 10px 0;width: 69%;text-align: left;}
+        .main-footer-wrapper .grid-01 li{ float:none; margin:0;display: inline-block;}
+        .main-footer-wrapper .grid-01 li a{ padding:0 20px; font-size:15px; }
+        .main-footer-wrapper .grid-02{font-size: 15px;width: 30%;}
+        .main-footer-wrapper .container_info2 h4{ text-align:center; font-size: 30px;}
+        .main-footer-wrapper .container_info p{ font-size:14px;}
+        .main-footer-wrapper .container_info a{font-size:14px;}
+        .main-footer-wrapper .container_info h3{ font-size:0; margin:15px 0 0 0;}
+        .main-footer-wrapper .box-left-one{ width:100%; float:none;}
+        .footer-box-02 a img {margin-left: 10px; width: 56px;}
+    }
+    
+    @media (max-width: 767px) {
+        .footer-box-01 ul {margin: 0 auto;}
+        .footer-box-01 li a, .main-footer-wrapper .grid-01 li a {font-size: 10px;}
+        .footer-box-01 li a{ padding:0 5px;}
+        .footer-box-01 li.last a{ padding:0 5px 0 5px;}
+        .footer-box-02 {margin:20px 0 10px;}
+        .main-footer-wrapper .grid-01{width:100%; float:none; padding: 10px 0; text-align: center;}
+        .main-footer-wrapper .grid-01 li a{ padding:0 10px;}
+        .main-footer-wrapper .grid-02{width:100%; float:none;text-align:center; font-size: 10px;}
+        .main-footer-wrapper .container_info2 h4 {font-size: 14px;}
+        .footer-box-02 a img {width: 30px;}
+        
+        .navbar-collapse {
+            position: absolute;
+            right: 10px;
+            background: #303030;
+            width: 290px;
+            top: 52px;
+            padding: 0;
+            z-index: 9;
+        }
+        .navbar-default {
+            padding: 0;
+        }
+        .navbar-default .navbar-toggle {
+            background: #fff;
+            margin-right: 0;
+        }
+        .navbar-default .navbar-toggle:hover,
+        .navbar-default .navbar-toggle:focus {
+            background: #f2f2f2;
+        }
+        .navbar-default .navbar-nav > li {
+            border-top: 1px solid #444;
+            width: 100%;
+            margin: 0;
+            text-align: left;
+            padding: 0 0 0 30px;
+        }
+        .navbar-default .navbar-nav > li:first-child {
+            padding: 0 0 0 30px;
+            border: none;
+        }
+        .navbar-default .navbar-nav > li > a {
+            background: none !important;
+            padding: 10px 0;
+            color: #fff !important;
+            line-height: 22px;
+        }
+        .navbar-default .navbar-nav > li > a:hover,
+        .navbar-default .navbar-nav > li.active > a {
+            background: none !important;
+        }
+        .navbar-nav {
+            margin: 0;
+            text-align: right;
+            top: 0;
+        }
+        .logo {
+            float: left;
+        }
+        .nav_info {
+            width: auto;
+            margin: 0;
+            float: right;
+        }
+        .disruptivenoise_info {
+            padding: 40px 0;
+        }
+        .disruptivenoise_info h4 {
+            font-size: 18px;
+        }
+        .disruptivenoise_info figure {
+            width: 48%;
+            margin: 0 4px 10px 0;
+            height: 120px;
+        }
+        .disruptivenoise_info figure img {
+            max-width: 80%;
+        }
+        .everlastingimpact_info {
+            height: auto;
+        }
+        .everlastingimpact_cont {
+            padding: 160px 0 0 0;
+        }
+        /*.footer_nav {
+    		margin: 0 0 10px 0;
+    	}*/
+        .footer_nav,
+        .copyright_txt {
+            float: none;
+            width: 100%;
+            text-align: center;
+        }
+        .banner_cont ul li {
+            font-size: 32px;
+            line-height: 34px;
+        }
+        .banner_cont ul li span {
+            font-size: 22px;
+            line-height: 24px;
+        }
+        .activateyouridoag_info h4 {
+            font-size: 24px;
+            padding-bottom: 26px;
+        }
+        .worldofidoag_info ul li h3 {
+            font-size: 28px;
+        }
+        .worldofidoag_info ul li p {
+            font-size: 16px;
+            padding: 0px 0px;
+        }
+        .worldofidoag_info ul li .worldofidoag_img {
+            max-width: 340px;
+        }
+        .worldofidoag_info {
+            padding: 40px 0px 80px 0;
+        }
+        .brandoffer_info .brandoffer_contleft {
+            width: 100%;
+        }
+        .brandoffer_info .notice_feed_info {
+            width: 100%;
+        }
+        .brandoffer_info .brandoffer_list ul li {
+            margin: 0 10px 15px 0px !important;
+            width: 48.6% !important;
+        }
+        .brandoffer_info .brandoffer_list ul li:nth-child(3n) {
+            margin-right: 10px;
+        }
+        .brandoffer_info .brandoffer_list ul li:nth-child(2n) {
+            margin-right: 10px;
+        }
+        .brandoffer_info .mybrandoffer_list ul li:nth-child(5n) {
+            margin-right: 10px;
+        }
+        .brandoffer_info .mybrandoffer_list ul li:nth-child(2n) {
+            margin-right: 0px !important;
+        }
+        .brandoffer_info .mybrandoffer_list ul li {
+            width: 48%;
+            margin: 0px 15px 15px 0px !important;
+        }
+        .brandoffer_info {
+            /*background:#de685e;*/
+            /*innerpage main div bg color apply*/
+            padding: 15px 0;
+        }
+        .stdntdashboard_info {
+            padding: 0px 0px 20px 0;
+        }
+        .contactus_info h1,
+        .contactus_from h1 {
+            font: normal 36px/50px 'proxima_novalight';
+        }
+        .contact_locationinfo {
+            margin: 20px 0;
+        }
+        .banner_cont ul li br:nth-last-child(2) {
+            display: none;
+        }
+        .banner_cont ul li br:last-child {
+            display: none;
+        }
+        .navbar-nav .open .dropdown-menu {
+            margin: 0px;
+            background-color: #fff;
+            padding: 0px;
+            width: 220px;
+        }
+        .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+            color: #fff;
+            padding-left: 15px;
+        }
+        .haveanaccount_txt .dropdown-menu {
+            top: 20px;
+        }
+        .fully_verified img,
+        .brands_content_section img,
+        .mesure_results img {
+            width: 30%;
+        }
+        .fully_verified,
+        .brands_content_section,
+        .mesure_results {
+            text-align: center;
+        }
+        .brands_content_section h3 br,
+        .testimonials_section h3 br {
+            display: none;
+        }
+        .why_idog {
+            padding: 0 10px;
+            margin: 20px 0 20px;
+        }
+        .why_idog p {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        .why_idog h2,
+        .why_idoginst h2 {
+            font: normal 24px/30px 'proxima_novalight';
+            margin-top: 0px;
+        }
+        .reg_idog a {
+            font-size: 12px;
+        }
+        .brands_content_section h3,
+        .testimonials_section h3 {
+            font: normal 20px/26px 'proxima_nova_ltsemibold';
+            margin: 20px 0 10px;
+        }
+        .events_cnt {
+            padding-top: 10px;
+        }
+        .nav_info2 h4 {
+            margin-right: 10px;
+            margin-left: 0;
+        }
+        .nav_info2 {
+            display: block;
+            margin-top: 40px;
+        }
+        .nav_info2 ul {
+            margin-left: 0;
+        }
+        .sendyourownnote_info input[type="submit"] {
+            float: left;
+            margin-left: 5px;
+            margin-top: 0;
+        }
+        .brandoffer_info .brandoffer_list ul li .brandoffer_img .brandoffer_imgcont h5 {
+            font-size: 14px;
+        }
+        .brand_poast_info .brand_setting_txt ul li {
+            font-size: 12px;
+            padding: 6px 0px;
+        }
+        .contactus_fullform .form-group {
+            margin-bottom: 5px;
+        }
+        .contactus_fullform input[type="text"],
+        .contactus_fullform input[type="email"],
+        .contactus_fullform input[type="password"] {
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+        }
+        .contactus_fullform textarea {
+            width: 100%;
+        }
+        .contactus_fullform .form-textarea {
+            width: 100%;
+        }
+        .container_info {
+            width: 100%;
+            padding: 0px 15px;
+        }
+        .testimonials_info ul li .testimonials_img {
+            width: 130px;
+            height: 130px;
+        }
+        .testimonials_section h5 {
+            font-size: 14px;
+        }
+        .testimonials_info ul li p {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        .press_list {
+            text-align: center;
+            padding: 15px;
+        }
+        .press_list h3 {
+            font: normal 16px/20px 'proxima_nova_regular';
+        }
+        .aboutbanner_cnt p {
+            font-size: 18px;
+            line-height: 26px;
+        }
+        .aboutus_info h1 {
+            font: normal 26px/36px 'proxima_nova_ltsemibold';
+            padding-bottom: 15px;
+            padding-top: 15px;
+            margin: 0px;
+        }
+        .contact_locationinfo .contact_list .figure-caption span {
+            margin-right: 0px;
+            float: none;
+            padding-left: 0;
+        }
+        .contact_locationinfo .contact_list .figure img {
+            width: 100px;
+            height: 100px;
+        }
+        .contact_locationinfo .contact_list .figure-caption span img {
+            width: 40px;
+            height: 30px;
+        }
+        .contactus_info h1,
+        .contactus_from h1 {
+            font: normal 26px/32px 'proxima_novalight';
+        }
+        .multiselect-container li a label {
+            padding-left: 15px;
+            font-weight: normal;
+            font-size: 13px;
+            margin: 5px 0px;
+        }
+        .multiselect-container>li>a.multiselect-all:first-child label {
+            font-weight: normal;
+        }
+        .postanewoffer_info ul li .input_val span {
+            background-color: transparent;
+        }
+        .marketingtrainee_info .marketingtrainee_left ul li p,
+        .marketingtrainee_info .marketingtrainee_left ul li h6 {
+            font-size: 13px;
+        }
+        .brandoffer_listtopcont h4 {
+            font-size: 18px;
+        }
+        .brands_errorleft,
+        .institutions_errorleft,
+        .allnotfund_msgleft {
+            width: 110px;
+        }
+        .brands_errorright,
+        .allnotfund_msgright,
+        .institutions_erroright {
+            padding: 0px 0 0 140px !important;
+        }
+        .allnotfund_msgright p,
+        .allnotfund_msgright p span.bold_msg {
+            font-size: 15px;
+            line-height: 20px;
+        }
+        .postanewoffer_info {
+            padding: 10px 0px;
+        }
+        .postanewoffer_info h3 {
+            font-size: 14px;
+            padding-top: 0px;
+            padding-bottom: 10px;
+        }
+        .postanewoffer_info ul li .input_val textarea,
+        .postanewoffer_info ul li .input_val textarea {
+            height: 80px;
+        }
+        .postanewoffer_info ul li.date_txt .nam_val {
+            width: 20%;
+        }
+        .postanewoffer_info ul li.date_txt .input_val {
+            width: 80%;
+        }
+        .postanewoffer_info ul li .input_val.tabs input[type="text"] {
+            max-width: 100%;
+        }
+        .faq_list h4 {
+            font-size: 14px;
+        }
+        .faq_liststyle h2 {
+            font: 16px/24px proxima_nova_ltsemibold !important;
+        }
+        .faq_info .faqsearch h5,
+        .privacy_policy h5 {
+            font: normal 18px/26px 'proxima_nova_ltsemibold';
+        }
+        .faqsearch {
+            margin-bottom: 0px;
+            margin-top: 15px;
+            height: inherit;
+            display: inline-block;
+        }
+        .faq_info .faqsearch h5 {
+            width: 100%;
+        }
+        .faqsearch span {
+            width: 100%;
+            display: inline-block;
+        }
+        .faqsearch input[type=text] {
+            float: left;
+        }
+        .brandoffer_info .mybrandoffer_list ul li .brandoffer_img .brandoffer_imgcont h5 {
+            font-size: 15px;
+        }
+        .brandoffer_info .mybrandoffer_list ul li .brandoffer_img .brandoffer_imgcont > p {
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+        .brandoffer_info .mybrandoffer_list ul li .brandoffer_img .brandoffer_imgcont .share_like_txt,
+        .brandoffer_info .mybrandoffer_list ul li .brandoffer_follow,
+        .brandoffer_info .mybrandoffer_list ul li .brandoffer_img .mybrandslider_listcont .brandname {
+            font-size: 13px;
+        }
+        .brandoffer_info .mybrandoffer_list ul li .brandoffer_follow {
+            line-height: 28px;
+        }
+        .brandoffer_info .mybrandoffer_list ul li .brandoffer_img .brandoffer_imgcont .share_like_txt p {
+            margin-bottom: 5px;
+        }
+        .search_info input[type="text"] {
+            font-size: 13px;
+            height: 30px;
+            line-height: 30px;
+        }
+        .brand_logo {
+            height: 160px;
+        }
+        .brandsatidoag_info h5 {
+            font-size: 16px;
+        }
+        .marketingtrainee_info .marketingtrainee_left,
+        .marketingtrainee_info .marketingtrainee_right {
+            width: 100%;
+            border: 0px;
+        }
+        .marketingtrainee_info .marketingtrainee_right {
+            padding: 10px 0px;
+        }
+        .loginrequired_modal-dialog {
+            margin: 0px auto;
+        }
+        /*.date_clear{ clear:both; }*/
+        .date_clear {
+            margin-bottom: 10px;
+            display: inline-block;
+            width: 100%;
+        }
+        .internship_appleft,
+        .internship_appright {
+            width: 100%;
+            padding: 15px !important;
+        }
+        .internship_appleft p,
+        .internship_appright p {
+            font-size: 14px;
+        }
+        .internship_appleft input[type="text"] {
+            font-size: 13px;
+            height: 40px;
+            line-height: 40px;
+        }
+        .internship_appinfo {
+            height: 100px;
+            margin-bottom: 15px;
+        }
+        .brandoffer_info .notice_feed_list h3 img {
+            float: left !important;
+        }
+        .subhead {
+            font-size: 15px;
+        }
+        .internship_appleft textarea {
+            font-size: 13px;
+            padding: 10px;
+            color: #000;
+        }
+        .internship_appright,
+        .internship_appright ul li {
+            border: 0px;
+        }
+        .internship_appright ul li span {
+            font-size: 15px;
+            padding-left: 0px;
+            padding-top: 5px !important;
+        }
+        .internship_appright ul li span.boldtxt {
+            padding-left: 0px !important;
+            padding-bottom: 5px !important;
+        }
+        .addthis_sharing_toolbox span i.fa {
+            width: 24px;
+            font-size: 14px;
+            padding: 4px 5px;
+        }
+        .addthis_sharing_toolbox {
+            left: inherit;
+            right: 15%;
+            top: -15px;
+            width: auto;
+            padding: 3px 5px;
+        }
+        .addthis_sharing_toolbox:after {
+            right: 20px;
+            left: inherit;
+        }
+        .haveanaccount_txt .dropdown-menu {
+            width: 230px;
+            padding: 10px;
+        }
+        .suggestedbrands_list .bx-wrapper .bx-viewport {
+            height: 316px !important;
+        }
+        .suggestedbrands_list ul li .suggestedbrands_cont p {
+            font-size: 14px;
+        }
+        .suggestedbrands_list ul li .suggestedbrands_cont h4 {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        .pressimg_wp,
+        .press_logo {
+            width: 190px;
+            height: 180px;
+            margin: 0px auto;
+            position: relative;
+        }
+        .pressimg_wp img,
+        .press_logo img,
+        .profile_img img {
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            position: absolute;
+        }
+        .activation_left {
+            width: 58%;
+        }
+        .activation_middle {
+            width: 5%;
+        }
+        .activation_right {
+            width: 37%;
+        }
+        .log_for_chan_info .fb_gp_btn {
+            width: 90%;
+            margin: 53px 10px 0px 10px;
+        }
+        .log_for_chan_info a {
+            font-size: 13px !important;
+            height: auto !important;
+            line-height: 36px !important;
+        }
+        .log_for_chan_info .fbLogin .fa,
+        .log_for_chan_info .gplusLogin .fa {
+            font-size: 24px;
+            width: 36px;
+            height: 36px;
+            line-height: 36px;
+        }
+        .rc-anchor-normal {
+            width: 76% !important;
+        }
+        .log_for_chan_info .fbLogin {
+            margin-bottom: 25px;
+        }
+        .stip_heading {
+            width: 100%;
+            display: block;
+        }
+        .stip_headinginfo span {
+            width: 100%;
+            display: block;
+            margin-top: 60px;
+        }
+        .stip_headinginfo span p {
+            font-size: 15px;
+            padding: 0px 15px;
+        }
+        .activationstep2_info .log_for_chan_info ul li,
+        .stip_cnt ul li span.main_head,
+        .stip_cnt ul li span.sub_head {
+            font-size: 14px !important;
+        }
+        .activation_tandc .checkbox label {
+            font-size: 15px;
+        }
+        .activation_tandc input[type="checkbox"] {
+            vertical-align: top;
+            margin-top: 7px;
+        }
+        /*.studentdashboard_footer{ margin-bottom:100px;}*/
+        .brandoffer_info .mybrandoffer_list ul li:nth-child(3n) {
+            margin-right: 10px !important;
+        }
+        .brandsign_info .brandsign_left h3,
+        .featured_txt span {
+            font-size: 17px;
+        }
+        .login_bg footer,
+        .forgotpassword_bg footer,
+        .activationstep1_bg footer,
+        .activationstep2_bg footer {
+            position: inherit;
+        }
+        .having_trouble-content .close {
+            width: 20px;
+            top: -25px;
+        }
+        .having_trouble-body input[type="submit"] {
+            font-size: 14px;
+        }
+        .stdntdashboard_info .brandsign_info .brandsign_right,
+        .stdntdashboard_info .brandsign_info .brandsign_right {
+            min-height: 180px;
+        }
+        .brand_poast_info {
+            background-color: transparent;
+            border: 0px;
+            margin: 0 0 10px 0;
+            padding: 0px;
+        }
+        .brand_poast_info h3 {
+            font-size: 18px;
+            margin: 10px 0px;
+        }
+        .postsomething_statistics_info .postsomething_info ul li {
+            margin: 0 6px;
+        }
+        .registoff_info .edit_del-btns {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            display: block;
+        }
+        .registoff_info .edit_del-btns a img {
+            margin-right: 5px;
+        }
+        .edit_del-btns {
+            display: block;
+        }
+        .about_locationinfo .about_list .figure-caption {
+            padding: 0px 0px !important;
+        }
+        .about_locationinfo .about_list .figure .readmore_btn {
+            margin-bottom: 30px;
+            margin-top: 15px;
+        }
+        .thankyou_body p span.thanks_heading,
+        {
+            font: normal 15px/18px 'proxima_nova_ltsemibold';
+        }
+        .thankyou_body {
+            padding: 15px;
+        }
+        .thankyou_body p {
+            font: normal 15px/18px 'proxima_novalight';
+        }
+        .photowidget_FSW .photowidget_img,
+        .photowidget_L .photowidget_img,
+        .photowidget_S .photowidget_img,
+        .photowidget_M .photowidget_img,
+        .photowidget_XS .photowidget_img {
+            /*height:auto;*/
+        }
+        .errorpage {
+            margin: 20px auto;
+        }
+        .error404_img {
+            width: 200px;
+            text-align: center;
+            margin: 0px auto;
+        }
+        .errorpage .error404_cnt {
+            padding-top: 0px;
+        }
+        .errorpage .error404_cnt h2 {
+            font: normal 60px/80px 'proxima_nova_rgbold';
+        }
+        .errorpage .error404_cnt h4 {
+            font: normal 20px/24px 'proxima_nova_ltsemibold';
+        }
+        .errorpage .error404_cnt p {
+            font: normal 13px/18px 'proxima_nova_regular';
+        }
+        .alert-danger,
+        .alert-success {
+            margin: 8px auto 0 auto;
+            padding: 8px;
+            font-size: 13px;
+        }
+        .lostcardscocial_btns,
+        .lostcardscocial_btns:hover,
+        .lostcardscocial_btns:focus {
+            max-width: 100%;
+        }
+        .lostcardguest_info h4 {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .lostcardguest_info .form-group .form-control {
+            height: 34px;
+            font-size: 14px;
+        }
+        .orcenter {
+            padding: 10px 0;
+        }
+        .lostcard_login input[type="submit"] {
+            padding: 0 20px;
+            font-size: 14px;
+        }
+        .lostcardscocial_btns,
+        .lostcardscocial_btns:hover,
+        .lostcardscocial_btns:focus,
+        .submit_deatilsbtn,
+        .submit_deatilsbtn:hover,
+        .submit_deatilsbtn:focus {
+            font-size: 14px;
+        }
+        .or_cricle {
+            margin-bottom: 30px;
+            margin-top: 20px;
+        }
+        .lostcardguest_bottom {
+            padding: 15px;
+        }
+        .lostcardguest_bottom h5 {
+            font-size: 15px;
+        }
+        .submit_deatilsinfo {
+            margin: 15px auto;
+        }
+        .lostcard_login input[type="submit"] {
+            margin-bottom: 0 !important;
+        }
+        .whitebox_txt .brandsign_listcont h3 {
+            margin-bottom: 8px;
+        }
+        .newinterndash_info {
+            margin-bottom: 15px;
+        }
+    }
+    
+    @media(max-width:639px){
+        .inner_div_useonly.height_div {min-height: 318px !important;}
+        .absolute_span {
+    top: 19em;
+}
+        
+    }
+    @media (min-width: 601px) and (max-width: 767px) {
+        /*.banner_cont {
+            display: none;
+        }*/
+        
+        .activateyouridoag_info h4 {
+            font-size: 20px;
+            padding-bottom: 10px;
+        }
+
+        .banner_info {
+            padding: 0;
+            background-position: center top;
+        }
+        .brandicon_info {
+            background-size: cover;
+            height: 200px;
+            padding-right: 670px;
+            margin-top: 0px;
+        }
+        .brandicon_list .brandicon_img {
+            background: transparent;
+            border: none;
+        }
+        .brand_logo_thmb {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            top: 80px;
+        }
+        .brandicon_list .follow_txt {
+            padding: 0 8px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 10px;
+            position: absolute;
+            left: 100px;
+            top: 30px;
+        }
+        .brandicon_list .follow_txtlist {
+            height: 23px;
+            line-height: 23px;
+            font-size: 10px;
+            padding: 0 6px;
+            position: relative;
+            left: -22px;
+            top: 30px;
+        }
+        .nav_info2 {
+            margin-top: 0px;
+        }
+        .instuctionbrandlogo_list {
+            bottom: 0px !important;
+        }
+        .link_fetch {
+            height: 80px;
+        }
+        .link_fetch .leftdb {
+            width: 54%;
+        }
+        .link_fetch .rightdb {
+            width: 46%;
+        }
+    }
+    
+    @media (max-width: 600px) {
+        .ordi img{height: auto;}
+        .absolute_span {
+    top: 19.5em;
+}
+        .inner_div_useonly.height_div {min-height: 314px !important;}
+        /* .activation_mobile, .text_mobile{
+    	 	display: none;   
+    	 }*/
+        .search_outlet {
+            float: right;
+            width: 40%;
+        }
+        /* .text_mobile{
+    	 	display: none;   
+    	}
+        .card_activation{
+    	    display: block;
+    	 }*/
+        .banner_cont ul li {
+            font-size: 72px;
+            line-height: 62px;
+        }
+        .banner_cont ul li span {
+            font-size: 40px;
+            line-height: 40px;
+        }
+        /*.banner_cont .bx-wrapper .bx-pager {
+    	    left: 0;
+    	    bottom: -175px;
+    	    right: 0;
+    	    width: 150px;
+    	    top: inherit;
+    	    margin: 0px auto;
+    	}*/
+        .worldofidoag_info ul li h3 {
+            font-size: 30px;
+        }
+        .worldofidoag_info {
+            padding: 40px 0;
+        }
+        .worldofidoag_info .bx-wrapper .bx-pager {
+            bottom: -30px;
+        }
+        .everlastingimpact_info {
+            height: auto;
+        }
+        .everlastingimpact_cont {
+            padding: 20px 0px !important;
+        }
+        .everlastingimpact_info h3,
+        .connectstudents_info h3 {
+            font-size: 20px;
+        }
+        .connectstudents_info {
+            height: auto;
+            padding: 0 0 0px 0;
+        }
+        .gettheidoag_info {
+            max-width: 350px;
+            width: 100%;
+        }
+        .banner_cont ul li {
+            font-size: 28px;
+            line-height: 32px;
+        }
+        .banner_cont ul li span {
+            font-size: 20px;
+            line-height: 22px;
+        }
+        .activateyouridoag_info h4 {
+            font-size: 20px;
+            padding-bottom: 10px;
+        }
+        .worldofidoag_info ul li h3 {
+            font-size: 20px;
+        }
+        .worldofidoag_info ul li p {
+            font-size: 15px;
+        }
+        .worldofidoag_info ul li .worldofidoag_img {
+            max-width: 300px;
+        }
+        .worldofidoag_info {
+            padding: 30px 0px 40px 0;
+        }
+        .brandoffer_info .brandoffer_list ul li {
+            margin-right: 10px;
+            width: 47% !important;
+        }
+        .aboutbanner_cnt {
+            width: 90%;
+        }
+        .about_contactstip {
+            padding: 25px 10px 0px 10px;
+        }
+        .about_contactstip p {
+            font-size: 16px;
+        }
+        .footer_nav ul li a {
+            font-size: 11px;
+            line-height: 12px;
+            padding: 0 6px;
+        }
+        .footer_nav ul li:first-child a {
+            padding-left: 0;
+        }
+        .footer_nav ul li:last-child a {
+            padding-right: 0;
+        }
+        .top-arrow {
+            bottom: 60px;
+        }
+        .testimonials_info ul li p {
+            background-size: 20px;
+        }
+        .copyright_txt {
+            margin-top: 5px;
+        }
+        /*.banner_cont .bx-wrapper .bx-pager .bx-pager-item {
+	    display: inline-block;
+    	}
+    	.banner_cont .bx-wrapper .bx-pager.bx-default-pager a{ 
+    		width: 21px;
+    		height: 4px;
+    		float: left;
+    		margin-right: 10px;
+    	}*/
+        .banner_cont .bx-wrapper .bx-pager.bx-default-pager a:hover,
+        .banner_cont .bx-wrapper .bx-pager.bx-default-pager a.active {}
+        .cnt_readmore {
+            margin: 20px 0px;
+        }
+        .bx-wrapper img {
+            /*max-width:240px !important;*/
+            display: block;
+            width: 100%;
+            margin: 0px auto;
+        }
+        .cnt_readmore a {
+            font-size: 14px;
+        }
+        /*.gettheidoag_info h3 {
+    	    padding-bottom: 0px !important;
+    	}*/
+        .brandoffer_info .brandoffer_list ul li:nth-child(2n) {
+            margin-right: 0px !important;
+        }
+        .brandoffer_info .brandoffer_list ul li .brandoffer_cont {
+            /*display:none;*/
+        }
+        .brandoffer_img .new_txt a {
+            font-size: 12px;
+            right: 6px;
+            top: -68px;
+        }
+        .brandicon_list .follow_txtlist,
+        .follow_txt a {
+            font-size: 10px;
+        }
+        .brandoffer_info .brandoffer_list ul li .brandoffer_img .brandoffer_imgcont .share_like_txt p,
+        .photowidget_S .photowidget_img .photowidget_imgcont .share_like_txt p,
+        .photowidget_M .photowidget_img .photowidget_imgcont .share_like_txt p,
+        .photowidget_XS .photowidget_img .photowidget_imgcont .share_like_txt p,
+        .photowidget_XS .photowidget_img .photowidget_imgcont .share_like_txt p {
+            margin: 0px auto 5px auto;
+            float: none;
+            text-align: center;
+        }
+        .share_like_info p span.likeicon,
+        .share_like_txt span.likeicon,
+        .share_like_strip span.likeicon {
+            margin: 0px auto;
+            display: block;
+        }
+        .brandoffer_info .brandoffer_list ul li .brandoffer_img .brandoffer_imgcont .share_like_txt p img,
+        .brandoffer_info .brandoffer_list ul li .brandoffer_img .brandoffer_imgcont .share_like_txt p img,
+        .photowidget_XS .photowidget_img .photowidget_imgcont .share_like_txt p img,
+        .photowidget_M .photowidget_img .photowidget_imgcont .share_like_txt p img,
+        .photowidget_img .photowidget_imgcont .share_like_txt p img,
+        .photowidget_S .photowidget_img .photowidget_imgcont .share_like_txt p img {
+            margin: 0px auto;
+            display: block;
+        }
+        .photowidget_list .share_like_info p span.likeicon,
+        .share_like_txt span.likeicon,
+        .share_like_strip span.likeicon {}
+        .sendyourownnote_info input[type="submit"] {
+            float: left;
+            margin-top: 0px;
+            margin-left: 5px;
+        }
+        .instuctionbrandlogo_img,
+        .brand_logo_thmb {
+            width: 60px !important;
+            height: 60px !important;
+        }
+        .brandicon_list .follow_txt {
+            margin-top: 30px !important;
+            font-size: 10px;
+            padding: 0 5px;
+            height: 25px;
+            line-height: 25px;
+        }
+        .brandicon_list .follow_txtlist {
+            margin-top: 34px !important;
+            height: 18px !important;
+            line-height: 18px !important
+        }
+        .instuctionbrandlogo_list {
+            bottom: 0px !important;
+        }
+        .photowidget_M .photowidget_img .photowidget_imgcont h5,
+        .photowidget_img .photowidget_imgcont h5,
+        .photowidget_S .photowidget_img .photowidget_imgcont h5 {
+            font-size: 14px;
+            width: 100%;
+        }
+        .photowidget_img .photowidget_imgcont .share_like_txt {
+            width: 100%;
+        }
+        .photowidget_img .photowidget_imgcont .share_like_txt p {
+            width: 30%;
+            margin: inherit;
+        }
+        .dashboard_linksinfo {
+            padding: 0px 10px;
+        }
+        .dashboard_events h4,
+        .dashboard_outlet h4,
+        .brandoffer_list h4 {
+            padding-top: 10px;
+            font-size: 16px !important;
+        }
+        .dashboard_list h6 {
+            font-size: 14px;
+            margin: 5px 0px;
+        }
+        .dashboard_list p {
+            font-size: 13px;
+        }
+        .dashboard_list .share_like_info p span.likeicon {
+            margin: inherit;
+            display: inline-block;
+        }
+        .brandoffer_info .brandoffer_contleft .table-row {
+            display: inherit !important;
+        }
+        .brandoffer_info .brandoffer_contleft .registoff_info {
+            width: 49%;
+            display: inline-block;
+            padding: 15px 5px 8px 5px;
+            vertical-align: top;
+        }
+        .brandoffer_info .brandoffer_contleft .registoff_info ul li {
+            width: 100% !important;
+            margin-bottom: 5px !important;
+        }
+        .brandoffer_info .brandoffer_contleft .registoff_info ul li .outlet_locacnt {
+            font-size: 14px;
+            font-family: 'proxima_nova_regular';
+            line-height: 20px;
+        }
+        .brandoffer_info .brandoffer_contleft .registoff_info h4 {
+            font-size: 14px !important;
+            margin-bottom: 0 !important;
+            padding-bottom: 0;
+        }
+        .export_btns {
+            margin-bottom: 0 !important;
+        }
+        .postsomething_statistics_info .statistics_info h6,
+        .postsomething_statistics_info .postsomething_info h6,
+        .brand_poast_info h6 {
+            margin-bottom: 10px !important;
+            font-size: 12px;
+        }
+        .postsomething_statistics_info .statistics_info .bx-wrapper .bx-controls-direction a {
+            margin: -12px -9px 0 -9px;
+        }
+        .postanewoffer_info ul li {
+            padding: 6px 10px;
+        }
+        .postanewoffer_info ul li .input_val,
+        .postanewoffer_info .form-control {
+            width: 100%;
+            font-size: 13px;
+        }
+        .brandoffer_info .mybrandoffer_list ul li:nth-child(2n) {
+            margin-right: 0px !important;
+        }
+        .brandoffer_info .mybrandoffer_list ul li {
+            width: 47.33%;
+            margin: 0px 15px 15px 0px !important;
+        }
+        .brands_banner,
+        .student_regbg,
+        .press_banner {
+            height: 150px;
+        }
+        .container_info {
+            width: 100%;
+            padding: 0px 15px;
+        }
+        .testimonials_info ul li .testimonials_img {
+            width: 100px;
+            height: 100px;
+        }
+        .about_bxslider li {
+            height: 200px;
+        }
+        .aboutbanner_cnt {
+            top: 10%;
+        }
+        .aboutbanner_cnt p {
+            font-size: 15px;
+            line-height: 20px;
+        }
+        .aboutdown_arrow {
+            bottom: 15px;
+        }
+        .about_banner .bx-wrapper .bx-pager {
+            bottom: 40px !important;
+        }
+        .aboutdown_arrow img {
+            width: 35px;
+        }
+        .about_banner .bx-wrapper .bx-pager.bx-default-pager a,
+        .about_banner .bx-wrapper .bx-pager.bx-default-pager a.active,
+        .about_banner .bx-wrapper .bx-pager.bx-default-pager a:hover {
+            width: 10px;
+            height: 10px;
+        }
+        .brandoffer_info {
+            padding-bottom: 0;
+        }
+        .aboutus_info h1 {
+            font: normal 20px/28px 'proxima_nova_ltsemibold';
+        }
+        .contact_locationinfo .contact_list .figure-caption span {
+            width: auto;
+            float: none;
+            text-align: center;
+        }
+        .contact_locationinfo .contact_list .figure img {
+            width: 80px;
+            height: 80px;
+        }
+        .contact_locationinfo .contact_list .figure-caption span img {
+            width: 40px;
+            height: 30px;
+        }
+        .figure-scocialicons {
+            padding-left: 0;
+        }
+        .contactus_info h1,
+        .contactus_from h1 {
+            font: normal 22px/28px 'proxima_novalight';
+        }
+        #progressbar li:after {
+            background-size: 30%;
+        }
+        .first_tab h5,
+        .second_tab h5,
+        .third_tab h5,
+        .profile_form_edit label {
+            font: normal 15px/20px 'proxima_novalight';
+        }
+        .stepbystep_details {
+            padding: 10px 5px;
+        }
+        .popup_selectall .checkbox {
+            width: 47%;
+        }
+        .activity_left {
+            width: 100%;
+            float: left;
+        }
+        .activity_right {
+            padding: 0;
+        }
+        .date_box {
+            width: auto;
+            height: inherit;
+            padding: 8px;
+            background: none;
+        }
+        .activity_info ul li {
+            margin-bottom: 5px;
+            padding-bottom: 10px;
+        }
+        .date_box .date,
+        .date_box .year {
+            color: #343434;
+        }
+        .date_box span {
+            display: inline-block;
+        }
+        .date_box .date,
+        .date_box .date sup {
+            font: normal 15px/20px 'proxima_nova_ltsemibold';
+        }
+        .date_box .year,
+        ul.activity_group li,
+        .myprofile_list.new_class {
+            font: normal 12px/16px 'proxima_nova_regular';
+        }
+        .profile_info .profile_cont .profile_img {
+            width: 120px;
+            height: 110px;
+        }
+        .myprofile_list.new_class br {
+            display: none;
+        }
+        .norecords_sml {
+            font-size: 14px;
+        }
+        .postsomething_statistics_info .postsomething_info,
+        .postsomething_statistics_info .statistics_info {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        .photowidget_list .grid-item {
+            width: 100% !important;
+            padding-right: 0px !important;
+        }
+        .brandoffer_info .brandoffer_list ul li .brandoffer_img .brand_img,
+        .disablebgclr {
+            /*height:180px;*/
+        }
+        .brandicon_info {
+            height: 180px !important;
+            background-size: cover;
+            padding-right: 420px;
+            margin-top: 0px;
+        }
+        .export_btns .fr {
+            display: inline-block;
+            width: 100%;
+        }
+        .addoutlet_btn,
+        .sampleexcel_btn,
+        .import_btn,
+        .delete_btn {
+            height: inherit;
+            line-height: inherit;
+            font-size: 10px;
+            float: left;
+            padding: 6px 4px;
+        }
+        .brandoffer_listtopcont .available_txt ul li {
+            margin-bottom: 5px;
+        }
+        .banner_cont ul li span {
+            font-size: 18px;
+            line-height: 26px;
+        }
+        .banner_cont ul li span.bigtxt {
+            line-height: 32px;
+            font-size: 24px;
+        }
+        .sendyourownnote_info input[type="submit"] {
+            font-size: 14px;
+        }
+        .brands_errorleft,
+        .institutions_errorleft,
+        .allnotfund_msgleft {
+            width: 100%;
+            max-width: 80px;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            float: none;
+        }
+        .brands_errorleft img,
+        .institutions_errorleft img,
+        .allnotfund_msgleft img {
+            width: 100%;
+        }
+        .brands_errorright,
+        .allnotfund_msgright,
+        .institutions_erroright {
+            padding: 0px 0 0 0px !important;
+            width: 100%;
+            display: inline-block;
+            text-align: center !important;
+        }
+        .marketingtrainee_info .marketingtrainee_left {
+            padding: 0px 8px 0px 0px;
+        }
+        .postanewoffer_info ul li .input_val textarea {
+            height: 40px !important;
+        }
+        .postanewoffer_info ul li .input_val.tabs input[type="text"] {
+            max-width: 100%;
+        }
+        .postanewoffer_info ul li.date_txt .nam_val,
+        .postanewoffer_info ul li .nam_val,
+        .postanewoffer_info ul li.date_txt .input_val {
+            width: 100%;
+        }
+        .faq_list h4 {
+            font-size: 13px;
+            line-height: 18px;
+            padding: 10px;
+        }
+        .faq_list h4 span {
+            margin-top: 6px;
+        }
+        .faq_liststyle h2 {
+            font: 14px/20px proxima_nova_ltsemibold !important;
+        }
+        .faq_info .faqsearch h5,
+        .privacy_policy h5 {
+            font: normal 18px/24px 'proxima_nova_ltsemibold';
+        }
+        .brandoffer_info .brandoffer_list ul li .brandoffer_img .brandoffer_imgcont h5 {
+            font-size: 13px;
+        }
+        .log_for_chan_info {
+            width: 100%;
+        }
+        .log_for_chan_info input[type="submit"] {
+            padding: 10px;
+            font-size: 13px;
+            line-height: inherit;
+            height: inherit;
+        }
+        .log_for_chan_info p {
+            font-size: 12px;
+        }
+        .log_for_chan_info h4 {
+            font-size: 16px;
+        }
+        .forgotpassword_info {
+            margin-bottom: 100px;
+            margin-top: 30px;
+        }
+        .brandoffer_listtopcont {
+            font-size: 13px;
+        }
+        .photowidget_img .note_img2 {
+            width: 30px;
+        }
+        .notice_feed_list .studentrecentupdates_list ul li .studentrecentupdates_cont {
+            font-size: 13px;
+        }
+        .brandoffer_info .brandoffer_contleft .registoff_info ul li .outlet_locacnt br {
+            display: none;
+        }
+        .marketingtrainee_info .applynow_btn {
+            width: 100%;
+            height: 38px;
+            line-height: 36px;
+            font-size: 14px;
+        }
+        .brandoffer_info .brandoffer_list ul li .addthis_sharing_toolbox,
+        .brandoffer_info .brandoffer_list .dashboard_list .share_like_info .addthis_sharing_toolbox {
+            top: -50px;
+            padding: 6px;
+            width: auto;
+            right: 0;
+            left: inherit;
+        }
+        .brandoffer_info .brandoffer_list ul li .addthis_sharing_toolbox:after {
+            right: 10px;
+            left: inherit;
+        }
+        .addthis_sharing_toolbox:after {
+            right: 10px;
+            left: inherit;
+        }
+        .photowidget_M .addthis_sharing_toolbox:after {
+            right: inherit;
+            left: 80px;
+        }
+        .photowidget_FSW .addthis_sharing_toolbox:after {
+            right: inherit;
+            left: 80px;
+        }
+        .loginrequired_modal-dialog {
+            width: 100%;
+            padding: 0px 10px;
+        }
+        .loginrequired_modal-content h4 {
+            font-size: 16px;
+        }
+        .loginrequired_modal-body input {
+            height: 36px;
+        }
+        .loginrequired_modal-body input[type=checkbox] {
+            margin-top: 2px;
+        }
+        .loginrequired_modal-body .login_btn {
+            font-size: 14px;
+        }
+        .ortxt {
+            padding: 20px 0px 10px 0px;
+        }
+        .fbbtn {
+            margin: 10px auto;
+            font-size: 15px;
+        }
+        .loginrequired_modal-body {
+            padding: 0px 15px 15px 15px;
+        }
+        .date_clear {
+            margin-bottom: 0;
+        }
+        .addthis_sharing_toolbox span i.fa {
+            width: 20px;
+            font-size: 12px;
+            padding: 4px 5px;
+        }
+        .addthis_sharing_toolbox {
+            left: inherit;
+            right: 15%;
+            top: -15px;
+            width: auto;
+            padding: 3px 5px;
+        }
+        .photowidget_FSW .addthis_sharing_toolbox {
+            position: absolute;
+            right: inherit;
+            top: -24px;
+            left: 60px;
+            display: none;
+            width: auto;
+            background: #fff;
+            border-radius: 6px;
+            padding: 6px;
+            z-index: 5;
+        }
+        .suggestedbrands_list .bx-wrapper .bx-viewport {
+            height: 316px !important;
+        }
+        .internshipapp_submit input[type="submit"] {
+            width: 100%;
+            font-size: 16px;
+        }
+        .press_list h3,
+        .press_details h3 {
+            font: normal 15px/20px 'proxima_nova_regular';
+        }
+        .press_text p {
+            font: normal 14px/20px 'proxima_nova_regular' !important;
+        }
+        .pressimg_wp,
+        .press_logo {
+            height: 120px;
+        }
+        .activation_left,
+        .loginnew_left {
+            width: 100% !important;
+            padding-right: 0;
+            padding-left: 0;
+        }
+        .activation_middle,
+        .loginnew_middle {
+            width: 100% !important;
+            text-align: center;
+        }
+        .activation_middle img,
+        .loginnew_middle img {
+            display: none;
+        }
+        .activation_right,
+        .loginnew_right {
+            width: 100% !important;
+        }
+        .loginnew_left,
+        .loginnew_right {
+            padding-top: 10px;
+        }
+        .middle-or {
+            display: block;
+            font: normal 14px/20px 'proxima_nova_regular' !important;
+            padding: 10px 0px;
+            color: #fff;
+        }
+        .log_for_chan_info .fb_gp_btn {
+            margin: 0px;
+        }
+        .login_submit {
+            margin: 0px;
+        }
+        .log_for_chan_info a {
+            max-width: 200px !important;
+        }
+        .activationstep2_info .log_for_chan_info input[type="text"],
+        .activationstep2_info .log_for_chan_info input[type="email"],
+        .activationstep2_info .log_for_chan_info input[type="password"],
+        .activationstep2_info .log_for_chan_info input[type="tel"],
+        .activationstep2_info select.gender_select {
+            font-size: 14px;
+        }
+        .activation_tandc .checkbox label {
+            font-size: 14px;
+        }
+        .log_for_chan_info .fb_gp_btn {
+            width: 100%;
+        }
+        .donthave_idoagcard .tellus_btn {
+            padding: 0px 10px;
+        }
+        .disablebgclr h6 {
+            font-size: 13px;
+            margin-top: 60px;
+        }
+        .brandsign_info .brandsign_left,
+        .brandsign_info .brandsign_right {
+            width: 100%;
+        }
+        .brandsign_info .brandsign_left .brandsign_leftcont p {
+            margin-bottom: 10px;
+        }
+        .brandsign_info .brandsign_left h3 {
+            font-size: 16px;
+        }
+        .brandsign_info .brandsign_left .brandsign_leftcont p {
+            font-size: 13px;
+        }
+        .brandsign_info {
+            margin-bottom: 0;
+        }
+        .photowidget_list .photowidget_FSW.grid-item {
+            margin-bottom: 10px;
+        }
+        .mobile_btmenu ul {
+            float: left;
+            width: 100%;
+            list-style: none;
+        }
+        .mobile_btmenu ul li a span {
+            font: normal 12px/14px 'proxima_nova_regular';
+        }
+        /*.stdntdashboard_info .brandsign_info .brandsign_right, .stdntdashboard_info .brandsign_info .brandsign_right{ padding-bottom:28px; }*/
+        .brandsign_info .brandsign_right .share_like_strip ul li {
+            padding: 5px 0;
+        }
+        .featured_txt {
+            padding: 5px 10px;
+            margin: 10px 0 0;
+        }
+        .footer_inner {
+            padding: 10px 15px;
+        }
+        .search {
+            width: 100%;
+        }
+        .footer_nav ul li {
+            float: none;
+            text-align: center;
+            display: inline-block;
+        }
+        .registered_brands_container .container_info,
+        .aboutbanner_cnt {
+            width: 96%;
+            padding: 0px 30px;
+        }
+        .registered_brands .bx-controls-direction a.bx-prev {
+            left: -18px;
+        }
+        .registered_brands .bx-controls-direction a.bx-next {
+            right: -18px;
+        }
+        .having_trouble-body input[type="submit"] {
+            font-size: 13px;
+        }
+        .error_msg p,
+        .success_msg p {
+            font-size: 12px;
+            line-height: 16px;
+        }
+        .featured_txt {
+            width: 100%;
+        }
+        .featured_txt img {
+            max-width: 80px !important;
+            float: left;
+            vertical-align: middle;
+            margin-right: 10px;
+            margin-top: 4px;
+        }
+        .myprofile_list .form-control {
+            font-size: 14px;
+        }
+        .brandsifollow_info .viewall_btn {
+            font-size: 15px;
+        }
+        .why_idog h2,
+        .why_idoginst h2 {
+            font: normal 20px/24px 'proxima_novalight';
+        }
+        .brand_page_title {
+            width: auto;
+            height: auto;
+            font: normal 16px/18px 'proxima_novalight';
+            bottom: 0;
+            padding: 6px 10px;
+        }
+        .postsomething_statistics_info .postsomething_info ul li {
+            margin: 0 16px;
+        }
+        .brand_poast_info h3 {
+            font-size: 15px;
+        }
+        .share_like_txt .fa-share-alt,
+        .share_like_txt .fa-heart-o,
+        .share_like_txt .fa-heart,
+        .share_like_txt .fa-eye {
+            display: block;
+            margin-right: 0;
+        }
+        .share_like_txt p b,
+        .share_like_txt p b,
+        .share_like_txt p b,
+        .share_like_txt p b {
+            display: block;
+        }
+        .brandoffer_info .brandoffer_list ul li .brandoffer_img {
+            /* height: 180px;*/
+        }
+        .contactus_fullform input[type="submit"] {
+            font-size: 16px;
+        }
+        .brandoffer_info .brandoffer_list ul li .brandoffer_img .brandoffer_imgcont .share_like_txt p {
+            width: 30%;
+            font-size: 11px;
+        }
+        .error404_img {
+            width: 140px;
+        }
+        .errorpage .error404_cnt h2 {
+            font: normal 36px/40px 'proxima_nova_rgbold';
+        }
+        .errorpage .error404_cnt h4 {
+            font: normal 16px/20px 'proxima_nova_ltsemibold';
+        }
+        .errorpage .error404_cnt p {
+            font: normal 12px/18px 'proxima_nova_regular';
+        }
+        .alert-danger,
+        .alert-success {
+            margin: 5px auto 0 auto;
+            padding: 5px;
+            font-size: 11px;
+        }
+        .photowidget_FSW {
+            max-width: 100%;
+            width: 100%;
+            height: 260px;
+        }
+        .photowidget_M {
+            max-width: 100%;
+            width: 100%;
+        }
+        .photowidget_FSW .disablebgclr h6,
+        .photowidget_S .disablebgclr h6,
+        .photowidget_M .disablebgclr h6 {
+            margin-top: 120px;
+        }
+        .newinternship_inner .disablebgclr h6 {
+            margin: 0px;
+        }
+        .newinterndash_info .stipend_row span small {
+            padding-left: 0px;
+        }
+        .photowidget_FSW .photowidget_img .photowidget_imgcont .share_like_txt {
+            text-align: left;
+        }
+        .photowidget_FSW .photowidget_img .photowidget_imgcont .share_like_txt p {
+            width: 55px;
+            text-align: center;
+        }
+        .banner_info {
+            padding: 0px;
+            /*background-position: center left;
+        min-height: 272px;*/
+        }
+        .link_fetch {
+            height: 90px;
+        }
+        .link_fetch .leftdb {
+            width: 35%;
+        }
+        .link_fetch .rightdb {
+            width: 65%;
+        }
+        /*.banner_info {
+	    //height: 590px;
+	    padding: 0px;
+	    background-image: url(../images/banner_img.jpg);
+	    background-size: cover;
+	    background-position: center center;
+	    background-repeat: no-repeat;
+	   }*/
+        .person_details ul li {
+            width: 100%;
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
+        .lostcard_info h5 {
+            font-size: 14px;
+            line-height: 24px;
+            margin: 10px 0;
+        }
+        .lostcard_info h5 span {
+            font-size: 15px;
+        }
+        .lostcard_info h2 {
+            font-size: 18px;
+            line-height: 20px;
+            margin-bottom: 0;
+        }
+        .person_details h4 {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        .addressform_list .form-group label {
+            font-size: 14px;
+        }
+        .addressform_list .form-group .form-control {
+            height: 34px;
+            font-size: 14px;
+        }
+        .check_avilab a,
+        .check_avilab a:hover,
+        .payment_details ul li span.apply_txt a,
+        .payment_details ul li span.apply_txt a:hover {
+            font-size: 13px;
+        }
+        .addressform_list .form-group {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .lostcard_info {
+            padding: 10px;
+        }
+        .addressform_list .form-group.emptyspace label {
+            display: none;
+        }
+        .payment_details ul li span.apply_txt .applycode {
+            width: 60px;
+        }
+        .payment_details ul li span:last-child {
+            font-size: 13px;
+        }
+        .payment_details p {
+            font-size: 13px;
+            line-height: 16px;
+        }
+        .payment_details p br {
+            display: none;
+        }
+        #editphone .form-group,
+        #editemail .form-group {
+            width: 70%;
+            margin-bottom: 5px;
+        }
+        .lostcardguest_info h4 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .lostcardscocial_btns,
+        .lostcardscocial_btns:hover,
+        .lostcardscocial_btns:focus,
+        .submit_deatilsbtn,
+        .submit_deatilsbtn:hover,
+        .submit_deatilsbtn:focus {
+            font-size: 13px;
+        }
+        .lostcardguest_form {
+            margin: 15px 0;
+        }
+        .lostcardguest_bottom h5,
+        .lostcardguest_bottom p {
+            font-size: 14px;
+        }
+        .recover_modal-content .form-group label {
+            font-size: 13px;
+        }
+        .recover_modal-content input[type="submit"] {
+            font-size: 13px;
+        }
+        .applyicons_row p i.fa {
+            padding-right: 0;
+        }
+        .newinternship_list .share_like_txt.dash_internship .fa-share-alt,
+        .newinternship_list .share_like_txt.dash_internship .fa-heart-o,
+        .newinternship_list .share_like_txt.dash_internship .fa-heart,
+        .newinternship_list .share_like_txt.dash_internship .fa-eye {
+            display: inline-block;
+        }
+        .newinternship_list .share_like_txt.dash_internship p b,
+        .newinternship_list .share_like_txt.dash_internship p b,
+        .newinternship_list .share_like_txt.dash_internship p b,
+        .newinternship_list .share_like_txt.dash_internship p b {
+            display: inline-block;
+            padding-left: 2px;
+        }
+        @media(max-width:518px){
+            
+            .row.inner_div_back.profile_picture_style{height: 115px;}
+        }
+        @media(max-width:430px){
+           .inner_div_useonly.height_div {
+    max-height: initial !important;
+    min-height: 414px !important;
+}
+.absolute_span {
+    top: 26.8em;
+}
+
+            
+        }
+       
+        @media(max-widht:402px){
+             .inner_div_useonly.height_div {
+    max-height: initial !important;
+    min-height: 368px !important;
+}
+.absolute_span {
+    top: 22.8em;
+}
+        }
+        @media all and (max-width:414px) and (min-width:401px) {
+           
+            .brandoffer_info .brandoffer_list ul li .brandoffer_cont .brandoffer_continner .brandoffer_conttxt {
+                width: 60%;
+            }
+            .brandoffer_info .brandoffer_list ul li .brandoffer_cont .brandoffer_continner .brandoffer_conticon {
+                width: 60px;
+                height: 60px;
+            }
+            .link_fetch {
+                height: 80px;
+            }
+            .link_fetch .leftdb {
+                width: 53%;
+            }
+            .link_fetch .rightdb {
+                width: 47%;
+            }
+            .profile_info .profile_cont .profile_continner h4 {
+                font-size: 24px;
+            }
+        }
+        @media (max-width: 400px) {
+            header .logo img {
+                max-height: 60px;
+            }
+            .gettheidoag_info {
+                width: 100%;
+            }
+            .banner_cont ul li {
+                font-size: 20px;
+                line-height: 24px;
+            }
+            .banner_cont ul li span {
+                font-size: 18px;
+                line-height: 22px;
+            }
+            .activateyouridoag_info h4 {
+                font-size: 14px;
+                padding-bottom: 6px;
+            }
+            .worldofidoag_info ul li h3 {
+                font-size: 18px;
+                padding-bottom: 10px;
+            }
+            .worldofidoag_info ul li p {
+                font-size: 14px;
+            }
+            .worldofidoag_info ul li .worldofidoag_img {
+                max-width: 300px;
+            }
+            .worldofidoag_info {
+                padding: 20px 0px 30px 0;
+            }
+            .everlastingimpact_info p,
+            .connectstudents_info p {
+                font-size: 14px;
+            }
+            .connectstudents_info h3 {
+                font-size: 18px;
+            }
+            .footer_nav ul li {
+                float: inherit;
+                display: inline-block;
+            }
+            .haveanaccount_txt .haveanaccount_head {
+                padding-top: 0px;
+                padding-bottom: 0px;
+            }
+            .brandoffer_info .brandoffer_list ul li {
+                margin: 0px;
+                width: 100% !important;
+            }
+            .search_info input[type="text"] {
+                width: 80%;
+            }
+            .brandoffer_info .mybrandoffer_list ul li {
+                width: 47%;
+            }
+            .brandoffer_info {
+                width: 100%;
+                float: none;
+                margin: 0px auto;
+            }
+            .container_info {
+                width: 100%;
+                padding: 0px 15px;
+            }
+            .everlastingimpact_info h3,
+            .connectstudents_info h3 {
+                font-size: 18px;
+                padding-bottom: 5px;
+            }
+            .registered_brands ul li img,
+            .institutions_brands ul li img {
+                margin: 5px auto;
+                max-width: 100px !important;
+            }
+            .bx-wrapper img {
+                max-width: 100% !important;
+                top: 40% !important;
+            }
+            .featured_txt {
+                width: 100%;
+            }
+            .featured_txt img {
+                max-width: 60px !important;
+                float: left;
+                vertical-align: middle;
+                margin-right: 10px;
+                margin-top: 4px;
+            }
+            .gettheidoag_info h3 {
+                font-size: 14px;
+                height: 30px;
+                line-height: 30px;
+                padding-top: 0;
+            }
+            .sendyourownnote_info input[type="submit"] {
+                float: left;
+                margin-top: 5px;
+                margin-left: 0px;
+            }
+            .brandoffer_info .brandoffer_contleft .table-row {
+                display: inherit;
+            }
+            /*.brandoffer_info .brandoffer_contleft .registoff_info{ width:49%; display:inline-block; padding:10px 10px 8px 10px; vertical-align:top;  }*/
+            .brandoffer_info .brandoffer_contleft .registoff_info {
+                width: 100%;
+                display: inline-block;
+                padding: 10px 10px 8px 10px;
+                vertical-align: top;
+                border-right: 0px;
+                min-height: inherit;
+            }
+            .registoff_info ul li .outlet_locaicon {
+                display: none;
+            }
+            .registoff_info ul li .outlet_locacnt {
+                padding-left: 0;
+            }
+            .dashboard_outlet {
+                padding: 10px;
+            }
+            .brandoffer_info .brandoffer_contleft .registoff_info ul li {
+                width: 100% !important;
+            }
+            .brandoffer_info .mybrandoffer_list ul li {
+                margin: 0px 10px 20px 0px !important;
+            }
+            .testimonials_info ul li .testimonials_img {
+                width: 80px;
+                height: 80px;
+            }
+            .aboutbanner_cnt p {
+                font-size: 12px;
+                line-height: 16px;
+            }
+            .contact_locationinfo .contact_list .figure-caption span img {
+                width: 40px;
+            }
+            .stepbystep_modal-dialog {
+                width: 92% !important;
+            }
+            .stepprofile_right {
+                width: 100%;
+            }
+            .stepprofile_left {
+                max-width: 100px;
+                height: 100px;
+                margin-right: 0;
+                width: 100%;
+                margin: 10px auto;
+                float: none;
+            }
+            .profile_info .profile_cont .profile_continner h4 {
+                margin-top: 30px;
+                font-size: 22px;
+            }
+            .postsomething_statistics_info .postsomething_info ul li {
+                margin: 0px 6px;
+            }
+            .postsomething_statistics_info .postsomething_info ul li p {
+                font-size: 10px;
+            }
+            .postsomething_statistics_info .postsomething_info {
+                padding: 12px;
+            }
+            .follow_txt {
+                margin-top: 50px !important;
+            }
+            .brandicon_list .follow_txtlist {
+                margin-top: 54px;
+            }
+            .brandoffer_info .brandoffer_list ul li .brandoffer_img .brand_img,
+            .disablebgclr {
+                /*height:150px;*/
+            }
+            .brandoffer_info .brandoffer_contleft .registoff_info ul li .outlet_locacnt {
+                font-size: 13px;
+            }
+            .user_nav>li>a {
+                font-size: 14px;
+                line-height: 44px;
+            }
+            .logo {
+                float: left;
+                width: 54px;
+            }
+            .logo_nav_info {
+                padding: 5px 0px;
+            }
+            .user_nav {
+                right: 0;
+            }
+            .postanewoffer_info ul li .nam_val {
+                width: 100%;
+            }
+            .banner_cont ul li span {
+                font-size: 18px;
+                line-height: 22px;
+            }
+            .banner_cont ul li span.bigtxt {
+                line-height: 28px;
+                font-size: 24px;
+            }
+            .having_trouble {
+                padding: 5px 0px;
+                /*position: relative;
+                top: -30px;
+                left: 90px;*/
+                clear: both;
+            }
+            .having_trouble a {
+                font-size: 13px;
+            }
+            /*.banner_cont .bx-wrapper .bx-pager {
+            left: 0;
+            bottom: -210px;
+            right: 0;
+            width: 150px;
+            top: inherit;
+            margin: 0px auto;
+        }*/
+            .sendyourownnote_info input[type="text"] {
+                width: 100%;
+            }
+            .brandoffer_info .brandoffer_list ul li .brandoffer_img .brandoffer_imgcont h5 {
+                font-size: 12px;
+            }
+            .brandoffer_info .mybrandoffer_list ul li .brandoffer_img .brandoffer_imgcont h5 {
+                font-size: 14px;
+            }
+            .brandoffer_info .mybrandoffer_list ul li .brandoffer_img .brandoffer_imgcont > p {
+                font-size: 12px;
+                margin-bottom: 5px;
+            }
+            .brandoffer_info .mybrandoffer_list ul li .brandoffer_img .brandoffer_imgcont .share_like_txt,
+            .brandoffer_info .mybrandoffer_list ul li .brandoffer_follow,
+            .brandoffer_info .mybrandoffer_list ul li .brandoffer_img .mybrandslider_listcont .brandname {
+                font-size: 12px;
+            }
+            .brandoffer_info .mybrandoffer_list ul li .brandoffer_follow {
+                line-height: 28px;
+            }
+            .brandoffer_info .mybrandoffer_list ul li .brandoffer_img .brandoffer_imgcont .share_like_txt p {
+                margin-bottom: 5px;
+            }
+            .search_info input[type="text"] {
+                font-size: 13px;
+                height: 30px;
+                line-height: 30px;
+            }
+            .brand_logo {
+                height: 130px;
+            }
+            .brandoffer_info .brandoffer_contleft .registoff_info h4 {
+                font-size: 13px !important;
+            }
+            .registered_brands .bx-wrapper .bx-viewport {
+                height: 100px !important;
+            }
+            .disruptivenoise_info figure {
+                height: 100px;
+                width: 100%;
+                max-width: 70%;
+                padding: 10px;
+            }
+            .disruptivenoise_info figure img {
+                padding: 0px;
+                max-width: 80%;
+            }
+            .suggestedbrands_list .bx-wrapper .bx-viewport {
+                height: 261px !important;
+            }
+            .internship_appinfo {
+                height: 80px;
+            }
+            .brandoffer_info .notice_feed_list h3 {
+                font-size: 14px !important;
+            }
+            .g-recaptcha {
+                transform: scale(0.89) !important;
+                -webkit-transform: scale(0.89) !important;
+            }
+            .activation_tandc .checkbox {
+                margin: 0px;
+            }
+            .mobile_back_btn,
+            .change_password {
+                font-size: 13px;
+                padding: 4px 8px;
+            }
+            .mobile_btmenu ul {
+                float: left;
+                width: 100%;
+            }
+            .mobile_btmenu ul li {
+                padding: 5px 0px;
+            }
+            .mobile_btmenu ul li img {
+                max-width: 18px;
+                height: auto;
+            }
+            .mobile_btmenu ul li a span {
+                font: normal 10px/12px 'proxima_nova_regular';
+                margin-top: 2px;
+            }
+            .brandsign_info .brandsign_right .share_like_strip {
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+                height: auto;
+                z-index: 0;
+            }
+            .brandsign_info .brandsign_right .share_like_strip ul {
+                width: 100%;
+            }
+            .brandsign_info .brandsign_right .share_like_strip ul li {
+                width: 33.33%;
+                float: left;
+            }
+            .brandsign_info .brandsign_right .share_like_strip ul li br,
+            .brandsign_info .brandsign_right .share_like_strip ul li br {
+                display: none;
+            }
+            .brandsign_info .brandsign_right .share_like_strip ul li span {
+                display: inline-block;
+            }
+            .brandsign_info .brandsign_right .brandsign_img {
+                margin-left: 0;
+            }
+            .stdntdashboard_info {
+                padding: 0px 0px 20px 0;
+            }
+            .profile_title_section .profile_title {
+                float: none;
+            }
+            .postsomething_statistics_info {
+                margin-bottom: 0;
+            }
+            .brandoffer_info .brandoffer_list ul li .brandoffer_img {
+                /*height: 160px;*/
+            }
+            .social_search_info .search_txt,
+            .social_search_info .social_txt {
+                display: none;
+            }
+            .brandoffer_info .mybrandoffer_list ul li .brandoffer_img .mybrandslider_listcont .brandlike {
+                font-size: 10px;
+                width: 36%;
+            }
+            .brandoffer_info .mybrandoffer_list ul li .brandoffer_img .mybrandslider_listcont .brandname {
+                font-size: 11px;
+                width: 64%;
+            }
+            .brandoffer_info .brandoffer_list ul li .brandoffer_cont h6 {
+                font-size: 13px;
+            }
+            .brandoffer_info .brandoffer_list ul li .brandoffer_cont .brandoffer_continner p {
+                font-size: 12px;
+                line-height: 16px;
+            }
+            .brandoffer_info .brandoffer_list ul li .brandoffer_cont {
+                min-height: 80px;
+            }
+            .instuctionbrandlogo_img,
+            .brand_logo_thmb {
+                width: 60px !important;
+                height: 60px !important;
+            }
+            .follow_txt {
+                margin-top: 25px !important;
+            }
+            .brandicon_list .follow_txtlist {
+                margin-top: 30px;
+            }
+            .instuctionbrandlogo_list {
+                bottom: 0px !important;
+            }
+            .nav_info2 {
+                display: block;
+                margin-top: 0px;
+            }
+            .link_fetch {
+                height: 80px;
+            }
+            .link_fetch .leftdb {
+                width: 53%;
+            }
+            .link_fetch .rightdb {
+                width: 47%;
+            }
+            #editphone .form-group,
+            #editemail .form-group {
+                width: 60%;
+            }
+            .addressform_list .form-group .form-control {
+                height: 30px;
+            }
+            .profile_info .profile_cont .profile_img {
+                width: 110px;
+                height: 100px;
+            }
+        }
+        @media(max-width:398px){
+            .row.inner_div_back.profile_picture_style {
+    height: 88px;
+    margin-top: 1.7em;
+}
+            .inner_div_useonly.height_div {
+    max-height: initial !important;
+    min-height: 359px !important;
+}
+.absolute_span {
+    top: 22.8em;
+}
+        }
+        @media (max-width:375px) {
+           
+            .popup_selectall .checkbox {
+                width: 46%;
+            }
+            .brandoffer_info .mybrandoffer_list ul li .brandoffer_img .mybrandslider_listcont .brandname {
+                width: 62%;
+            }
+            .brandoffer_info .mybrandoffer_list ul li .brandoffer_img .mybrandslider_listcont .brandlike {
+                width: 38%;
+            }
+            .newinternship_list .share_like_txt.dash_internship {
+                padding: 3px 0px;
+            }
+            .newinternship_list .share_like_txt.dash_internship p {
+                font-size: 12px;
+            }
+            .profile_info .profile_cont .profile_continner h4 {
+                font-size: 20px;
+            }
+            .profile_info .profile_cont .profile_continner p {
+                font-size: 13px;
+            }
+            .profile_info .profile_cont .profile_img {
+                width: 90px;
+                height: 80px;
+            }
+            .banner_cont .bx-wrapper .bx-pager {
+                bottom: -6px;
+            }
+        }
+        @media(max-width:398px){
+            
+            .inner_div_useonly.height_div {
+    max-height: initial !important;
+    min-height: 395px !important;
+}
+           .absolute_span{    top: 25.8em;} 
+           h1.height_head_use {bottom: -0.1em;}
+           inner_div_useonly p:nth-of-type(1){}
+        }
+        @media (max-width:320px) {
+            .popup_selectall .checkbox {
+                width: 94%;
+                margin: 8px auto;
+                float: none;
+            }
+        }
+
+    /*RESPONSIV CODE HERE for POP UP OF TROUBLE LOGGING IN*/
+    /*allsmart phone protrait mode*/
+    @media only screen and (max-width:767px) 
+    {
+        .grid-01{ float:none; width:100%; padding:0;}
+        .grid-02{ float:none; width:100%; padding:0;}
+        .modal-box{ width:85%;}
+        .activateyouridoag_info .box-left{ width:100% !important; float:none !important;}
+        .activateyouridoag_info .box-right{width:100% !important; float:none !important; }
+        
+        .box-left-one{ width:100%  !important; float:none  !important;}
+        .left-side{ float:none !important; width:100% !important; text-align:left !important;}
+        .right-side{ float:none  !important; width:100% !important;}
+        .right-btn{ float:none !important; width:100% !important; }
+        .right-btn{ float:none !important; margin:0 !important;}
+        .box-right-two{ float:none !important; width:100% !important;}
+        .grid-01 ul{ margin:0 !important; padding:0 !important;}
+        .myimgsize{ max-width:35%;}
+        .disruptivenoise_info{ padding:10px 0 20px !important;}
+    }
+
+    /*all smartphone landscape mode*/
+    @media only screen and ( min-width:480px) and (max-width:767px)
+    {   
+        .grid-01{ float:none; width:100%; padding:0;}
+        .grid-02{ float:none; width:100%; padding:0;}
+        .modal-box{ width:85%;}
+        .activateyouridoag_info .box-left{ width:100% !important; float:none !important;}
+        .activateyouridoag_info .box-right{width:100% !important; float:none !important; }
+    }
+
+    @media only screen and ( min-width:481px) and (max-width:767px)
+    {
+        .grid-01{ float:none; width:100%; padding:0;}
+        .grid-02{ float:none; width:100%; padding:0;}
+        .modal-box{ width:85%;}   
+        .activateyouridoag_info .box-left{ width:100% !important; float:none !important;}
+        .activateyouridoag_info .box-right{width:100% !important; float:none !important; }
+    }                                                                                        
+    /*for tab*/
+    @media only screen and ( min-width:768px) and (max-width:995px)             
+    {    
+        .grid-01{ float:none; width:100%; padding:0;}
+        .grid-02{ float:none; width:100%; padding:0;}
+        .modal-box{ width:85%;}    
+    }

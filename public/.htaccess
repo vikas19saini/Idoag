@@ -1,0 +1,33 @@
+#code for non-WWW to WWW
+
+<IfModule mod_rewrite.c>
+  Options -MultiViews
+  RewriteEngine On
+  RewriteCond $1 !^(blog)
+  RewriteCond %{HTTPS} off
+  RewriteCond %{HTTP_HOST} !^dev\. [NC]
+  RewriteRule ^ http://dev.%{HTTP_HOST}%{REQUEST_URI} [R=301,L,NE]
+
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^ index.php [L]
+
+</IfModule>
+
+
+
+#code for WWW to non WWW
+
+#<IfModule mod_rewrite.c>
+#  Options -MultiViews
+#  RewriteEngine On
+
+#  RewriteCond %{HTTPS} off
+#  RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+#  RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+#  RewriteCond %{REQUEST_FILENAME} !-d
+#  RewriteCond %{REQUEST_FILENAME} !-f
+#  RewriteRule ^ index.php [L]
+
+#</IfModule>
