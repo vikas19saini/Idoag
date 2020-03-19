@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.defaultv2')
 
 @section('title','Contact Us |idoag.com')
 
@@ -6,117 +6,123 @@
 <meta name="keywords" content="Contact Us |idoag.com" />
 <meta name="description" content="Contact Us |idoag.com" />
 @stop
-
+@section('css')
+    <style>
+        .has-error .help-block,
+        .has-error .control-label,
+        .has-error .radio,
+        .has-error .checkbox,
+        .has-error .radio-inline,
+        .has-error .checkbox-inline,
+        .has-error.radio label,
+        .has-error.checkbox label,
+        .has-error.radio-inline label,
+        .has-error.checkbox-inline label {
+         color: #a94442;
+        }
+    </style>
+@stop
 @section('content')
-
-<!-- Content Start Here -->
-<div class="wrapper">
-
-    <!-- Header Starts here -->
-    @include('layouts.header')
-    <!-- Header Ends here -->
-
-
-
-
-    <div class="brandoffer_info contactwrapper_info">
-        @include('partials.flash')
-        <div class="container_info contactus_info">
-
+    @include('layouts.headerv2')
+    <div class="container">    
+        <div id="accordion" class="myaccordion">
             <h1>Contact idoag</h1>
-            <p>Get in touch with us to get the ball rolling</p>
+            <p><span>Get in touch with us to get the ball rolling</span></p>
             <div class="row contact_locationinfo">
-                <div class="col-md-4 col-sm-4 col-xs-12 contact_list">
-                    <figure class="figure">
-                        {{ HTML::image('assets/images/contactlocation_img1.png','',['class'=>'img-rounded'])}}
-                        <figcaption class="figure-caption text-center">
-                            B-131 Basement Floor,<br/>
-                            Sector 50 Noida,<br/>
-                            UP - 201301</figcaption>
-                    </figure>
+                <div class="col-md-4">
+                    <div class="contact_locationinfo wow fadeInUp">
+                        {{ HTML::image('assets/imagesv2/contactlocation_img1.png') }}                 
+                        <p>B-131 Basement Floor, Sector 50 Noida, UP - 201301</p>    
+                    </div>
                 </div>
-                <div class="col-md-4 col-sm-4 col-xs-12 contact_list">
-                    <figure class="figure">
-                        {{ HTML::image('assets/images/contactlocation_img2.png','',['class'=>'img-rounded'])}}
-                        <figcaption class="figure-caption text-center">
-                            <a href="mailto:info@idoag.com?Subject=Contact">info@idoag.com</a>
-                        </figcaption>
-                    </figure>
+                <div class="col-md-4">
+                    <div class="contact_locationinfo wow fadeInUp" data-wow-delay="0.3s">
+                        {{ HTML::image('assets/imagesv2/contactlocation_img2.png') }}
+                        <a href="mailto:info@idoag.com"><p>info@idoag.com</p></a>   
+                    </div>
                 </div>
-                <div class="col-md-4 col-sm-4 col-xs-12 contact_list">
-                    <figure class="figure">
-                        {{ HTML::image('assets/images/contactlocation_img3.png','',['class'=>'img-rounded'])}}
-                        <figcaption class="figure-caption text-center figure-scocialicons">
-                            <span><a href="https://www.facebook.com/idoag" target="_blank"> {{ HTML::image('assets/images/contact_fb.png')}}<i>Facebook</i></a></span>
-                            <span><a href="http://instagram.com/social.idoag" target="_blank">{{ HTML::image('assets/images/ig_icon.png', 'Instagram') }}<i>Instagram</i></a></span>
-                        </figcaption>
-                    </figure>
+                <div class="col-md-4">
+                    <div class="contact_locationinfo wow fadeInUp" data-wow-delay="0.6s">
+                        {{ HTML::image('assets/imagesv2/contactlocation_img3.png') }}
+                        <ul>
+                        <li><a href="https://www.facebook.com/idoag" target="_blank">{{ HTML::image('assets/imagesv2/facebook.svg') }}
+                            <span>Facebook</span>  </a>  
+                        </li>
+                            <li><a href="http://instagram.com/social.idoag" target="_blank">{{ HTML::image('assets/imagesv2/instagram.svg') }}
+                            <span>Instagram</span> </a>
+                        </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-
-
-
-
-
-        </div>
-
-        <div class="contactus_from">
-            <div class="container_info">
+            <div class="container_info wow fadeInUp">
                 <h1>Drop us a message...</h1>
-                <p>We're always happy to hear from you. Just fill in the form below and we 'll get back to you as soon as we can. </p>
-
-
-                <div class="form-area contactus_fullform">
-                    {{ Form::open(['class' => 'form-group form-inline','id' => 'contact-form-validate']) }}
-                    <div class="form-group">
-                        {{Form::text('firstname',null,['placeholder' => 'First Name', 'required' => 'required'])}}
-                    </div>
-                    <div class="form-group">
-                        {{Form::text('lastname',null,['placeholder' => 'Last Name',  'required' => 'required'])}}
-                    </div>
-                    <div class="form-group">
-                        {{Form::text('email',null,['placeholder' => 'Email',  'required' => 'required'])}}
-                    </div>
-                    <div class="form-group">
-                        {{Form::text('phone',null,['placeholder' => 'Phone','required' => 'required'])}}
-                    </div>
-                    <div class="form-group form-textarea">
-                        {{Form::textarea('message',null,['placeholder' => 'Message' ])}} 
-                    </div>
-
-                    <div class="form-group grecaptcha_adjust">
-                        <div class="input-group">
-                            <div class="captha_input">
-                                <div class="g-recaptcha" id="captchaContainer"  data-theme="light" data-sitekey="6LdjgRgTAAAAAMp-Ztydlt8NpmG3761HKYeKxLT6" style="transform:scale(1.06);-webkit-transform:scale(1.06);transform-origin:0 0;-webkit-transform-origin:0 0;"></div>  
+                <p><span>We're always happy to hear from you. Just fill in the form below and we 'll get back to you as soon as we can.</span></p>
+                {{ Form::open(['class' => 'contactus_fullform','id' => 'contact-form-validate']) }}
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group custom_fd">
+                                {{Form::text('firstname',null,['placeholder' => 'First Name', 'required' => 'required', 'class'=>'form-control'])}}
                             </div>
                         </div>
-                    </div>
-
-                    <div class="form-inline"> 
-                        <div class="input-group">
-                            {{ Form::submit('Submit', array('class' => 'btn btn-primary text-center')) }}
+                        <div class="col-md-6">
+                            <div class="form-group custom_fd">
+                                {{Form::text('lastname',null,['placeholder' => 'Last Name',  'required' => 'required', 'class'=>'form-control'])}}
+                            </div>
                         </div>
-                    </div> 
-
-                    {{ Form::close() }}
-                </div>
-
-
+                        <div class="col-md-6">
+                            <div class="form-group custom_fd">
+                                {{Form::text('email',null,['placeholder' => 'Email',  'required' => 'required', 'class'=>'form-control'])}}
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group custom_fd">
+                                {{Form::text('phone',null,['placeholder' => 'Phone','required' => 'required', 'class'=>'form-control'])}}
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group custom_txt_aria">
+                                {{Form::textarea('message',null,['placeholder' => 'Message', 'class'=>'form-control' ])}} 
+                            </div>
+                        </div>
+                        <div class="modal-footer custom-btn sub_bttn">
+                            <button type="submit" class="btn-primary">Submit</button>
+                        </div>
+                    </div>
+                {{ Form::close() }}
             </div>
         </div>
-
-
     </div>
-</div>        <!-- Footer Starts here -->
-@include('layouts.footer')
-<!-- Footer Ends here -->
+    @include('layouts.footerv2')
 
 @stop
 
 @section('js')
 
 <script>
-
+    $('#brand_icon').owlCarousel( {
+        loop:true,
+        margin:10,
+        nav:false,
+        dots:false,
+        autoplay:true,
+        smartSpeed: 1000,
+        autoplayTimeout:4000,
+        responsive: {
+            1900: {
+                items: 5.4
+            },
+            1024: {
+                items: 5.4
+            },
+            667: {
+                items: 3.2
+            },
+            0: {
+                items: 3.2
+            }
+        }
+    });  
     $(document).ready(function () {
 
         $('#contact-form-validate').formValidation({

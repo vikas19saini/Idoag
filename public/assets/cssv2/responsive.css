@@ -1,0 +1,223 @@
+
+@media (max-width:1024px){
+.rates-sec p{padding: 0 15px;font: 400 1rem/1.6rem 'Poppins', sans-serif;}
+ .banner-txt h1 {font: 600 2rem/3.6rem 'Poppins', sans-serif;padding: 0;}   
+    .banner-txt p{padding: 0}   
+    .over-icon-rgt img{display: none}
+    .overlay-on-bg h2 span{display: inline}
+    .works-sec p{padding: 0}
+    .col-marchant h4 {font: 500 .9rem/1.8rem 'Poppins', sans-serif;}
+    .login-btn{padding:7px 35px;margin: 3px 10px;font: 400 .9rem/1.4rem 'Poppins', sans-serif}
+    .navbar-light .navbar-nav .nav-link {font: 300 .8rem/1.6rem 'Poppins', sans-serif; padding-right: 0; padding-left: 0;padding:10px 20px}
+    ul.diamond li::before{display: none}
+    ul.diamond li::after{display: none}
+    .overlay-on-bg ul li{padding: 0 0 20px 0}
+    .rates-bx h5 {font: 500 1.11rem/1.6rem 'Poppins', sans-serif;}
+    .inner-user i {padding: 8px 15px;}
+    .sel_2_left{padding:0 15px}
+    .right_1 img{padding: 0;float: right}
+    .active-crd{padding:7px 22px;font: 400 .9rem/1.4rem 'Poppins', sans-serif;margin:0}
+    .custom_wd {margin: 0 15px 20px 15px;max-width: 30%;}
+    .header-bg{padding: 0;height: 515px}
+    .about_band {padding: 50px 0 90px;}
+    .about_band small {padding:55px 0 6px;}
+    .about-bg-ht {height: 450px;}
+    .img_tx p {bottom: 3rem;padding: 0 30px;font-size: 15px;font-weight: 200;}
+}
+
+@media (max-width:823px){
+.right_1 img {padding-left: 0px;}
+.right_1 {padding: 20px 10px}  
+    .user_1 h5 {font: 500 .8rem/1rem 'Poppins', sans-serif;}
+    .user_1 p {font: 300 .7rem/1rem 'Poppins', sans-serif;}
+    .inner-user i {padding: 5px 5px;}
+    .about_brand {bottom: -2.6rem;}
+    
+}
+@media (min-width:768px) and (max-width:1024px) {
+.sec-5{margin: 0 0 20px}
+.col-marchant {padding: 45px 0;}
+.offer_trade{top: -7px}
+.services_bx {padding: 40px 0px;}
+.sec-5 p {font: 400 .8rem/1.4rem 'Poppins', sans-serif;}
+.get_in_button{bottom: 13px;padding: 3px 15px;font-size: 12.5px;}
+.col-marchant p {font: 300 0.75rem/1rem 'Poppins', sans-serif;}
+
+
+
+}
+    
+    
+@media (max-width:768px) {
+    .in_form{background: #00C3EB;margin-top: -2px;}
+    .overlay-on-bg{bottom: -5rem;}
+    .bg-light button{border: none}
+    .bg-light button:focus{outline:none;}
+    .bdr_img{padding: 0 6px}
+    .mrg_auto{text-align: center}
+    .sel_2_left {padding: 0 15px;}
+    .les_dis{padding: 70px 0 26px;}
+    .inner-offer_1 p {padding: 0 0 30px}
+    .inner-offer_1>small{display: block;margin: 0 0 30px}
+    .inner-offer_1 small button{padding: 10PX;width: 100%}
+    .inner-offer_1 .bttm_reved{margin: 0;}
+    .right_1{padding: 20px 12px}
+    .border_left {padding: 0 10px;}
+    .bg-light{display: none}
+    .mobile_menu{display: block}
+    .active-crd{padding: 2px 10px;font: 400 .8rem/1.4rem 'Poppins', sans-serif;}
+    .mob_veiw{display: block;    float: right;position: relative;right: 52px;}
+    .custom_wd {margin: 0 15px 20px 15px;max-width: 45%;}
+    .img_control img{margin: inherit}
+    .header-bg{height: auto}
+    .about_brand {bottom: -5.6rem;}
+    .baner_slider {padding: 100px 0 185px;}
+    .coming_sec{margin: 0 0 20px}
+    .img_tx p {bottom: 3rem;padding: 0 20px;font-size: 13px;font-weight: 200;}
+    
+}
+
+@media (max-width:767px) {
+.txt-btn-rght p span{display: inline}
+.header-bg{background-size:cover;height: auto;background: #00C3EB;}
+.banner-txt h1 {font: 400 1.25rem/2rem 'Poppins', sans-serif;padding: 0}
+.banner-txt p {font: 200 0.75rem/1.6rem 'Poppins', sans-serif;padding: 0;}
+.banner-txt p span{display: inline}
+.overlay-on-bg h2 {font:300 0.75rem/1.2rem 'Poppins', sans-serif;} 
+.works-sec p{padding: 0}
+.view-bttn{display: none}
+.inner-sec h3 {font: 600 1.1rem/2rem 'Poppins', sans-serif;}
+.inner-sec p {font: 300 0.75rem/1rem 'Poppins', sans-serif;}
+ .overlay-on-bg ul li{font: 300 0.75rem/1rem 'Poppins', sans-serif;}
+.works-sec{padding: 0 0 70px}
+.rates-sec h4 {font: 500 0.75rem/1rem 'Poppins', sans-serif;}
+.rates-sec h1 {font: 600 1.25rem/2rem 'Poppins', sans-serif;}
+.rates-sec {padding: 40px 0 20px;}
+.bttm-txt{display: none}
+.sec-5 h3 {font: 600 .9rem/1.4rem 'Poppins', sans-serif;}
+.sec-5 p {font: 300 .73rem/1rem 'Poppins', sans-serif;}
+.sec-5{margin: 0;background: #f8f6f6;border-radius: 10px;height: 236px;}
+.img_control img{padding: 0 0 20px;margin: inherit}
+.img_control{padding: 0 0 20px}
+.col-marchant {padding:40px 0;width: 100%;height: 175px;}
+.inner-ftr ul li{padding: 0 30px 0 0;}
+    .inner-ftr{display: none}
+    .show_social{display: block}
+    .ft-head h3 {margin: 0 0 10px;    font: 400 1rem/1.4rem 'Poppins', sans-serif;}
+    .footer-bg{padding: 0;}
+    .ft-head{padding:36px 0}
+    .policies{padding: 0 0 20px}
+    .modal-content {padding: .6rem;}
+    .inner-mobTx{padding:120px 0 0}
+    .img_mrg{display: block !important}
+    .desk_s{display: none}
+    .logo p{padding: 0}
+    
+    .sec_3_main {padding: 30px 15px 0;border: 1px solid #ccc;border-radius: 10px;}
+    .inner_bttm_mg h3{padding: 0}
+    
+    /****-----other letest-------****/
+    .top_right_hdTx h2{padding: 37px 0 0 0;font: 500 1.1rem/1.6rem 'Poppins', sans-serif;}
+     
+    
+    .banner-top-aria button {margin: 28px 0 44px}
+    .services_bx p span {display: inline;}
+    .sec_3 img {width: auto !important;float: left}
+    
+    .modal-custom-wd .modal-content {padding: 1.625rem 1rem 0;}
+    .custom_fd {margin-bottom: 1.6rem;}
+    .border_left {border-left: none;padding: 4rem 15px}
+    .custom_fd input {height: calc(2em + .75rem + 2px);}
+    .custom_wd {margin: 15px 10px;max-width: inherit;}
+    section .partner_with {padding:0 15px 30px}
+    .inner-ftr h4 {font: 200 1rem/1.8rem 'Poppins', sans-serif;margin: 0 0 10px;
+}
+    
+    .custom_field {border: none;display: inherit;}
+    .custom_field input{width: 100%; border: 1px solid #00C3EB;height: calc(2.3em + .5rem + 2px);margin:0;border-radius: 4px}
+    .main_works_sec{margin: 50px 0;}
+    .partner_sec{padding: 50px 0}
+    .modal-dialog {margin: 6.75rem auto;}
+    .con_left {margin:0 15px 30px 15px;flex:auto}
+    .about_band {padding: 39px 0 6px;}
+    .banner-top-aria h1 {font: 600 1.2rem/2.6rem 'Poppins', sans-serif;padding: 0}
+    .about_band small {padding: 45px 0 20px;}
+    .logo_img img{width: 70px}
+    .wraper_icon{margin: 0 0 30px}
+    .loern-btn{padding: 0}
+    .banner-txt h1 span{display: inline-block}
+    .how_works {margin:65px 0 0;padding: 65px 0;}
+    .how_works .inner-sec{padding:0}
+    .how_works .inner-sec p{padding: 0 0 30px}
+    .txt-btn-rght p{padding: 0 0 26px}
+    .carousel_user {padding: 70px 0 26px;}
+    .partner_with {margin:35px 0 0;}
+    .banner-top-aria {padding: 40px 0 0;}
+    .right-bx-tx{padding: 50px 0 0}
+    .right-bx-tx h2{padding: 0;font: 600 1.1rem/1.6rem 'Poppins', sans-serif;}
+    .offer_sec .sec_3_main{margin: 50px 0 0;}
+    .mob_veiw {right: 40px}
+    .about_brand {position: inherit;bottom: 0}
+    #brand_icon .owl-item img {width: 100%;}
+    .inner_contant_sec{padding: 0}
+    header {background:#fff;padding: 20px 0}
+    .offer_trade {position: inherit;bottom: 0;}
+    .get_in_button{padding: 3px 14px;font-size: 13px;bottom: 16px;}
+    .why_part {max-width: 100%;}
+    .inner_banner {padding: 100px 0 10px;}
+    .works-sec h3 {font: 500 .9rem/1.6rem 'Poppins', sans-serif !important;}
+    .col-marchant p {font: 300 0.75rem/1rem 'Poppins', sans-serif;}
+    .baner_slider {padding: 100px 0 0;}
+    .inner-ovrly{top: 50px}
+    .inner_bttm_mg{padding:70px 0 26px;}
+    .logo_img a {padding: 0 16px 0 0;}
+    .logo_img p {padding: 5px 0 0;font: 300 0.8rem/1rem 'Poppins', sans-serif;}
+    .mrg_auto img{width: 125px}
+    .test_desk{display: none}
+    .test_mob{display: block}
+    .coming_mob{display: block}
+    .coming_desk{display:none}
+    .inner-offer_1 h4 {font: 700 1.1rem/1.8rem 'Poppins', sans-serif;}
+    .fa-icons {position: relative;top: -7px;}
+    .shadow-effect button {opacity: 1;font: 200 .9rem/1.6rem 'Poppins', sans-serif;display: block;margin: 15px auto 0;background: #fff;}
+    [data-aos-delay] {
+    transition-delay: 0 !important;}
+    .fa-stack{width: auto !important;height: auto !important}
+    .myaccordion .btn{font-size: 13.5px}
+    .myaccordion .fa-stack {font-size: 12px;}
+    .myaccordion h3 {font: 300 18px/30px 'Poppins', sans-serif;}
+    .myaccordion{margin: 45px auto;}
+    .myaccordion h1 {font: 400 22px/30px 'Poppins', sans-serif;margin: 0 0 20px;}
+    .myaccordion h3{padding: 20px 0 16px;}
+    .myaccordion p{font-size: 12.5px;}
+    .card-body li{font-size: 12.5px}
+    .privacy_policy ol li strong{font-size: 13.5px}
+    .privacy_policy ol li{font-size: 12.5px}
+    .contact_locationinfo {margin: 25px 0;}
+    .contact_locationinfo img{width: 80px;height: 80px}
+    .contact_locationinfo p{padding: 0 50px}
+    .contact_locationinfo ul li img{width: 30px;height: 30px;}
+    .contact_locationinfo ul li span{font-size: 12.5px;}
+    .contactus_fullform {padding-top: 10px;}
+    .overlay-on-bg{position:relative;bottom: 0;padding: 25px;}
+    .testimonial_mob{display:block}
+    .testimonial_desk{display: none}
+}
+
+@media (max-width:414px){
+.custom_sm_bt{margin: 0 auto}
+.custom_txt_aria textarea{padding: 12px;height: 100px;}
+.services_bx { padding: 40px 0;}
+.coming_sec{margin: 0}
+.img_tx p {bottom: 1.6rem;}
+.calim_bttn{padding: 7px 30px;font: 200 .9rem/1rem 'Poppins', sans-serif;}
+}
+
+@media (max-width:320px){
+.inner-ftr ul li {padding: 0 27px 0 0;}
+.inner-user i {padding: 10px 4px;}
+.right_1 img{padding-left: 4px;}
+.modal_hd h3 {font: 600 1rem/2rem 'Poppins', sans-serif;}    
+    
+    
+}
