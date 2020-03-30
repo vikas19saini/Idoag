@@ -10,6 +10,7 @@
         {{ HTML::style('assets/cssv2/bootstrap.min.css') }}
         {{ HTML::style('assets/cssv2/style.css') }}
         {{ HTML::style('assets/cssv2/responsive.css') }}
+        {{ HTML::style('assets/cssv2/owl.carousel.css') }}
         {{ HTML::style('assets/cssv2/animate.min.css') }} 
         {{ HTML::style('assets/plugins/formValidation/formValidation.min.css') }}     
         
@@ -74,18 +75,17 @@
             @yield('content')
 
             @include('partials.login')
+            @include('partials.getInTouch')
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+         
+        {{ HTML::script('assets/plugins/formValidation/formValidation.min.js') }}        
+        {{ HTML::script('assets/plugins/formValidation/bootstrap.min.js') }}
         {{ HTML::script('assets/jsv2/bootstrap.min.js') }}
         {{ HTML::script('assets/jsv2/owl.carousel.js') }}
         {{ HTML::script('assets/jsv2/custom.js') }}
-        {{ HTML::script('assets/jsv2/wow.js') }}       
-        {{ HTML::script('assets/js/jquery.mCustomScrollbar.js') }}
-        {{ HTML::script('assets/js/webslidemenu.js') }}
-        {{ HTML::script('assets/js/jquery.bxslider.js') }}      
-        {{ HTML::script('assets/plugins/formValidation/formValidation.min.js') }}        
-        {{ HTML::script('assets/plugins/formValidation/bootstrap.min.js') }}
-   
+        {{ HTML::script('assets/jsv2/wow.js') }}
+        
         @yield('js')
 
         

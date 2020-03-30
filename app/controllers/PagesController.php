@@ -175,7 +175,8 @@ class PagesController extends \BaseController {
     // About Page View
     public function getAbout() {
         $page = $this->page->find(1);
-        return View::make('pages.about')->withPage($page);
+        $brands = $this->brand->getAll();
+        return View::make('pages.about')->withPage($page)->withBrands($brands);
     }
 
     // Services Page View
