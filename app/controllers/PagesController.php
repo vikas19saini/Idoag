@@ -126,7 +126,9 @@ class PagesController extends \BaseController {
         $press = $this->press->getActive();
 
         $page = $this->page->find(6);
+        $brands = $this->brand->getAll();
 
+        $press_all = Press::where('activated','=', 1)->orderBy('created_at','desc')->get(); //echo"<pre>";print_r($press);exit();
         return View::make('pages.index')
                         ->withMainBannerSliders($main_banner_sliders)
                         ->withSecondBannerSliders($second_banner_sliders)
@@ -134,7 +136,7 @@ class PagesController extends \BaseController {
                         //->withThirdBannerSlidersImages($third_banner_sliders_images)
                         ->withFourthBannerSliders($fourth_banner_sliders)
                         ->withFifthBannerSliders($fifth_banner_sliders)
-                        ->withPress($press)->withPage($page);
+                        ->withPress($press)->withPage($page)->withBrands($brands)->withTestimonials($press_all);
     }
 
     // FAQ Page View

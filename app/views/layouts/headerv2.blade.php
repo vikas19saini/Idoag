@@ -3,7 +3,20 @@
         <div class="row inner-head">
             <div class="col-md-3 col-8">
                 <div class="logo_img">
-                    <a href="{{ URL::route('home') }}">
+                @if(isset($loggedin_user) && $loggedin_user && $user_group == 'Students')
+                        <a href="{{ URL::route('student_dashboard')}}">
+                            @elseif(isset($loggedin_user) && $loggedin_user && $user_group == 'Admins')
+                                <a href="{{URL::route('admin_dashboard')}}">
+                                    @elseif(isset($loggedin_user) && $loggedin_user && $user_group == 'Brands')
+                                        <a href="{{URL::route('brand_profile',array(getBrandSlug($loggedin_user->brand_id)))}}">
+                                            @elseif(isset($loggedin_user) && $loggedin_user && $user_group == 'Institutions')
+                                                <a href="{{URL::route('institution_profile',array(getInstitutionSlug($loggedin_user->institution_id)))}}">
+
+                                                    @else
+
+                                                        <a href="{{ URL::route('home') }}">
+
+                                                            @endif
                         {{ HTML::image('assets/imagesv2/logo.png', 'Logo', array('class' => 'img-fluid')) }}
                     </a>
                     <!-- <p>Campus offers</p> -->
@@ -16,16 +29,26 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Campus offers</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Corporate offers</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Lost card</a>
-                        </li>
+                            @if(isset($loggedin_user) && $loggedin_user && $user_group == 'Students' )
+                            <li class="{{ (Request::is('offers') ? 'nav-item active' : 'nav-item') }}">
+                                <a class="nav-link" href="{{ URL::route('offers') }}">{{ ($loggedin_user->user_type == 'student') ? 'CAMPUS OFFERS' : 'CORPORATE OFFERS' }}</a>
+                            </li>
+                            @else
+                            <li class="{{ (Request::is('offers') ? 'nav-item active' : 'nav-item') }}">
+                                <a class="nav-link" href="{{ URL::route('offers') }}">Campus offers</a>
+                            </li>
+                            <li class="{{ (Request::is('offers') ? 'nav-item active' : 'nav-item') }}">
+                                <a class="nav-link" href="{{ URL::route('offers') }}">Corporate offers</a>
+                            </li>
+                            @endif
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{Url::route('lostcard')}}" target="_blank">Lost card</a>
+                            </li>
+                            @if(isset($loggedin_user) && $loggedin_user)
+                            <li><a  href="{{Url::route('logout')}}"><button type="button" class="login-btn" >Logout</button></a></li>
+                            @else
                             <li><button type="button" class="login-btn" data-toggle="modal" data-target="#popUpWindow">Login</button></li>
+                            @endif
                         </ul>
                     </div>
                 </nav> 
@@ -36,9 +59,9 @@
                         <span></span>
                         <span></span>
                         <ul id="menu">
-                            <a href="#"><li>Campus offers</li></a>
-                            <a href="#"><li>Corporate offers</li></a>
-                            <a href="#"><li>Lost card</li></a>
+                            <a href="{{ URL::route('offers') }}"><li>Campus offers</li></a>
+                            <a href="{{ URL::route('offers') }}"><li>Corporate offers</li></a>
+                            <a href="{{Url::route('lostcard')}}"><li>Lost card</li></a>
                             <a href="#" data-toggle="modal" data-target="#popUpWindow"><li>Login</li></a>
                         </ul>
                     </div>
