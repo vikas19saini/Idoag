@@ -127,6 +127,9 @@ class PagesController extends \BaseController {
 
         $page = $this->page->find(6);
         $brands = $this->brand->getAll();
+		
+		$offers_new = DB::table('posts')->select('posts.*', 'brands.name AS bname', 'brands.id AS brand_id')->join('brands', 'brands.id', '=', 'posts.brand_id')->where('posts.type', 'offer')->where('posts.status', '1')->where('posts.end_date', '>', date('Y-m-d'))->orderBy('posts.updated_at', 'desc')->take(12)->get();
+
 
         $press_all = Press::where('activated','=', 1)->orderBy('created_at','desc')->get(); //echo"<pre>";print_r($press);exit();
         return View::make('pages.index')
@@ -136,6 +139,7 @@ class PagesController extends \BaseController {
                         //->withThirdBannerSlidersImages($third_banner_sliders_images)
                         ->withFourthBannerSliders($fourth_banner_sliders)
                         ->withFifthBannerSliders($fifth_banner_sliders)
+						->withOffersNew($offers_new)
                         ->withPress($press)->withPage($page)->withBrands($brands)->withTestimonials($press_all);
     }
 
@@ -222,18 +226,21 @@ class PagesController extends \BaseController {
 
     public function postEnquiry() {
         $input = Input::all();
-
         try {
             $this->enquiryForm->validate($input);
         } catch (\Laracasts\Validation\FormValidationException $e) {
 
             return Redirect::back()->withInput()->withErrors($e->getErrors());
         }
-
-        $this->enquiry->create($input);
-
-        return Redirect::route('contactus')->withFlashMessage('We have received your query and will get back to you as soon as possible.');
-    }
+		$this->enquiry->create($input);
+		
+		if(isset($input['pageurl']) && !empty($input['pageurl'])){
+			return Redirect::route('home')->withFlashMessage('We have received your query and will get back to you as soon as possible.');
+		}else{
+			return Redirect::route('contactus')->withFlashMessage('We have received your query and will get back to you as soon as possible.');
+		}
+		
+	}
 
     public function postHelpRequest() {
         $input = Input::all();
@@ -331,13 +338,10 @@ class PagesController extends \BaseController {
     }
 
     public function validateCardAndUserType() {
-        $card_number = Input::get('card_number');
-
-        $user = User::where('card_number', $card_number)->first();
-
-        $student_data = Student::join('institutions', 'institutions.id', '=', 'student_data.college_id')->where('student_data.card_number', $card_number)->get();
-
-        if ($user) {
+		$card_number = Input::get('card_number');
+		$user = User::where('card_number', $card_number)->first();
+		$student_data = Student::join('institutions', 'institutions.id', '=', 'student_data.college_id')->where('student_data.card_number', $card_number)->get();
+		if ($user) {
             if ($user->activated == 0)
                 return json_encode(array('valid' => true, 'new_message' => 'You have activated your card but not verified the email-id. Click on link that was sent to you on this email :' . $user['email']));
             else

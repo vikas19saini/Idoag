@@ -15,15 +15,15 @@
                     </div>
                     <div class="form-group inner-lok">
                         <span><i class="fa fa-lock" aria-hidden="true"></i></span>
-                        {{ Form::password('password', ['placeholder' => 'Password', 'required' => 'required', 'autocomplete' => 'off','class'=>'form-control']) }}
+                        {{ Form::password('password', ['id'=>'myInput','placeholder' => 'Password', 'required' => 'required', 'autocomplete' => 'off','class'=>'form-control']) }}
                         {{ errors_for('password', $errors) }}
                         <i onclick="myFunction()" class="fa fa-eye-slash" aria-hidden="true"></i> 
                     </div>
-                    <div class="custom-control custom-checkbox mb-3 mb-1">
+                    <!--<div class="custom-control custom-checkbox mb-3 mb-1">
                         <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
                         <label class="custom-control-label rem-chek" for="customCheck">Remember me</label>
                     <div class="forgot-txt">Forgot Password?</div>
-                    </div>
+                    </div>-->
                 
             </div>
 
@@ -33,7 +33,7 @@
               
             </div>
             {{ Form::close() }}
-            <div class="modal-ftr"><p>Doesn’t have an account? Get subscription</p></div>
+            <!--<div class="modal-ftr"><p>Doesn’t have an account? Get subscription</p></div>-->
         </div>
     </div>
 </div>

@@ -1,291 +1,298 @@
+@extends('layouts.defaultv2')
 
-@extends('layouts.default')
+@section('title','IDOAG: Save, Create, Connect | Student Discount Card, India | Internships | Opportunities |Events | Brand Connect  | Institute Connect |idoag.com')
 
-@section('title','Student Home Page |idoag.com')
 @section('metatags')
-    <meta name="keywords" content="Student Home Page |idoag.com" />
-    <meta name="description" content="Student Home Page |idoag.com" />    
+<meta name="keywords" content="IDOAG: Save, Create, Connect | Student Discount Card, India | Internships | Opportunities |Events | Brand Connect  | Institute Connect |idoag.com" />
+<meta name="description" content="IDOAG: Save, Create, Connect | Student Discount Card, India | Internships | Opportunities |Events | Brand Connect  | Institute Connect |idoag.com" />
+
+<meta property="og:description" content="Offers & Discounts for Students |idoag.com">
+<meta property="og:image" content="http://idoag.com/assets/images/connectstudents_bg.jpg">
+<meta property="og:title" content="Offers & Discounts for Students |idoag.com">
+<meta property="og:url" content="{{ Request::fullUrl(); }}">
+<meta property="fb:app_id" content="1664606373750912">
+<meta property="og:type" content="idoagconnect:website">
+<meta property="twitter:card" content="summary">
+<meta property="twitter:creator" content="idoag">
+<meta property="twitter:domain" content="idoag.com">
+<meta property="twitter:site" content="idoag.com">
 @stop
+
 @section('css')
-    {{ HTML::style('assets/css/jquery-ui.css') }}    
-    {{ HTML::style('assets/css/owl.carousel.css') }}    
-    {{ HTML::style('assets/css/owl.theme.css') }}
+{{ HTML::style('assets/plugins/datepicker/datepicker3.css') }}    
+{{ HTML::style('assets/plugins/pikaday/pikaday.css') }}
+
 @stop
-@section('classtitle')
-dashboard_page
-@stop
+
+
 @section('content')
-  
-    <!-- Content Start Here -->
-  	<div class="wrapper">
+@include('layouts.headerv2')
 
-        <!-- Header Starts here -->
-        @include('layouts.header')                  
-        <!-- Header Ends here -->
-        
-        <div class="mobile_btmenu ">
-            <ul>
-                <li>
-                    <a href="{{ URL::route('studentupdates')}}" >
-                        {{ HTML::image('assets/images/mobilebt_recent.png')}}
-                        <span>Recent<br/> Updates</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="{{ URL::route('studentoffers')}}">
-                        {{ HTML::image('assets/images/mobilebt_recently.png')}}
-                        <span>Recently<br/> Viewed Offers</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="{{ URL::route('student_internships')}}">
-                        {{ HTML::image('assets/images/mobilebt_internship.png')}}
-                        <span>My<br/> Internships</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="{{URL::route('institution_profile',getInstitutionSlug($student_details->institution_id))}}">
-                        {{ HTML::image('assets/images/mobilebt_institutions.png')}}
-                        <span>My<br/> Institute</span>
-                    </a>
-                </li>
-            </ul>        
+        <!--start by dpk -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7 sec_1">
+				{{ HTML::image(getImage('uploads/offer_mob.png','noimage.jpg',''),'',array('class' => "img-fluid"))}}
+				<div class="img_tx"><a href="#"><p>View Details</p></a></div>
+			</div>
+
+			<div class="col-md-5 sel_2_left">
+			<!-- TESTIMONIALS -->
+				<section class="test_mob">
+					<div class="letest_dis inner-sec les_dis wow fadeInUp">
+						<h3>Best Deals </h3>  
+						<p>Get us hands on our Best Offers from this month.</p>
+					</div>
+				<div id="testimonials_mob" class="img_custom owl-carousel">
+					@foreach($offers_new as $offer)
+						<div class="item wow fadeInUp">
+							<div class="shadow-effect">
+								{{ HTML::image(getImage('uploads/photos/',$offer->image,'noimage.jpg'),'')}}
+								<button><a href="other-letest.html">Claim Now</a></button>
+							</div>
+						</div>
+					@endforeach
+					
+					<!--END OF TESTIMONIAL 5 -->
+				</div>
+			</section>
+			<div class="right-bx-tx">
+				<h2>Trending Discounts</h2>
+				@if(count($trending_offers) > 0)
+					@foreach($trending_offers as $offer)
+						@if(isset($loggedin_user) && $loggedin_user->brand_id != $offer->brand_id &&  $offer->start_date> date('Y-m-d'))
+							@else
+							<div class="right_1 wow fadeInUp">
+								<div class="right_in-tx">
+								<!--<h5>80% off</h5> --> 
+								<!--<p>Myntra Big Clearance Sale - <span>50% to 80% OFF</span></p>-->
+								<!--<a href="#">View Details</a>-->
+								<h5>80% off</h5>
+								<p>{{ShortenText($offer->short_description,100)}}</p>
+								<a @if(Sentry::check())  href="{{ URL::route('offer_details',array('slug1' => getBrandSlug($offer->brand_id), 'slug2' => $offer->slug ))}}" @else
+                                            href="#" data-toggle="modal"  data-target="#login_required" @endif >View Details</a>
+								</div>
+								{{ HTML::image(getImage('uploads/brands/',getBrandLogo($offer->brand_id),'noimage.jpg'),'')}}
+							</div>
+						@endif
+					@endforeach
+                    @else
+						<div class="right_1 wow fadeInUp">
+							<div class="right_in-tx">
+								<p>No Data Found</p>
+							</div>
+						</div>
+				@endif
+			</div>
+		
+		</div>
         </div>
-        
-        <div class='row'>
-        
-        <!-- Desktop slider -->
-        
-         <div class="carousel fade-carousel slide carousel-fade hidden-sm hidden-xs" data-ride="carousel" data-interval="4000" id="bs-carousel">
-            <div class="carousel-inner piislider">			   
-		<?php
-                $counter = 0;
-                $indictors = '';
-                ?>
-                @foreach($sliders as $slider)
-                <div class="item slides @if($counter == 0) active bg_div_use @endif" style="background-size: cover;background-repeat: no-repeat;background-image: url('{{URL::to('/')}}/uploads/{{ $slider->image_name }}');">
-                    <div class="hero">
-                        <div class="bg_slider_content bounceInLeft">
-                           <h3></h3>
-                           <p></p>
-                        </div>
-                    </div>
-                </div>
-                <?php 
-                
-                if($counter == 0)
-                    $indictors .= '<li data-target="#bs-carousel" data-slide-to="' . $counter . '" class="active"></li>';
-                else
-                    $indictors .= '<li data-target="#bs-carousel" data-slide-to="' . $counter . '"></li>';
-                        
-                ?>
-                <?php $counter++ ?>
-                @endforeach               
-            </div>
-            <ol class="carousel-indicators">
-               {{ $indictors }}
-            </ol>
-         </div>
-        
-        <!-- Desktop slider end -->
-        
-        
-        <!-- Mobile Slider -->
-        
-        <div id="myCarousel" class="carousel slide   hidden-lg hidden-md" data-ride="carousel">                   
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
-                        
-                        
-                        <?php
-                $counter = 0;
-                $indictors = '';
-                ?>
-                @foreach($sliders as $slider)
-                <div class="item @if($counter == 0) active bg_div_use @endif div_wso">
-                            <img src="{{URL::to('/')}}/uploads/{{ $slider->mobile_image }}" class="img-responsive" style="width:100%; height:100vh">
-                            <div class='bg_slider_content bounceInLeft'>
-                                <h3></h3>
-                                <p></p>
-                            </div>
-                        </div>
-                <?php 
-                
-                if($counter == 0)
-                    $indictors .= '<li data-target="#myCarousel" data-slide-to="' . $counter . '" class="active"></li>';
-                else
-                    $indictors .= '<li data-target="#myCarousel" data-slide-to="' . $counter . '"></li>';
-                        
-                ?>
-                <?php $counter++ ?>
-                @endforeach               
-            </div>            
-                    <!-- Left and right controls -->
-                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                    
-                     <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        {{ $indictors }}
-                    </ol>                    
-                </div>
-            </div>
-        
-        
-      <div class='container'>
-         <h1 class='div_in iwq'>DISCOUNTS</h1>
-      </div>      
-        <div class='row'>
-            <div class='btn_latest'>
-               <button class='clearfix'>Latest</button>
-            </div>
-            <div class="col-lg-9 col-md-9 col-xs-12 col-sm-12">
-                <div class="bg_sonu row_full">
-                <div class="inner_div_useonly wor_new less_pad" id="display_offers" style="background:inherit">
-                    @foreach($offers_new as $offer)
-                    <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6">
-                        <div class="item_offer" style="position:relative">
-                           <div class='inner_div_useonly' style="position:relative">
-                               <a href="{{ URL::route('offer_details',array('slug1' => getBrandSlug($offer->brand_id), 'slug2' => $offer->slug ))}}">
-                                    <div class='moreinner'>
-                                          {{ HTML::image(getImage('uploads/photos/M_',$offer->image,'noimage.jpg'),'', array('class' => 'brand_img'))}}
-                                          <h1>{{ HTML::image(getImage('uploads/brands/',getBrandLogo($offer->brand_id),'noimage.jpg'),'')}}</h1>
-                                    </div>
-                               </a>
-                               <a href="{{ URL::route('offer_details',array('slug1' => getBrandSlug($offer->brand_id), 'slug2' => $offer->slug ))}}">
-                                    <div class="offers_min">
-                                          <p>{{$offer->name}}</p>
-                                    </div>
-                              </a>
-                              <div class='clearfix'></div>
-                              <div class='uicon_latest' style="position:relative">
-                                 <i class="fa likeicons @if(checkLikes($offer->id)) fa-heart @else fa-heart-o  @endif count_likes id_{{$offer->id}}" id="{{$offer->id}}"></i>
-                                 <i class="fa fa-share-alt share_social"></i>
-                                 <div  class="addthis_sharing_toolbox">
-                                    <span style="display:inline" class="share_fb"><a class="share_fb_db" target="_blank" onclick="FBShareOpDB('{{$offer->image}}','{{$offer->short_description}}','{{$offer->name}}','{{ URL::route('photo_details',array('slug1' => getBrandSlug($offer->brand_id), 'slug2' => $offer->slug ))}}')"><i class="fa fa-facebook"></i></a></span>
-                                    <span style="display:inline" class="share_tw"><a href="https://twitter.com/home?status={{$offer->name}} - {{ URL::route('photo_details',array('slug1' => getBrandSlug($offer->brand_id), 'slug2' => $offer->slug ))}} via idoagcard"><i class="fa fa-twitter"></i></a></span>
-                                    <span style="display:inline" class="share_pin"><a href="https://pinterest.com/pin/create/button/?url={{URL::route('photo_details',array('slug1' => getBrandSlug($offer->brand_id), 'slug2' => $offer->slug ))}}&media=http://idoag.com/uploads/photos/M_{{$offer->image}}&description={{ $offer->name }} "><i class="fa fa-pinterest"></i></a></span>
-                                    <span style="display:inline" class="share_gplus"><a href="https://plus.google.com/share?url={{ URL::route('photo_details',array('slug1' => getBrandSlug($offer->brand_id), 'slug2' => $offer->slug ))}}"><i class="fa fa-google-plus"></i></a></span>
-                                </div>
-                              </div>                          
-                           </div>                       
-                        </div>
-                    </div>
-                    @endforeach
-                </div>
-            </div>
-            </div>
-            <div class="col-lg-3 col-md-3 hidden-xs hidden-sm dashbord_right">
-                <div class="row_divdfs row_divdfs_offer text-center">
-                    <div class="dirow">
-                        <h1>TRENDING DISCOUNTS</h1>
-                    </div>
-                    @if(count($trending_offers) > 0)
-                                @foreach($trending_offers as $offer)
-                                    @if(isset($loggedin_user) && $loggedin_user->brand_id != $offer->brand_id &&  $offer->start_date> date('Y-m-d'))
-                                    @else
-                                        <div class='row_xa_offer'>
-                                            <a   @if(Sentry::check())  href="{{ URL::route('offer_details',array('slug1' => getBrandSlug($offer->brand_id), 'slug2' => $offer->slug ))}}" @else
-                                            href="#" data-toggle="modal"  data-target="#login_required" @endif >
-                                                {{ HTML::image(getImage('uploads/brands/',getBrandLogo($offer->brand_id),'noimage.jpg'),'')}}                                        
-                                                <p>{{ShortenText($offer->short_description,100)}}</p>
-                                            </a>    
-                                        </div>
-                                    @endif
-                                @endforeach
-                            @else
-                                <div class='row_xa_offer'>                                        
-                                    <p>No record found..</p>
-                                </div>
-                            @endif
-                </div>
-            </div>
-      </div>      
-      <!--<div class='row margin_div_e'>
-         <div class='btn_latest'>
-            <button class='clearfix'>Latest</button>
-         </div>
-         <div class='inner_navagation row'>
-            <div id="owl-demo_a" class="owl-carousel owl-theme">
-               @foreach($internships_new as $internship)
-               <?php $p_type = getPostType($internship->id)?>
-               <div class="item" style="position: relative">
-                  <div class='inner_div_useonly'>
-                      <div onclick='window.location.href="{{ URL::route('internship_details',array('slug1' => getBrandSlug($internship->brand_id), 'slug2' => $internship->slug ))}}"'>
-                     <div class='class_spamll'>
-                        <p class='pull-left'><i class="fas fa-map-marker-alt"></i> {{$internship->city}}</p>
-                        <h1 class='pull-right' @if($p_type == 'internship') style="color:#4281aa" @elseif($p_type == 'ambassador') style="color:#4f6988" @else style="color:#e95f6f " @endif>{{strtoupper($p_type)}}</h1>
-                     </div>
-                     <div class='ordi eadfdf' onclick='window.location.href="{{ URL::route('internship_details',array('slug1' => getBrandSlug($internship->brand_id), 'slug2' => $internship->slug ))}}"'>
-                         {{ HTML::image(getImage('uploads/brands/',getBrandLogo($internship->brand_id),'noimage.jpg'),'')}}                        
-                     </div>
-                     <div class='clearfix'></div>
-                     <div class='secd cesagrer'>
-                        <div class='col-lg-6 col-sm-6 col-md-6 col-xs-6'>
-                           <ul>
-                               @if($p_type != 'internship')<li>&nbsp;</li>@endif
-                              <li>
-                                 <a href='#'>Cat: {{substr($internship->category, 0, 15)}}</a>   
-                              </li>
-                              <li>
-                                 <a href='#'>Start : {{$internship->start_date}}</a>   
-                              </li>
-                              @if($p_type == 'internship')
-                                <li>
-                                   <a href='#'>Duration : {{getMonths($internship->start_date, $internship->end_date)}}</a>   
-                                </li>
-                              @endif
-                           </ul>
-                        </div>                         
-                        <div class='col-lg-6 col-sm-6 col-md-6 col-xs-6'>
-                           <ul class='pull-right'>
-                               @if($p_type != 'internship')<li>&nbsp;</li>@endif
-                              <li>
-                                 <a href='#'>Apply By : {{$internship->application_date}}</a>   
-                              </li>
-                              <li>
-                                 <a href='#'>@if($p_type == 'internship') Stipened: @else Salary: @endif  <i class="fas fa-rupee-sign"></i> {{$internship->amount}}/month</a>   
-                              </li>
-                           </ul>
-                        </div>
-                     </div>
-                      </div>
-                     <div class='clearfix'></div>
-                     <div class='bg_ground div_height_bg_use' @if($p_type == 'internship') style="background:#4281aa" @elseif($p_type == 'ambassador') style="background:#4f6988" @else style="background:#e95f6f " @endif>
-                         <a href="{{ URL::route('internship_details',array('slug1' => getBrandSlug($internship->brand_id), 'slug2' => $internship->slug ))}}"><p class=''>{{$internship->name}}</p></a>
-                        <div class='uicon_latest lates_updates'>
-                           <div class='clearfix'></div>
-                           <i class="fa likeicons @if(checkLikes($internship->id)) fa-heart @else fa-heart-o  @endif count_likes id_{{$internship->id}}" id="{{$internship->id}}"></i>
-                           <i class="fa fa-share-alt share_social"></i>
-                           <div  class="addthis_sharing_toolbox">
-                                <span style="display:inline" class="share_fb"><a class="share_fb_db" target="_blank" onclick="FBShareOpDB('{{$internship->image}}','{{$internship->short_description}}','{{$internship->name}}','{{ URL::route('photo_details',array('slug1' => getBrandSlug($internship->brand_id), 'slug2' => $internship->slug ))}}')"><i class="fa fa-facebook"></i></a></span>
-                                <span style="display:inline" class="share_tw"><a href="https://twitter.com/home?status={{$internship->name}} - {{ URL::route('photo_details',array('slug1' => getBrandSlug($internship->brand_id), 'slug2' => $internship->slug ))}} via idoagcard"><i class="fa fa-twitter"></i></a></span>
-                                <span style="display:inline" class="share_pin"><a href="https://pinterest.com/pin/create/button/?url={{URL::route('photo_details',array('slug1' => getBrandSlug($internship->brand_id), 'slug2' => $internship->slug ))}}&media=http://idoag.com/uploads/photos/M_{{$internship->image}}&description={{ $internship->name }} "><i class="fa fa-pinterest"></i></a></span>
-                                <span style="display:inline" class="share_gplus"><a href="https://plus.google.com/share?url={{ URL::route('photo_details',array('slug1' => getBrandSlug($internship->brand_id), 'slug2' => $internship->slug ))}}"><i class="fa fa-google-plus"></i></a></span>
-                            </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               @endforeach
-            </div>
-         </div>
-         <div class='clearfix'></div>
-         <div class='fgs'>
-             <button class='clearfix o pull-right'><a style="color:inherit" href='{{route('internships')}}'>View All</a></button>
-         </div>
-      </div>
-    </div>-->
+    </div>
+	
+		<!----------------->
+		
+	<!-- TESTIMONIALS -->
+	<section class="test_desk">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="letest_dis inner-sec les_dis wow fadeInUp">
+						<h3>Best Deals </h3>  
+						<p>Get us hands on our Best Offers from this month.</p>
+					</div>
+					<div id="customers-testimonials" class="img_custom owl-carousel wow fadeInRight">
+					
+						@foreach($offers_new as $offer)
+						<div class="item wow fadeInUp">
+							<div class="shadow-effect">
+								{{ HTML::image(getImage('uploads/photos/',$offer->image,'noimage.jpg'),'', array('width' => 271, 'height' => 309))}}
+								<button>
+								<a @if(Sentry::check())  href="{{ URL::route('offer_details',array('slug1' => getBrandSlug($offer->brand_id), 'slug2' => $offer->slug ))}}" @else
+                                            href="#" data-toggle="modal"  data-target="#login_required" @endif >Claim Now</a>
+								</button>
+							</div>
+						</div>
+						@endforeach
+						<!--<div class="item wow fadeInUp" data-wow-delay="0.3s">
+						  <div class="shadow-effect">
+							  <img src="images/offer-picture_1.png" alt="">
+							  <button><a href="other-letest.html">Claim Now</a></button>
+						  </div>
+						</div>
+						  
+						  <div class="item wow fadeInUp" data-wow-delay="0.6s">
+						  <div class="shadow-effect">
+							<img src="images/offer-picture_2.png" alt="">
+							<button><a href="other-letest.html">Claim Now</a></button>
+						  </div>
+						</div>
 
-    <!-- Footer Starts here-->
-    @include('layouts.footer')
-    <!-- Footer Ends here -->
+						<div class="item wow fadeInUp" data-wow-delay="0.9s">
+						  <div class="shadow-effect">
+							<img src="images/offer-picture_1.png" alt="">
+							
+							  <button><a href="other-letest.html">Claim Now</a></button>
+						  </div>
+						</div>
+						-->
+						
+						
+						
+						
+						<!--END OF TESTIMONIAL 5 -->
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+	<section>
+    <div class="container">
+    <div class="letest_dis inner-sec inner_bttm_mg wow fadeInUp">
+    <h3>Coming Soon offers</h3>  
+    <p>Stay tuned for all the all new offers press the like button to notify when this is like ...</p>
+    </div>
+    <div class="coming_desk">
+    <div class="row">
+    <div class="col-lg-3 col-sm-6">
+    <div class="coming_sec sec_3_main wow fadeInUp">
+    <div class="sec_3"><img src="images/Image-118.png" alt=""></div>
+     <div class="fa-icons">
+    <i class="fa fa-heart" aria-hidden="true"></i>
+    <i class="fa fa-upload" aria-hidden="true"></i>    
+    </div>   
+    <div class="inner-offer_1"><h4>80% Off</h4>
+    <p>Galaxy Tab A7 - On Exclusive Campus price</p> 
+    <small>Start from Till Feb 12, 2019</small>
+    </div>
+    </div>
+    </div>  
+        
+    <div class="col-lg-3 col-sm-6">
+    <div class="coming_sec sec_3_main wow fadeInUp" data-wow-delay="0.3s">
+    <div class="sec_3"><img src="images/Image-118.png" alt=""></div>
+     <div class="fa-icons">
+    <i class="fa fa-heart" aria-hidden="true"></i>
+    <i class="fa fa-upload" aria-hidden="true"></i>    
+    </div>   
+    <div class="inner-offer_1"><h4>80% Off</h4>
+    <p>Galaxy Tab A7 - On Exclusive Campus price</p> 
+    <small>Start from Till Feb 16, 2019</small>
+    </div>
+    </div>
+    </div>
+        
+    <div class="col-lg-3 col-sm-6">
+    <div class="coming_sec sec_3_main wow fadeInUp" data-wow-delay="0.6s">
+    <div class="sec_3"><img src="images/img_1.png" alt=""></div>
+     <div class="fa-icons">
+    <i class="fa fa-heart" aria-hidden="true"></i>
+    <i class="fa fa-upload" aria-hidden="true"></i>    
+    </div>   
+    <div class="inner-offer_1 change_clr"><h4>80% Off</h4>
+    <p>Galaxy Tab A7 - On Exclusive Campus price</p> 
+     <small>Start from Till Feb 18, 2019</small>
+    </div>
+    </div>
+    </div>
+        
+    <div class="col-lg-3 col-sm-6">
+    <div class="coming_sec sec_3_main wow fadeInUp" data-wow-delay="0.9s">
+    <div class="sec_3"><img src="images/img_1.png" alt=""></div>
+     <div class="fa-icons">
+    <i class="fa fa-heart" aria-hidden="true"></i>
+    <i class="fa fa-upload" aria-hidden="true"></i>    
+    </div>   
+    <div class="inner-offer_1 change_clr"><h4>80% Off</h4>
+    <p>Galaxy Tab A7 - On Exclusive Campus price</p> 
+     <small>Start from Till Feb 22, 2019</small>
+    </div>
+    </div>
+    </div>
+    </div> 
+    </div>
+        
+    <div class="coming_mob">
+    <div class="row">
+        <div class="col-md-12">
+    <div id="offer_letest" class="owl-carousel">
+    <div class="item wow fadeInUp">
+      <div class="coming_sec sec_3_main">
+    <div class="sec_3"><img src="images/Image-118.png" alt=""></div>
+     <div class="fa-icons">
+    <i class="fa fa-heart" aria-hidden="true"></i>
+    <i class="fa fa-upload" aria-hidden="true"></i>    
+    </div>   
+    <div class="inner-offer_1"><h4>80% Off</h4>
+    <p>Galaxy Tab A7 - On Exclusive Campus price</p> 
+    <small>Start from Till Feb 12, 2019</small>
+    </div>
+    </div>  
+    </div>
+        <div class="item wow fadeInUp" data-wow-delay="0.3s">
+        <div class="coming_sec sec_3_main">
+    <div class="sec_3"><img src="images/Image-118.png" alt=""></div>
+     <div class="fa-icons">
+    <i class="fa fa-heart" aria-hidden="true"></i>
+    <i class="fa fa-upload" aria-hidden="true"></i>    
+    </div>   
+    <div class="inner-offer_1"><h4>80% Off</h4>
+    <p>Galaxy Tab A7 - On Exclusive Campus price</p> 
+    <small>Start from Till Feb 16, 2019</small>
+    </div>
+    </div>
+        </div>
+        <div class="item wow fadeInUp" data-wow-delay="0.6s">
+        <div class="coming_sec sec_3_main">
+    <div class="sec_3"><img src="images/img_1.png" alt=""></div>
+     <div class="fa-icons">
+    <i class="fa fa-heart" aria-hidden="true"></i>
+    <i class="fa fa-upload" aria-hidden="true"></i>    
+    </div>   
+    <div class="inner-offer_1 change_clr"><h4>80% Off</h4>
+    <p>Galaxy Tab A7 - On Exclusive Campus price</p> 
+     <small>Start from Till Feb 18, 2019</small>
+    </div>
+    </div>
+        </div>
+        <div class="item wow fadeInUp" data-wow-delay="0.9s">
+        <div class="coming_sec sec_3_main">
+    <div class="sec_3"><img src="images/img_1.png" alt=""></div>
+     <div class="fa-icons">
+    <i class="fa fa-heart" aria-hidden="true"></i>
+    <i class="fa fa-upload" aria-hidden="true"></i>    
+    </div>   
+    <div class="inner-offer_1 change_clr"><h4>80% Off</h4>
+    <p>Galaxy Tab A7 - On Exclusive Campus price</p> 
+     <small>Start from Till Feb 22, 2019</small>
+    </div>
+    </div>
+        </div>
+    </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </section>
+	
+	<section class="partner_brand">
+	<div class="container">
+    <div class="letest_dis inner-sec inner_bttm_mg wow fadeInUp" data-wow-delay="0.3s">
+    <h3>OUR BRAND PARTNERS</h3>  
+    <p>Get Your Refund 12 working hours Incase Of Transaction Failures.</p>
+    </div>
+        <div id="brand_icon" class="owl-carousel">
+		@foreach($brands as $brand)
+			<div class="item">
+				<div class="image-zm"><a href="{{URL::route('brand_profile',array($brand->slug))}}">{{ HTML::image(getImage('uploads/brands/',$brand->image,'noimage.jpg'),'',['class'=>'img-fluid'])}}</a></a></div>
+			</div>
+		@endforeach
+          
+        </div>
+      </div>
+    </section>
+
+    @include('layouts.footerv2')
+
 
     <div id="stepbystep_regi" class="modal" role="dialog">
         <div class="modal-dialog institutions_modal-dialog stepbystep_modal-dialog">
@@ -538,9 +545,162 @@ dashboard_page
 
   	{{ HTML::script('assets/js/isotope-docs.min.js') }}
 	{{ HTML::script('assets/js/jquery.easing.min.js') }}        
-        {{ HTML::script('assets/plugins/datepicker/bootstrap-datepicker.js') }}
-        {{ HTML::script('assets/js/custom.js') }}
-        {{ HTML::script('assets/js/owl.carousel.js') }}
+    {{ HTML::script('assets/plugins/datepicker/bootstrap-datepicker.js') }}
+    	
+<!-----start by dpk------>
+<script>
+var wow = new WOW();
+  wow.init();
+</script>
+<script>
+$('#customers-testimonials').owlCarousel( {
+		loop: true,
+		items: 4,
+		margin: 10,
+		dots:true,
+        nav:false,
+  	     navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+		responsive: {
+			0: {
+				items: 1.2
+			},
+            
+			768: {
+				items: 2.2
+			},
+            1024: {
+				items: 3.2
+			},
+			1170: {
+				items: 4.2
+			}
+		}
+});
+    </script>
+    
+<script>
+$('#offer_letest').owlCarousel( {
+		loop: true,
+		items: 4,
+		margin: 10,
+		dots:false,
+        nav:false,
+  	     navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+		responsive: {
+			0: {
+				items: 1.2
+			},
+            568: {  
+            items: 2.2,
+            },
+        
+        667: {
+            items: 2.1
+        },
+        640: {
+            items: 2.2
+        },
+			768: {
+				items: 2.2
+			},
+            1024: {
+				items: 3.2
+			},
+			1170: {
+				items: 4.2
+			}
+		}
+});
+    </script>
+    
+<script>
+$('#testimonials_mob').owlCarousel( {
+		loop: true,
+		items: 4,
+		margin: 10,
+		dots:false,
+        nav:false,
+  	     navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+		responsive: {
+			0: {
+				items: 1.2
+			},
+            568: {  
+            items: 2.2,
+            },
+        
+        667: {
+            items: 2.1
+        },
+        640: {
+            items: 2.2
+        },
+			768: {
+				items: 2.2
+			},
+            1024: {
+				items: 3.2
+			},
+			1170: {
+				items: 4.2
+			}
+		}
+});
+    </script>
+    
+    
+<script>
+$('#brand-discount-sl').owlCarousel( {
+		loop: true,
+		items: 7,
+		margin: 30,
+		autoplay:true,
+		dots:true,
+        nav:false,
+		autoplayTimeout: 8500,
+		smartSpeed: 450,
+  	     navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+		responsive: {
+			0: {
+				items: 1
+			},
+			768: {
+				items: 2
+			},
+			1170: {
+				items: 7
+			}
+		}
+	});
+    </script>
+    <script>
+$('#brand_icon').owlCarousel( {
+    loop:true,
+    margin:10,
+    nav:false,
+    dots:false,
+    autoplay:true,
+    smartSpeed: 1000,
+    autoplayTimeout:4000,
+    responsive: {
+        1900: {
+            items: 5.4
+        },
+        1024: {
+            items: 5.4
+        },
+        667: {
+            items: 3.2
+        },
+        0: {
+            items: 3.2
+        }
+    }
+});    
+</script>
+
+<!-----End by dpk------->
+		
 <script>
     $(document).ready(function() {
         var process = true;

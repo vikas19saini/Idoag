@@ -1,379 +1,145 @@
-@extends('layouts.default')
+@extends('layouts.defaultv2')
 
 @section('title','Offer - '.$single->name.' from '.$brand->name.' |idoag.com')
 
 @section('metatags')
-    <meta name="keywords" content="Offer - {{$single->name}} from {{$brand->name}} |idoag.com"/>
-    <meta name="description" content="Offer - {{$single->name}} from {{$brand->name}} |idoag.com"/>
+<meta name="keywords" content="IDOAG: Save, Create, Connect | Student Discount Card, India | Internships | Opportunities |Events | Brand Connect  | Institute Connect |idoag.com" />
+<meta name="description" content="IDOAG: Save, Create, Connect | Student Discount Card, India | Internships | Opportunities |Events | Brand Connect  | Institute Connect |idoag.com" />
+
+<meta property="og:description" content="Offers & Discounts for Students |idoag.com">
+<meta property="og:image" content="http://idoag.com/assets/images/connectstudents_bg.jpg">
+<meta property="og:title" content="Offers & Discounts for Students |idoag.com">
+<meta property="og:url" content="{{ Request::fullUrl(); }}">
+<meta property="fb:app_id" content="1664606373750912">
+<meta property="og:type" content="idoagconnect:website">
+<meta property="twitter:card" content="summary">
+<meta property="twitter:creator" content="idoag">
+<meta property="twitter:domain" content="idoag.com">
+<meta property="twitter:site" content="idoag.com">
 @stop
 
 @section('css')
-    {{HTML::style('assets/css/custom_sonu.css')}}
-    @include('brands.partial.color')
-    <style>
-        .bg_sonu{
-            background:transparent;
-        }
-    </style>
+{{ HTML::style('assets/plugins/datepicker/datepicker3.css') }}    
+{{ HTML::style('assets/plugins/pikaday/pikaday.css') }}
+
+<style>
+.top_right_hdTx h4 p{
+	color:black !important;
+	background:#fff !important;
+}
+</style>
 @stop
 
 @section('content')
-
+@include('layouts.headerv2')
     <!-- Content Start Here -->
-    <div class="wrapper">
-
-        <!-- Header Starts here -->
-        @include('layouts.header')
-        <!-- Header Ends here -->
-
-        <!-- Brand inner Nav start here -->
-        @include('brands.partial.inner_nav')
-        <!-- Brand inner Nav End here -->
-
-        <div class="brandoffer_info">
-
-            <div class="container_info">
-
-                <div class="brandoffer_contleft">
-
-                    <div class="brandoffer_listtop">
-
-                        <div class="brandoffer_listtopimg">
-
-                            {{ HTML::image(getImage('uploads/photos/',$single->image,'noimage.jpg'),'',['class'=>'brandsoffer_img','itemprop'=>'image'])}}
-
-                            <div class="note_img2">   {{ HTML::image("assets/images/note_img3.png") }} </div>
-
-                            <div class="brandoffer_imgcont">
-                              
-                                <div class="share_like_txt">
-                                    
-                                    <p><i class="fa fa-eye"></i> {{getPostInfoCount($single->id, 'visits')}}</p>
-                                    
-                                    <p> <i class="fa likeicons @if(checkLikes($single->id)) fa-heart @else fa-heart-o  @endif " @if(Sentry::check()) id="{{$single->id}}" @endif></i>
-                                    
-                                        <b class="id_{{$single->id}}">{{getPostInfoCount($single->id, 'likes')}}</b> 
-
-                                    </p>
-                                    
-                                    <p><a class="share_social"><i class="fa fa-share-alt"></i> Share </a></p>
-                                    
-                                    <div class="addthis_sharing_toolbox"> 
-                                        <span class="share_fb"><a class="share_fb_db" target="_blank" onclick="FBShareOpDB('{{$single->image}}','{{$single->short_description}}','{{$single->name}}','{{ URL::route('offer_details',array('slug1' => getBrandSlug($single->brand_id), 'slug2' => $single->slug ))}}')"><i class="fa fa-facebook"></i></a></span>
-                                        <span class="share_tw"><a href="https://twitter.com/home?status={{$single->name}} - {{ URL::route('get_offers',array('slug1' => getBrandSlug($single->brand_id)))}} via idoagcard" target="_blank"><i class="fa fa-twitter"></i></a></span>
-                                        <span class="share_pin"><a href="https://pinterest.com/pin/create/button/?url={{ URL::route('get_offers',array('slug1' => getBrandSlug($single->brand_id)))}}&media=http://idoag.com/uploads/photos/M_{{$single->image}}&description={{ $single->name }} " target="_blank"><i class="fa fa-pinterest"></i></a></span>
-                                        <span class="share_gplus"><a href="https://plus.google.com/share?url={{ URL::route('get_offers',array('slug1' => getBrandSlug($single->brand_id)))}}" target="_blank"><i class="fa fa-google-plus"></i></a></span>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="brandoffer_listtopcont">
-                            {{ Form::hidden('_token', csrf_token()) }}
-
-                            <h4 itemprop="name">{{ $single->name}}</h4>
-
-                            <div class="available_txt">
-
-                                <ul>
-
-                                    @if($single->panindia == 'India')
-
-                                        <li> Avail it Anytime Anywhere</li>
-
-                                    @elseif($single->web_only == 1)
-
-                                        <li> Online Offer Only</li>
-
-                                    @elseif($single->panindia_inst_id)
-
-                                        <li> Available in {{getInstitutionName($single->panindia_inst_id)}} </li>
-
-                                    @else
-                                        @if($single->city!='')
-                                            <li><span class="stores_available"
-                                                      id="{{ $single->id}}"> Available at {{getCity($single->city)}}
-                                                    , {{getState($single->state)}} </span></li>
-                                        @else
-                                            <li><span class="stores_available" id="{{ $single->id}}"> Available at Selected Stores </span>
-                                            </li>
-                                        @endif
-                                    @endif
-
-                                    @if($single->start_date> date('Y-m-d'))
-
-                                        <li> Starts at {{ date("F d, Y", strtotime($single->start_date))  }} </li>
-
-                                    @else
-
-                                        <li> Valid Till {{ date("F d, Y", strtotime($single->end_date))  }} </li>
-
-                                    @endif
-
-                                </ul>
-
-                                @if($single->web_only == 0 && $single->available_stores)
-
-                                    <div class="available_selectcntinfo">
-
-                                        <div class="available_selectcnt">
-
-                                            <div class="available_search">
-
-                                                {{ Form::open(['class' => 'form-inline','id' => 'avail_stores', 'role' => 'form']) }}
-
-                                                <div class="form-group">
-
-                                                    <label>State</label>
-
-                                                    {{ Form::select('state', array('' => 'Select State') + $states,  $single->state,  ['class' => 'form-control', 'id' => 'stateId', 'required' => 'required','onchange' => 'getCity(this.value)'])}}
-
-                                                </div>
-
-                                                <div class="form-group">
-
-                                                    <label>City</label>
-
-                                                    {{Form::select('city',array('' => 'Select City') + $cities, $single->city,['class'=>'form-control','id'=>'cityId','required'])}}
-
-                                                </div>
-
-                                                <div class="form-group">
-
-                                                    <label>Location</label>
-
-                                                    {{Form::text('location',null,['placeholder' => 'Location', 'id'=>'location' ,'class' => 'form-control'])}}
-
-                                                </div>
-
-                                                {{ Form::submit('Go', ['class' => 'btn go_btn']) }}
-
-                                                {{ Form::close() }}
-
-                                            </div>
-
-                                            <div class="table-responsive available_tblinfo">
-
-                                                <div class="whitebg">
-
-                                                    <table class="table available_table">
-
-                                                        <thead>
-
-                                                        <tr>
-                                                            <th>Sl. No.</th>
-                                                            <th>city</th>
-                                                            <th>Location</th>
-                                                        </tr>
-
-                                                        </thead>
-
-                                                        <tbody>
-
-
-                                                        </tbody>
-
-                                                    </table>
-
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
-                                @endif
-
-                                @if($single->end_date<date('Y-m-d H:i:s'))
-
-                                    <br/><h4>Offer Expired</h4>
-
-                                @else
-
-
-                                    @if($single->voucher_type=='single' || $single->voucher_type=='multiple')
-
-                                        <div class="couponcode_txt">
-                                            <br/> <h5>Coupon Code</h5>
-
-                                            @if($single->voucher_type=='single')
-
-
-                                                @if($single->coupon_code)
-
-                                                    <a class="singlecoupon"
-                                                       id="{{$single->id}}">{{$single->coupon_code}}</a>
-
-                                                @else
-
-                                                    <a href="javascript:void(0);" class="singlecoupon"
-                                                       id="{{$single->id}}"> Coupon Code</a>
-
-                                                @endif
-
-                                            @else
-
-
-                                                @if($single->coupon_code)
-
-                                                    <a href="javascript:void(0);"
-                                                       id="{{$single->id}}">{{$single->coupon_code}}</a>
-                                                    <p><strong>Note:</strong> Here is the coupon you just generated. You
-                                                        could generate another coupon in
-                                                        @if($coupon_interval->h==0 && $coupon_interval->i==0) 00:15 @else
-                                                            00
-                                                            :{{ 15-$coupon_interval->i}} @endif mins</p>
-
-                                                @else
-
-                                                    <a href="javascript:void(0);" class="multiplecoupon" id="{{$single->id}}">Generate Coupon Code & Send Via Email</a>
-
-                                                    <div class="coupon_codetxt"> </div>
-                                                    <p> <strong>Note:</strong> You could generate only one coupon every 15 minutes. </p>
-
-                                                @endif
-
-                                            @endif
-
-                                        </div>
-
-                                    @endif
-                                @endif
-
-                            </div>
-
-                            <div class="show_stores"></div>
-
-                            {{ nl2br($single->description)}}
-                            <br/>
-
-                            <div class="couponcode_txt"><a href="#having_trouble" class="" data-toggle="modal"
-                                                           data-target="#having_trouble">Report Problem ?</a></div>
-
-                        </div>
-
-                    </div>
-                @if(count($offers))
-                    <div class="brandoffer_list newoffer_list">
-                        @if(isset($loggedin_user) && isset($brand) && $loggedin_user->brand_id == $single->brand_id)
-                        @else
-                            <h3 class="other_offers"> Other Offers of Interest</h3>
-                        @endif
-
-                        <ul>
-                         <div class='bg_sonu row_full'>
-                            <div class="inner_div_useonly wor_new less_pad" id="display_offers" style="background:inherit">
-                            @foreach($offers as $offer)
-
-                                @if($offer->id != $single->id)
-
-                                    <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6">
-                                                    <div class="item_offer" style="position:relative">
-                                                        <div class='inner_div_useonly'>
-                                                            @if(Sentry::check())
-                                                                <a  href="{{ URL::route('offer_details',array('slug1' => getBrandSlug($offer->brand_id), 'slug2' => $offer->slug ))}}">
-                                                            @else
-                                                                <a  href="#" data-toggle="modal" data-target="#login_required" data-id="{{ URL::route('offer_details',array('slug1' => getBrandSlug($offer->brand_id), 'slug2' => $offer->slug ))}}" class="login_btnpop">                                                            
-                                                            @endif
-                                                                <div class='moreinner'>
-                                                                    {{ HTML::image(getImage('uploads/photos/M_',$offer->image,'noimage.jpg'),'',['class'=>'brand_img'])}}
-                                                                    <h1>{{ HTML::image(getImage('uploads/brands/',getBrandLogo($offer->brand_id),'noimage.jpg'),'')}}</h1>
-                                                                </div>
-                                                            </a>                                                            
-                                                            @if(Sentry::check())
-                                                                <a  href="{{ URL::route('offer_details',array('slug1' => getBrandSlug($offer->brand_id), 'slug2' => $offer->slug ))}}">
-                                                            @else
-                                                                <a  href="#" data-toggle="modal" data-target="#login_required" data-id="{{ URL::route('offer_details',array('slug1' => getBrandSlug($offer->brand_id), 'slug2' => $offer->slug ))}}" class="login_btnpop">                                                            
-                                                            @endif
-                                                                <div class="offers_min">
-                                                                    <p>{{ShortenText($offer->short_description,70)}}</p>
-                                                                    <!--<p class="text-center"><span>Click here to get your coupon code</span></p> -->
-                                                                </div>
-                                                            </a>
-                                                            <div class='clearfix'></div>
-                                                            <div class="uicon_latest">
-                                                                <i class="fa likeicons @if(checkLikes($offer->id)) fa-heart @else fa-heart-o  @endif " @if(Sentry::check()) id="{{$offer->id}}" @endif> {{getPostInfoCount($offer->id, 'likes')}}</i>
-                                                                <i class="fa fa-share-alt share_social"></i>
-                                                                <div style="top:76%;right:2em" class="addthis_sharing_toolbox">
-                                                                    <span style="display:inline" class="share_fb"><a class="share_fb_db" target="_blank" onclick="FBShareOpDB('{{$offer->image}}','{{$offer->short_description}}','{{$offer->name}}','{{ URL::route('offer_details',array('slug1' => getBrandSlug($offer->brand_id), 'slug2' => $offer->slug ))}}')"><i class="fa fa-facebook"></i></a></span>
-                                                                    <span style="display:inline" class="share_tw"><a href="https://twitter.com/home?status={{$offer->name}} - {{ URL::route('get_offers',array('slug1' => getBrandSlug($offer->brand_id)))}} via idoagcard" target="_blank"><i class="fa fa-twitter"></i></a></span>
-                                                                    <span style="display:inline" class="share_pin"><a href="https://pinterest.com/pin/create/button/?url={{ URL::route('get_offers',array('slug1' => getBrandSlug($offer->brand_id)))}}&media=http://idoag.com/uploads/photos/M_{{$offer->image}}&description={{ $offer->name }}" target="_blank"><i class="fa fa-pinterest"></i></a></span>
-                                                                    <span style="display:inline" class="share_gplus"><a href="https://plus.google.com/share?url={{ URL::route('get_offers',array('slug1' => getBrandSlug($offer->brand_id)))}}" target="_blank"><i class="fa fa-google-plus"></i></a></span>
-                                                                </div>
-                                                            </div>
-                                                        </div>         
-                                                    </div>
-                                                </div>
-
-                                @endif
-
-                            @endforeach
-                            </div>
-                            </div>
-
-                        </ul>
-
-                    </div>
-                    @endif
-
-                </div>
-
-                <div class="notice_feed_info">
-                @if(count($brandoffers))
-                    <div class="notice_feed_list">
-                        <h3> {{ HTML::image("assets/images/note_img3.png") }} Offers
-                            by {{ Str::upper($brand->name) }} </h3>
-
-                        <div class="notice_feed_listinner2">
-
-                            <ul>
-
-
-                                @foreach($brandoffers as $offer)
-
-                                    <li>
-                                        <a href="{{ URL::route('offer_details',array('slug1' => getBrandSlug($offer->brand_id), 'slug2' => $offer->slug ))}}">
-
-                                            <div class="notice_feed_listinnerimg">{{ HTML::image(getImage('uploads/photos/',$offer->image,'noimage.jpg'))}}</div>
-
-                                            <div class="notice_feed_listinnercont">
-
-                                                <h5>{{$offer->name}}</h5>
-
-                                                <p>{{ShortenText($offer->short_description,120)}}</p>
-
-                                            </div>
-                                        </a>
-                                    </li>
-
-                                @endforeach
-
-                            </ul>
-
-                            <a href="{{URL::route('get_offers',$brand->slug)}}" class="seealloffers_btn">See all
-                                offers</a></div>
-                    </div>
-                    @endif
-
-                    @include('brands.partial.note')  
-
-                    @include('partials.ad')
-
-                </div>
-
-            </div>
-
-        </div>
-
+	
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 sec_1 sec_1Tx">
+			<!--<img src="images/offer_mob.png" class="img-fluid" alt="">-->
+				{{ HTML::image(getImage('uploads/photos/',$single->image,'noimage.jpg'),'',['class'=>'img-fluid'])}}
+
+				<div class="img_tx"><a href="#"><p>View Details</p></a></div>
+			</div>
+			<div class="col-md-6 sel_2_left">
+				<div class="top_right_hdTx">
+					<!--<h2>Galaxy Note 8 - On Exclusive Campus price</h2>-->
+					<h2>{{ $single->name}}</h2>
+					<p>Valid Till {{ date("F d, Y", strtotime($single->end_date))  }}</p>
+					@if(!empty($single->description))
+					<h3>How to Avail this Offer</h3>
+					<h4>{{ ($single->description)}}</h4>
+					 @endif
+					<!--<ol>
+					<li> Click on following link :
+						<a href="#">https://shop.samsung.com/in/byod/idoag</a>
+						</li>
+						<li>Mark the 'checkbox' : "I have an agent code"</li>
+						<li>Enter your 16 digit idoag card number in the agent code column.</li>
+						<li>Enter your email id that you have registered with your college.</li>
+						<li>Enter your mobile number that you have registered with your college.</li>
+						<li>You will receive an OTP and eStore Password on your email.</li>
+						<li>Enter OTP and Submit.. .</li>
+					</ol>-->
+					<br/>
+					<button type="botton" class="calim_bttn">Calim Now</button>
+					<small>My coupon code isn’t working. <a href="{{ URL::route('contactus') }}">Need Help</a></small>
+				</div>
+			</div>
+		</div>
     </div>
-    <!-- Content Ends Here -->
+	
+	
+	<!-- TESTIMONIALS -->
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="letest_dis inner-sec les_dis wow fadeInUp">
+						<h3>Other Offers </h3>  
+						<p>Get us hands on our Best Offers from this month.</p>
+					</div>
+					<div id="customers-testimonials" class="img_custom owl-carousel wow fadeInRight">
+						@foreach($offers as $offer)
+							@if($offer->id != $single->id)
+								<div class="item wow fadeInUp">
+									  <div class="shadow-effect">
+										<!--<img src="images/offer_pictur.png" alt="">-->
+											{{ HTML::image(getImage('uploads/photos/M_',$offer->image,'noimage.jpg'),'',['class'=>'brand_img'])}}
+                                            
+                                                                
+										<button><a @if(Sentry::check())  href="{{ URL::route('offer_details',array('slug1' => getBrandSlug($offer->brand_id), 'slug2' => $offer->slug ))}}" @else
+                                            href="#" data-toggle="modal"  data-target="#login_required" @endif >Claim Now</a></button>
+									</div>
+								</div>
+							@endif
+						@endforeach
+					
+					<!--END OF TESTIMONIAL 5 -->
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+	
+	<section class="partner_brand">
+		<div class="container">
+			<div class="inner-sec inner_bttm_mg wow fadeInUp">
+				<h3>Brand Discounts</h3>  
+				<p>Get Your Refund 12 working hours Incase Of Transaction Failures.</p>
+			</div>
+			<div id="brand_icon" class="owl-carousel">
+				@if($brandoffers)
+					@foreach($brandoffers as $offer)
+				
+						<div class="item">
+							<!--<div class="image-zm"><a href="#"><img src="images/brand/Ajio.png" alt=""></a></div>-->
+							
+							<div class="image-zm">
+								<a href="{{ URL::route('offer_details',array('slug1' => getBrandSlug($offer->brand_id), 'slug2' => $offer->slug ))}}">
+							<!--{{ HTML::image(getImage('uploads/photos/',$offer->image,'noimage.jpg'),'',['class'=>'img-fluid'])}}-->
+							
+							{{ HTML::image(getImage('uploads/brands/',getBrandLogo($offer->brand_id),'noimage.jpg'),'')}}
+							</a>
+							</div>
+						</div>
+					@endforeach
+				@endif
+			   
+			</div>
+		</div>
+    </section>
+	
+    
+	
+	
+	
+	<!-- Content Ends Here -->
 
     <!-- Footer Starts here -->
-    @include('layouts.footer')
+    @include('layouts.footerv2')
     <!-- Footer Ends here -->
 
 
@@ -451,6 +217,110 @@
 @section('js')
 
     {{ HTML::script('assets/js/notescript.js') }}
+	{{ HTML::script('assets/js/isotope-docs.min.js') }}
+	{{ HTML::script('assets/js/jquery.easing.min.js') }}        
+    {{ HTML::script('assets/plugins/datepicker/bootstrap-datepicker.js') }}
+	
+	
+<script>
+var wow = new WOW();
+  wow.init();
+</script>
+<script>
+$('#brand_icon').owlCarousel( {
+    loop:true,
+    margin:10,
+    nav:false,
+    dots:false,
+    autoplay:true,
+    smartSpeed: 1000,
+    autoplayTimeout:4000,
+    responsive: {
+        1900: {
+            items: 5.4
+        },
+        1024: {
+            items: 5.4
+        },
+        667: {
+            items: 3.2
+        },
+        
+        0: {
+            items: 3.2
+        }
+    }
+});    
+</script>
+
+    <script>
+$('#customers-testimonials').owlCarousel( {
+		loop: true,
+		items: 4,
+		margin: 10,
+		dots:true,
+        nav:false,
+  	     navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+		responsive: {
+			0: {
+				items: 1.2
+			},
+            
+            568: {  
+            items: 2.2,
+            },
+        
+        667: {
+            items: 2.1
+        },
+        640: {
+            items: 2.2
+        },
+			768: {
+				items: 2.2
+			},
+            1024: {
+				items: 3.2
+			},
+			1170: {
+				items: 4.2
+			}
+		}
+});
+    </script>
+    
+<script>
+$('#testimonials_mob').owlCarousel( {
+		loop: true,
+		items: 4,
+		margin: 10,
+		dots:false,
+        nav:false,
+  	     navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+		responsive: {
+			0: {
+				items: 1.2
+			},
+			768: {
+				items: 2.2
+			},
+            1024: {
+				items: 3.2
+			},
+			1170: {
+				items: 4.2
+			}
+		}
+});
+    </script>
+
+
+
+
+
+
+
+
 
     <script>
 

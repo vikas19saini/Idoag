@@ -19,6 +19,8 @@
 @stop
 
 @section('css')
+{{ HTML::style('assets/plugins/datepicker/datepicker3.css') }}    
+{{ HTML::style('assets/plugins/pikaday/pikaday.css') }}
 
 @stop
 
@@ -47,7 +49,6 @@
         </div>
     </div>
 </div>
-
 <div class="in_form">
     <div class="container">
         <div class="row">
@@ -55,10 +56,22 @@
                 <div class="inner-ovrly wow fadeInUp">
                     <div class="overlay-on-bg">
                         <h2>Simply enter your unique 16 digit number and you are all set to <span> access unique offers and do big savings with us .</span></h2>
-                        <div class="form-group custom_field" >
-                            <input type="text" id="numerical" class="form-control inpt_br_hidden" placeholder="XXXX XXXX XXXX XX45" required="">
-                            <button type="button" class="loern-btn">Activate card</button>
-                        </div>
+                         {{ Form::open(['class' => 'form-group activation_mobile','route' => 'student_activate']) }}
+						<div class="form-group custom_field card_input" >
+                            <input type="text" name='card_number' required="true" id="validatecardnumber" class="form-control inpt_br_hidden" placeholder="XXXX XXXX XXXX XX45">
+                            <button type="button" id="pwd" class="loern-btn enter_btn">Next</button>
+						</div>
+						<p class="errorCardNumber"></p>
+						{{ errors_for('card_number', $errors) }}
+						<div class="form-group custom_field row dob_input" style="display:none;">
+                            <input type="text" name='dob'  readonly placeholder='Enter your Date of Birth(dd/mm/yyyy)' autocomplete="off" id="datepicker" class="form-control inpt_br_hidden" >
+							<select name="companyId" autocomplete="off" class='wow fadeInDown animated claw' data-wow-delay="0.3s"/>
+							</select>
+							<button type="submit" id="pwd" class="loern-btn enter_btn2">Activate</button>
+						</div>
+						{{ errors_for('dob', $errors) }}
+                        {{ Form::hidden('_token', csrf_token()) }}
+						{{ Form::close() }}
                     </div>
                 </div>
             </div>
@@ -72,7 +85,7 @@
             <div class="inner-sec1 inner-sec txt-btn-rght inner-mobTx">
                 <h3>FAVOURITE OFFERS</h3>  
                 <p>We have curated offers on your favourite Brands - Products <span>and Services .... Grab Now !!</span></p>
-                <button class="view-bttn" id="loadMore">View All</button>
+                <button class="view-bttn" id="loadMore"><a href="{{ URL::route('offers') }}">View All</a></button>
             </div>
         </div>
     </div>    
@@ -82,13 +95,18 @@
 <section class="testimonial_desk">
 	<div class="container">
         <div class="row">
+			@foreach($offers_new as $offer)
             <div class="col-sm-3  wow fadeInUp">
-                <div class="shadow-effect">                 
-                    {{ HTML::image('assets/imagesv2/offer_pictur.png','',['class'=>'img-fluid'])}}
-                    <button><a href="other-letest.html">Claim Now</a></button>
-                </div>
+				<div class="shadow-effect">                 
+                    <!--{{ HTML::image('assets/imagesv2/offer_pictur.png','',['class'=>'img-fluid'])}}-->
+					{{ HTML::image(getImage('uploads/photos/',$offer->image,'noimage.jpg'),'', array('class'=>'img-fluid'))}}
+
+                    <!--<button><a href="other-letest.html">Claim Now</a></button>-->
+					<button><a href="#" data-toggle="modal" data-target="#popUpWindow">Claim Now</a></button>
+				</div>
             </div>
-            
+			@endforeach
+            <!--
             <div class="col-md-3 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="shadow-effect">
                     {{ HTML::image('assets/imagesv2/offer-picture_1.png','',['class'=>'img-fluid'])}}
@@ -109,8 +127,9 @@
                     <button><a href="other-letest.html">Claim Now</a></button>
                 </div>
             </div>
+			-->
         </div>
-        <div class="show_offer">
+        <!--<div class="show_offer">
             <div class="row">
                 <div class="col-sm-3">
                     <div class="shadow-effect">
@@ -140,7 +159,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
     </div>
 </section>
     
@@ -343,6 +362,10 @@
 @stop
 
 @section('js')
+{{ HTML::script('assets/plugins/datepicker/bootstrap-datepicker.js') }}
+{{ HTML::script('assets/plugins/pikaday/moment.js') }}
+{{ HTML::script('assets/plugins/pikaday/pikaday.js') }}
+{{ HTML::script('assets/plugins/pikaday/pikaday.jquery.js') }}
 <script>
 $('#customers-testimonials').owlCarousel( {
     loop:true,
@@ -503,4 +526,165 @@ $(()=>{
 var wow = new WOW();
   wow.init();
 </script>
+
+<script>    
+    $(document).ready(function () {
+        var picker = new Pikaday(
+		{
+			field: document.getElementById('datepicker'),
+			firstDay: 1,
+			format: 'DD-MM-YYYY',
+			minDate: new Date(1930, 0, 1),
+			maxDate: new Date(2016, 12, 31),
+			yearRange: [1930, 2016]
+		});
+	});
+</script>
+
+
+<script>
+$(document).ready(function(){
+	$(".enter_btn").click(function(){
+		var cardNumber = '';
+		ref = this;
+		/*if($("#validatecardnumber").val() != "" && $("#validatecardnumber1").val() == ""){
+			cardNumber = $("#validatecardnumber").val();
+		}
+		if($("#validatecardnumber").val() == "" && $("#validatecardnumber1").val() != ""){
+			cardNumber = $("#validatecardnumber1").val();
+		}*/
+		
+		cardNumber = $("#validatecardnumber").val();
+		
+		$.ajax({
+			type: 'post',
+			url: '/validateCardAndUserType',
+			data: {"card_number": cardNumber},
+			success: function(data){
+				console.log(data);
+				data = JSON.parse(data);
+				if(data.valid){
+					if(data.new_message === ""){
+						if(data.type === 'company'){
+							$(".dob_input select").html('');
+							for(var i=0; i<data.companies.length; i++){
+								$(".dob_input select").append('<option value="'+ data.companies[i].id +'">'+data.companies[i].name+'</option>');
+							}
+							$(".dob_input select").css('display', 'block');
+							$(".dob_input input[type=text]").css('display', 'none');
+						}
+						if(data.type === 'institution'){
+							console.log("inst");
+							
+							$(".dob_input select").css('display', 'none');
+							//$(".dob_input input[type=text]").css('display', 'block');
+							$(".dob_input").removeAttr('style');
+							$(".card_input").css('display', 'none');
+							$(".errorCardNumber").css('display', 'none');
+							
+						}
+						$(ref).addClass("active");            
+						$(".card_ani").addClass("active");
+						$(".dob_ani").addClass("active");
+					}else{
+						$("p.errorCardNumber").text(data.new_message);
+					}
+				}else{
+					$("p.errorCardNumber").text(data.new_message);
+				}
+			}
+		});          
+	})
+})
+</script>
+
+
+<script>
+$(document).ready(function () {
+
+        $('#contact-form-validate').formValidation({
+
+            framework: 'bootstrap',
+
+            icon: {
+
+                valid: 'glyphicon glyphicon-ok',
+                invalid: 'glyphicon glyphicon-remove',
+                validating: 'glyphicon glyphicon-refresh'
+            },
+            addOns: {
+                reCaptcha2: {
+                    element: 'captchaContainer',
+                    theme: 'light',
+                    siteKey: '6LdjgRgTAAAAAMp-Ztydlt8NpmG3761HKYeKxLT6',
+                    message: 'The captcha is not valid'
+                }
+            },
+            fields: {
+
+                firstname: {
+
+                    validators: {
+
+                        notEmpty: {
+                            message: 'The first name is required and cannot be empty'
+                        }
+                    }
+                },
+                lastname: {
+
+                    validators: {
+
+                        notEmpty: {
+
+                            message: 'The last name is required and cannot be empty'
+                        }
+                    }
+                },
+                email: {
+
+                    validators: {
+
+                        regexp: {
+
+                            regexp: '^[^@\\s]+@([^@\\s]+\\.)+[^@\\s]+$',
+
+                            message: 'The value is not a valid email address'
+
+                        }
+                    }
+                },
+                phone: {
+
+                    validators: {
+
+                        numeric: {
+
+                            message: 'The value is not a number'
+                        },
+
+                        stringLength: {
+
+                            min: 10,
+
+                            max: 10,
+
+                            message: 'The Mobile number must be 10 digits only'
+                        }
+                    }
+                }
+            }
+
+        })
+
+    });
+</script>
+
+
+
+
+
+
+
+
 @stop

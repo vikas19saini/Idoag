@@ -48,11 +48,13 @@
                             <li><a  href="{{Url::route('logout')}}"><button type="button" class="login-btn" >Logout</button></a></li>
                             @else
                             <li><button type="button" class="login-btn" data-toggle="modal" data-target="#popUpWindow">Login</button></li>
+							<li><a href="#activecart"><button type="button" class="active-crd">Activate card</button></a></li>
                             @endif
-                        </ul>
+						</ul>
                     </div>
                 </nav> 
-                <nav role="navigation" class="mobile_menu">
+				<a href="#activecart"><button type="button" class="active-crd mob_veiw">Activate card</button></a>
+				<nav role="navigation" class="mobile_menu">
                     <div id="menuToggle">
                         <input type="checkbox" />
                         <span></span>

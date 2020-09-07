@@ -116,7 +116,7 @@ class StudentUserController extends \BaseController {
         }
     }
 
-    public function checkStudentWithCard() {
+    public function checkStudentWithCard() {//die("hello");
         $data = array();
         $student_data = array();
 
@@ -479,8 +479,7 @@ class StudentUserController extends \BaseController {
         $trending_offers = $this->post->getTrendingPostsType('offer');
         $settings = DB::table('settings')->where('id', 1)->first();
         
-        $sliders = DB::table('sliders')->select('*')->where('page_name', 'StudentDashboardSlider')->where('status', 1)->get();        
-
+        $sliders = DB::table('sliders')->select('*')->where('page_name', 'StudentDashboardSlider')->where('status', 1)->get(); 
         return View::make('students.dashboard')->withBrandsPosts($brands_posts)
                 ->withStudentDetails($student_details)
                 ->withUser($user)                

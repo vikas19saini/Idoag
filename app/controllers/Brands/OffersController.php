@@ -408,8 +408,7 @@ class OffersController extends \BaseController {
 
 
   public function getOfferDetails($slug1, $slug2)
-  {
-      $type = 'offer';
+  {  $type = 'offer';
       $type = 'offer';
         $loggedUserType = Sentry::getUser()->user_type;
         $userType = '';
@@ -420,12 +419,12 @@ class OffersController extends \BaseController {
             $userType = 'students';
         }
       $brand = $this->brand->findBySlug($slug1);
-
-      $single = $this->post->getPostsBySlug($slug2);
-
+	  
+	  $single = $this->post->getPostsBySlug($slug2);
+	  
       $offers = Post::where('brand_id',$brand->id)->where('type',$type)->whereNotIn('id', array($single->id))->where('status',1)->where('end_date','>',date('Y-m-d'))->where('posts.for_user_type', '!=', $userType)->orderBy('visits','desc')->take(8)->get();
-
-      $post = $this->post->find($single->id);
+	  
+	  $post = $this->post->find($single->id);
 
       $post->timestamps = false;
 
@@ -454,7 +453,6 @@ class OffersController extends \BaseController {
       }
 
       $brandoffers        = Post::where(['brand_id' => $brand->id, 'type' => $type])->where('id', '<>', $single->id)->where('end_date', '>', date('Y-m-d'))->where('posts.for_user_type', '!=', $userType)->orderBy('created_at', 'desc')->take(4)->get();
-
       $loggedin_user      = Sentry::getUser();
 
       $user_group         = $loggedin_user->getGroups()->first()->name; 

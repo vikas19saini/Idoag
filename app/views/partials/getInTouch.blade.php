@@ -10,7 +10,47 @@
             </div>
             <!-- Body -->
             <div class="modal-body">
-                <form action="#">
+			<?php 
+				if(Request::url() == URL::route('home')){
+					$url = "1";
+				}else{
+					$url = "0";
+				}
+			?>
+				{{ Form::open(['route' => 'contactus','class' => 'contactus_fullform','id' => 'contact-form-validate']) }}
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group custom_fd">
+                                {{Form::text('firstname',null,['placeholder' => 'First Name', 'required' => 'required', 'class'=>'form-control'])}}
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group custom_fd">
+                                {{Form::text('lastname',null,['placeholder' => 'Last Name',  'required' => 'required', 'class'=>'form-control'])}}
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group custom_fd">
+                                {{Form::text('email',null,['placeholder' => 'Email',  'required' => 'required', 'class'=>'form-control'])}}
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group custom_fd">
+                                {{Form::text('phone',null,['placeholder' => 'Phone','required' => 'required', 'class'=>'form-control'])}}
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group custom_txt_aria">
+                                {{Form::textarea('message',null,['placeholder' => 'Message', 'class'=>'form-control' ])}} 
+								{{Form::hidden('pageurl',$url,['class'=>'form-control'])}}
+                            </div>
+                        </div>
+                        <div class="modal-footer custom-btn sub_bttn">
+                            <button type="submit" class="btn-primary">Submit</button>
+                        </div>
+                    </div>
+                {{ Form::close() }}
+                <!--<form action="#">
                 <div class="row">
                     <div class="col-md-4">
                         <div class="form-group custom_fd">
@@ -52,8 +92,9 @@
                         </div>
                     </div>
                 </div>
-                </form>
+                </form>-->
             </div>
         </div>
     </div>
 </div>
+
