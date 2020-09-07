@@ -233,8 +233,7 @@ index-page
               <div class='clearfix'></div>
             </div>   
     
-    
-    <div id="activateyouridoag_info" class='row secon_div asdfjsdlf d-flex flex-column-reverse'>
+		<div id="activateyouridoag_info" class='row secon_div asdfjsdlf d-flex flex-column-reverse'>
                 <div class=''>
                     <div class='col-lg-7 col-md-7 col-sm-12 col-xs-12'>
                         <div class='inner_divp_s row'>

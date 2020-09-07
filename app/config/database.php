@@ -54,7 +54,7 @@ return array(
 
                 'mysql' => array(
                         'driver'    => 'mysql',
-                        'host'      => 'idoag-development.co8pldazsxsy.ap-south-1.rds.amazonaws.com',
+                        'host'      => 'idoag.co8pldazsxsy.ap-south-1.rds.amazonaws.com',
                         'database'  => 'idoag',
                         'username'  => 'idoagdev',
                         'password'  => 'iG*#idoag',
